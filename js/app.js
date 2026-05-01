@@ -51,43 +51,57 @@ function mkListCard(pl,idx){
 }
 
 /* ══════════════════════════════════════════════════════
-   MAP — canvas with OSM tiles
+   MAP — Mapbox GL JS
 ══════════════════════════════════════════════════════ */
-(function drawMap(){
-  var cv=document.getElementById('mc'),ctx=cv.getContext('2d');
-  var phoneEl=document.getElementById('phone');
-  var W=phoneEl.clientWidth||390, H=phoneEl.clientHeight||844;
-  cv.width=W; cv.height=H;
-  var Z=14, LAT=35.6586, LNG=139.7454;
+mapboxgl.accessToken = 'pk.eyJ1IjoicG9wb3YyMzMiLCJhIjoiY21uemxpcmc3MGVyejJ4cHZnNjhtYms5MSJ9.Bx8xSk-jBrYZfCkjfrrW1w';
 
-  /* Base fill while tiles load */
-  ctx.fillStyle='#F0F3F0';ctx.fillRect(0,0,W,H);
+var map = new mapboxgl.Map({
+  container: 'map',
+  style: 'mapbox://styles/popov233/cmogt88uf000z01ree8rk4nvp',
+  center: [139.7454, 35.6586],
+  zoom: 15.5,
+  interactive: true,
+  scrollZoom: false
+});
 
-  /* CartoDB Positron NoLabels — just roads + land/water, no text at all */
-  var n=Math.pow(2,Z);
-  var tx0=(LNG+180)/360*n,lr=LAT*Math.PI/180;
-  var ty0=(1-Math.log(Math.tan(lr)+1/Math.cos(lr))/Math.PI)/2*n;
-  var ox=tx0*256-W/2,oy=ty0*256-H/2;
+var ZOOM_CLOSE = 15.5;
+var ZOOM_FAR   = 14.8;
 
-  for(var ty=Math.floor(oy/256)-1;ty<=Math.ceil((oy+H)/256)+1;ty++){
-    for(var tx=Math.floor(ox/256)-1;tx<=Math.ceil((ox+W)/256)+1;tx++){
-      if(tx<0||ty<0||tx>=n||ty>=n)continue;
-      (function(tx,ty){
-        var img=new Image();
-        img.crossOrigin='anonymous';
-        /* CartoDB Positron NoLabels: clean light map, roads only */
-        img.src='https://a.basemaps.cartocdn.com/light_nolabels/'+Z+'/'+tx+'/'+ty+'.png';
-        var dx=Math.round(tx*256-ox),dy=Math.round(ty*256-oy);
-        img.onload=function(){
-          ctx.save();
-          ctx.filter='saturate(0.6) brightness(1.02)';
-          ctx.drawImage(img,dx,dy,256,256);
-          ctx.restore();
-        };
-      })(tx,ty);
-    }
+var TT_LL=[139.7454,35.6586];
+
+function updatePOIPositions(){
+  if(appState==='lst')return;
+
+  // Tokyo Tower center card + pulse ring
+  var ttPt=map.project(TT_LL);
+  var cc=document.getElementById('cc');
+  var pr=document.getElementById('pr');
+  cc.style.left=ttPt.x+'px';
+  cc.style.top=ttPt.y+'px';
+  pr.style.left=ttPt.x+'px';
+  pr.style.top=ttPt.y+'px';
+
+  // ccLabel follows cc when visible
+  var ccLabel=document.getElementById('ccLabel');
+  if(ccLabel.classList.contains('show')){
+    ccLabel.style.left=ttPt.x+'px';
+    ccLabel.style.top=(ttPt.y+12)+'px';
+    ccLabel.style.transform='translateX(-50%)';
   }
-})();
+
+  // Other POI cards
+  document.querySelectorAll('.poi[data-i]').forEach(function(el){
+    var idx=parseInt(el.dataset.i);
+    var pl=PL[idx];
+    if(!pl||!pl.ll)return;
+    var pt=map.project(pl.ll);
+    el.style.left=pt.x+'px';
+    el.style.top=pt.y+'px';
+  });
+}
+
+map.on('load',updatePOIPositions);
+map.on('move',updatePOIPositions);
 
 /* Center card — real photo with emoji fallback */
 var ccImg = document.getElementById('ccImg');
@@ -209,6 +223,7 @@ function setState(next){
     sscr.style.overflowY='hidden';sscr.scrollTop=0;
     nearPOIs.forEach(function(p){p.style.display='flex';});
     setTimeout(function(){
+      map.resize();
       setMapOverlays(true);
       var list=zoomLv?PL.slice(0,10):PL.slice(0,3);
       document.getElementById('mcards').innerHTML=list.map(function(pl,i){return mkCard(pl,i);}).join('');
@@ -226,6 +241,7 @@ function setState(next){
 
 function setZoom(lv,showMsg){
   zoomLv=lv;var far=(lv>=1);
+  map.flyTo({zoom: far ? ZOOM_FAR : ZOOM_CLOSE, duration: 600});
   extPOIs.forEach(function(p){p.classList.toggle('show',far);});
   var cc=document.getElementById('cc');
   var ccLbl=document.getElementById('ccLabel');

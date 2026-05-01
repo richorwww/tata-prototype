@@ -29,7 +29,7 @@ html,body{width:100%;height:100%;overflow:hidden;font-family:'PingFang SC','Noto
 #mc{position:absolute;top:0;left:0;width:100%;height:100%;display:block}
 
 /* Center card — centered in default 390px view */
-#cc{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:136px;height:158px;border-radius:16px;overflow:hidden;box-shadow:0 10px 32px rgba(0,0,0,.32);z-index:25;cursor:pointer;transition:top .46s cubic-bezier(.32,.72,0,1),width .35s,height .35s,border-radius .35s}
+#cc{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:136px;height:158px;border-radius:16px;overflow:hidden;box-shadow:0 10px 32px rgba(0,0,0,.32);z-index:25;cursor:pointer;transition:width .35s,height .35s,border-radius .35s}
 #cc img{width:100%;height:100%;object-fit:cover;display:block}
 .cc-lbl{position:absolute;bottom:0;left:0;right:0;padding:12px 6px 6px;background:linear-gradient(to top,rgba(0,0,0,.62),transparent);font-size:10px;font-weight:600;color:#fff;text-align:center}
 .cc-dot{position:absolute;bottom:4px;left:50%;transform:translateX(-50%);width:8px;height:8px;border-radius:50%;background:#2196F3;border:2px solid #fff;box-shadow:0 0 0 3px rgba(33,150,243,.3)}
@@ -74,10 +74,8 @@ html,body{width:100%;height:100%;overflow:hidden;font-family:'PingFang SC','Noto
 .g .poi-dist{background:#00A17B}.p .poi-dist{background:#9B7EF0}.o .poi-dist{background:#F5873C}.b .poi-dist{background:#3B82F6}
 .poi::after{content:'';width:2px;height:5px;background:rgba(0,0,0,.12);border-radius:1px;margin-top:1px}
 
-/* Positions — near POIs sit inside the 390px default view */
-#n1{left:18px;top:195px}
-#n2{right:38px;top:108px}
-#n3{right:32px;top:248px}
+/* Positions — set dynamically via map.project() in app.js */
+.poi{transform:translate(-50%,-100%)}
 /* Extended POI positions (shown far zoom only) */
 .epoi{display:none!important}
 .epoi.show{display:flex!important}

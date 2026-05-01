@@ -6,6 +6,8 @@
 <title>Triplabo旅伴</title>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+<link href="https://api.mapbox.com/mapbox-gl-js/v3.4.0/mapbox-gl.css" rel="stylesheet">
+<script src="https://api.mapbox.com/mapbox-gl-js/v3.4.0/mapbox-gl.js"></script>
 </head>
 <body>
 <div id="phone">
@@ -13,7 +15,7 @@
 
   <!-- MAP ─────────────────────────────────────────────── -->
   <div id="mapWrap">
-    <canvas id="mc" width="390" height="844"></canvas>
+    <div id="map" style="position:absolute;top:0;left:0;width:100%;height:100%;"></div>
     <div id="pr"></div>
 
     <!-- Center card -->

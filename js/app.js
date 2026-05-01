@@ -69,6 +69,31 @@ var ZOOM_FAR   = 14.8;
 
 var TT_LL=[139.7454,35.6586];
 
+function calcDist(ll){
+  var R=6371000;
+  var dLat=(ll[1]-TT_LL[1])*Math.PI/180;
+  var dLng=(ll[0]-TT_LL[0])*Math.PI/180;
+  var a=Math.sin(dLat/2)*Math.sin(dLat/2)+
+        Math.cos(TT_LL[1]*Math.PI/180)*Math.cos(ll[1]*Math.PI/180)*
+        Math.sin(dLng/2)*Math.sin(dLng/2);
+  var m=R*2*Math.atan2(Math.sqrt(a),Math.sqrt(1-a));
+  return m<1000?Math.round(m)+'m':(m/1000).toFixed(1)+'km';
+}
+
+PL.forEach(function(pl){
+  if(pl.ll) pl.d=calcDist(pl.ll);
+});
+
+// 更新地图上硬编码的POI卡片距离
+document.querySelectorAll('.poi[data-i]').forEach(function(el){
+  var idx=parseInt(el.dataset.i);
+  var pl=PL[idx];
+  if(pl&&pl.ll){
+    var distEl=el.querySelector('.poi-dist');
+    if(distEl) distEl.textContent=pl.d;
+  }
+});
+
 function updatePOIPositions(){
   if(appState==='lst')return;
 

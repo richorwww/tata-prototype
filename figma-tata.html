@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1100">
+<title>Triplabo — TaTa Screens</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+  background:#8C949C;
+  font-family:'PingFang SC','Noto Sans JP','Noto Sans SC',sans-serif;
+  padding:48px;
+  display:flex;flex-direction:column;align-items:center;
+}
+.page-title{font-size:15px;font-weight:600;color:rgba(255,255,255,.65);margin-bottom:32px}
+.row{display:flex;gap:40px;align-items:flex-start}
+.phone-col{display:flex;flex-direction:column;align-items:center;gap:10px}
+.screen-label{font-size:12px;color:rgba(255,255,255,.6);font-weight:500}
+
+.phone{
+  width:390px;height:844px;
+  border-radius:44px;
+  background:#F5F7FA;
+  overflow:hidden;position:relative;
+  box-shadow:0 32px 72px rgba(0,0,0,.38),inset 0 0 0 1px rgba(255,255,255,.16);
+  flex-shrink:0;
+  display:flex;flex-direction:column;
+}
+
+/* ── Shared ── */
+.hdr-bar{
+  flex-shrink:0;
+  display:flex;align-items:center;justify-content:space-between;
+  padding:14px 18px 10px;
+  background:#fff;
+  border-bottom:1px solid #D1D1D6;
+}
+.hdr-back{font-size:22px;color:#6B7573;line-height:1}
+.hdr-title{font-size:16px;font-weight:700;color:#222726}
+.scroll-area{flex:1;overflow:hidden;background:#F5F7FA}
+
+.btn{flex:1;height:40px;border-radius:8px;border:1px solid #D1D1D6;background:#fff;font-size:13px;font-weight:600;color:#222726;display:flex;align-items:center;justify-content:center;gap:5px}
+.btn-g{background:#00A17B;border-color:#00A17B;color:#fff}
+
+/* ── STAMP CARD ── */
+.stamp-card{
+  background:#fff;border-radius:16px;
+  padding:24px 20px 20px;
+  margin:0 18px 16px;
+  box-shadow:0 2px 12px rgba(0,0,0,.08);
+  display:flex;flex-direction:column;align-items:center;
+  position:relative;
+}
+.stamp-share{
+  position:absolute;top:16px;right:16px;
+  width:32px;height:32px;border-radius:50%;
+  background:#EFF1F1;
+  display:flex;align-items:center;justify-content:center;font-size:14px;color:#6B7573;
+}
+.stamp-card-title{font-size:11px;font-weight:700;letter-spacing:1.5px;color:#A0ACA9;text-transform:uppercase;margin-bottom:6px}
+.stamp-card-sub{font-size:11px;color:#A0ACA9;margin-bottom:16px;text-align:center}
+.stamp-img-wrap{position:relative;margin-bottom:12px}
+.stamp-img-placeholder{
+  width:220px;height:130px;
+  background:linear-gradient(135deg,#E2F6EF,#D0EDE6);
+  border-radius:8px;
+  display:flex;align-items:center;justify-content:center;
+  font-size:48px;
+}
+.stamp-name{font-size:16px;font-weight:700;color:#222726;margin-bottom:2px}
+.stamp-date{font-size:12px;color:#A0ACA9;margin-bottom:16px}
+
+/* stickers row */
+.stickers-row{display:flex;gap:12px;justify-content:flex-start;margin-bottom:0}
+.tata-sticker{
+  display:flex;flex-direction:column;align-items:center;gap:4px;
+  background:#F8FFFE;border:1.5px solid #BDECDE;border-radius:12px;
+  padding:10px 14px;min-width:64px;
+}
+.tata-sticker-ic{font-size:28px;line-height:1}
+.tata-sticker-lbl{font-size:10.5px;font-weight:600;color:#00A17B}
+
+/* progress slots */
+.tata-slot{
+  width:30px;height:30px;border-radius:8px;
+  display:flex;align-items:center;justify-content:center;
+  font-size:13px;background:#EFF1F1;color:#D1D1D6;
+  border:1.5px dashed #D1D1D6;font-weight:600;
+}
+.tata-slot-done{
+  background:#E2F6EF;border:1.5px solid #BDECDE;color:#222726;font-size:15px;
+}
+
+/* ── PROFILE ── */
+.prof-stat{
+  background:#fff;border-radius:16px;padding:12px 14px;
+  box-shadow:0 1px 6px rgba(0,0,0,.06);border:1px solid #D1D1D6;
+}
+.prof-stat-ic{font-size:16px;margin-bottom:4px}
+.prof-stat-val{font-size:22px;font-weight:700;color:#222726;line-height:1}
+.prof-stat-lbl{font-size:11px;color:#A0ACA9;margin-top:2px}
+</style>
+</head>
+<body>
+
+<div class="page-title">Triplabo 旅伴 — TaTa Screens</div>
+
+<div class="row">
+
+  <!-- ══ SCREEN 1: TaTa Popup ══ -->
+  <div class="phone-col">
+  <div class="phone">
+
+    <!-- Header -->
+    <div class="hdr-bar">
+      <span class="hdr-back">←</span>
+      <span class="hdr-title">被发现啦！</span>
+      <div style="width:32px"></div>
+    </div>
+
+    <!-- Scroll area -->
+    <div class="scroll-area">
+
+      <!-- TaTa full body + congrats -->
+      <div style="display:flex;flex-direction:column;align-items:center;padding:20px 18px 12px;background:#fff;margin-bottom:8px">
+        <div style="margin-bottom:10px">
+          <!-- TaTa full SVG -->
+          <svg style="width:64px;height:auto" width="101" height="86" viewBox="0 0 101 86" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M21.8564 58.7142C23.0955 57.5631 24.8561 55.261 26.0625 55.7367C26.8777 56.059 41.682 59.5579 48.0732 59.5579C55.8992 59.5579 71.16 56.427 72.1709 56.0433C73.4099 55.5834 74.4858 58.7605 76.0508 59.7581C78.3924 62.4668 79.9029 65.1697 85.9111 69.5199C82.259 67.7548 74.4736 75.0296 74.4736 75.0296H25.2432C16.8725 75.0296 14.848 68.7717 12.7285 69.0326C16.511 67.3748 20.1282 60.3718 21.8564 58.7142Z" fill="#7BB8D4"/>
+            <path d="M92.4203 30.5064C92.4203 51.0144 73.3444 67.6571 49.8013 67.6571C26.2581 67.6571 7.21484 51.0144 7.21484 30.5064C7.21484 9.99843 26.3233 0 49.8665 0C73.4096 0 92.4529 9.99843 92.4529 30.5064H92.4203Z" fill="#D5E5F1"/>
+            <ellipse cx="14.9658" cy="75.0299" rx="14.9658" ry="10.6232" fill="#BAD7EB"/>
+            <ellipse cx="85.1729" cy="75.0299" rx="14.9658" ry="10.6232" fill="#BAD7EB"/>
+            <path d="M15.3189 27.8634C12.8407 32.0481 8.99289 33.0383 6.09075 31.3773C3.18861 29.7162 2.37341 26.1065 4.85164 21.9219C7.32987 17.7372 12.1559 14.5748 15.058 16.2039C17.9602 17.8331 17.8298 23.6788 15.3515 27.8634H15.3189Z" fill="#D5E5F1"/>
+            <path d="M84.2999 27.8634C86.7781 32.0481 90.6259 33.0383 93.528 31.3773C96.4302 29.7162 97.2454 26.1065 94.7671 21.9219C92.2889 17.7372 87.4629 14.5748 84.5607 16.2039C81.6586 17.8331 81.789 23.6788 84.2672 27.8634H84.2999Z" fill="#D5E5F1"/>
+            <circle cx="22.5" cy="44.5" r="7.5" fill="#FFCACA"/>
+            <circle cx="77.5" cy="44.5" r="7.5" fill="#FFCACA"/>
+            <path d="M56.8397 36.6674L52.943 32.8501C51.2238 31.166 48.4366 31.166 46.7174 32.8501L42.8207 36.6675C41.1016 38.3516 41.1016 41.082 42.8207 42.7661L46.7174 46.5835C48.4366 48.2676 51.2238 48.2676 52.943 46.5835L56.8397 42.7661C58.5588 41.082 58.5588 38.3516 56.8397 36.6674Z" fill="#212121"/>
+            <circle cx="27.5" cy="35.5" r="4" fill="#212121"/>
+            <circle cx="72.5" cy="35.5" r="4" fill="#212121"/>
+            <path d="M44.9453 51.7172L49.9344 49.2576L54.6952 51.7172" stroke="#1E1E1E" stroke-width="3.79062" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div style="font-size:18px;font-weight:700;color:#222726;margin-bottom:4px;text-align:center">你解锁了东京！🎉</div>
+        <div style="font-size:13px;color:#6B7573;line-height:1.5;text-align:center">我是塔塔，你的旅行小伙伴～<br>你已经收集到 <b style="color:#00A17B">3</b> 个地点贴纸了！</div>
+      </div>
+
+      <!-- GET! label -->
+      <div style="font-size:11px;font-weight:700;letter-spacing:1.5px;color:#A0ACA9;text-align:center;padding:4px 0 8px;text-transform:uppercase">GET!</div>
+
+      <!-- Stamp Card -->
+      <div class="stamp-card">
+        <div class="stamp-share">⬆</div>
+        <div class="stamp-card-title">Tokyo Achiever</div>
+        <div class="stamp-card-sub">你是第 <b style="color:#222726">8,821</b> 位解锁此成就的探索者</div>
+        <div class="stamp-img-wrap">
+          <div class="stamp-img-placeholder">🗼</div>
+        </div>
+        <div class="stamp-name">Tokyo Achiever</div>
+        <div class="stamp-date">2025.08.13 · 东京港区</div>
+        <!-- Stickers -->
+        <div class="stickers-row">
+          <div class="tata-sticker">
+            <div class="tata-sticker-ic">⛩️</div>
+            <div class="tata-sticker-lbl">神社</div>
+          </div>
+          <div class="tata-sticker">
+            <div class="tata-sticker-ic">🎮</div>
+            <div class="tata-sticker-lbl">活动</div>
+          </div>
+          <div class="tata-sticker">
+            <div class="tata-sticker-ic">🍜</div>
+            <div class="tata-sticker-lbl">美食</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Progress section -->
+      <div style="background:#fff;border-radius:16px;margin:0 18px 16px;padding:14px 16px">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
+          <div style="font-size:12.5px;font-weight:600;color:#222726">点亮东京地区</div>
+          <div style="font-size:12px;font-weight:700;color:#00A17B">30%</div>
+        </div>
+        <div style="background:#D1D1D6;border-radius:99px;height:8px;overflow:hidden;margin-bottom:10px">
+          <div style="height:100%;width:30%;background:linear-gradient(90deg,#00A17B,#24B48F);border-radius:99px"></div>
+        </div>
+        <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:8px">
+          <div class="tata-slot tata-slot-done">✓</div>
+          <div class="tata-slot tata-slot-done">✓</div>
+          <div class="tata-slot tata-slot-done">✓</div>
+          <div class="tata-slot">＋</div>
+          <div class="tata-slot">＋</div>
+          <div class="tata-slot">＋</div>
+          <div class="tata-slot">＋</div>
+        </div>
+        <div style="font-size:11px;color:#A0ACA9">再收集 6 个贴纸，即可点亮东京地区 ✨</div>
+      </div>
+
+      <!-- CTAs -->
+      <div style="display:flex;gap:10px;padding:0 18px 28px">
+        <div class="btn">继续探索</div>
+        <div class="btn btn-g">查看进度 →</div>
+      </div>
+
+    </div>
+  </div>
+  <div class="screen-label">TaTa 弹窗</div>
+  </div>
+
+  <!-- ══ SCREEN 2: Profile Page ══ -->
+  <div class="phone-col">
+  <div class="phone" style="background:#F0F4F8">
+
+    <!-- Header -->
+    <div class="hdr-bar">
+      <span class="hdr-back">←</span>
+      <span class="hdr-title">我的档案</span>
+      <div style="width:24px"></div>
+    </div>
+
+    <!-- Scroll area -->
+    <div class="scroll-area" style="background:#F0F4F8;overflow:hidden">
+
+      <!-- User + TaTa row -->
+      <div style="display:flex;align-items:center;gap:14px;padding:16px 18px 10px;background:#fff;border-bottom:1px solid #EFF1F1">
+        <svg style="width:56px;height:auto" width="101" height="86" viewBox="0 0 101 86" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M21.8564 58.7142C23.0955 57.5631 24.8561 55.261 26.0625 55.7367C26.8777 56.059 41.682 59.5579 48.0732 59.5579C55.8992 59.5579 71.16 56.427 72.1709 56.0433C73.4099 55.5834 74.4858 58.7605 76.0508 59.7581C78.3924 62.4668 79.9029 65.1697 85.9111 69.5199C82.259 67.7548 74.4736 75.0296 74.4736 75.0296H25.2432C16.8725 75.0296 14.848 68.7717 12.7285 69.0326C16.511 67.3748 20.1282 60.3718 21.8564 58.7142Z" fill="#7BB8D4"/>
+          <path d="M92.4203 30.5064C92.4203 51.0144 73.3444 67.6571 49.8013 67.6571C26.2581 67.6571 7.21484 51.0144 7.21484 30.5064C7.21484 9.99843 26.3233 0 49.8665 0C73.4096 0 92.4529 9.99843 92.4529 30.5064H92.4203Z" fill="#D5E5F1"/>
+          <ellipse cx="14.9658" cy="75.0299" rx="14.9658" ry="10.6232" fill="#BAD7EB"/>
+          <ellipse cx="85.1729" cy="75.0299" rx="14.9658" ry="10.6232" fill="#BAD7EB"/>
+          <path d="M15.3189 27.8634C12.8407 32.0481 8.99289 33.0383 6.09075 31.3773C3.18861 29.7162 2.37341 26.1065 4.85164 21.9219C7.32987 17.7372 12.1559 14.5748 15.058 16.2039C17.9602 17.8331 17.8298 23.6788 15.3515 27.8634H15.3189Z" fill="#D5E5F1"/>
+          <path d="M84.2999 27.8634C86.7781 32.0481 90.6259 33.0383 93.528 31.3773C96.4302 29.7162 97.2454 26.1065 94.7671 21.9219C92.2889 17.7372 87.4629 14.5748 84.5607 16.2039C81.6586 17.8331 81.789 23.6788 84.2672 27.8634H84.2999Z" fill="#D5E5F1"/>
+          <circle cx="22.5" cy="44.5" r="7.5" fill="#FFCACA"/>
+          <circle cx="77.5" cy="44.5" r="7.5" fill="#FFCACA"/>
+          <path d="M56.8397 36.6674L52.943 32.8501C51.2238 31.166 48.4366 31.166 46.7174 32.8501L42.8207 36.6675C41.1016 38.3516 41.1016 41.082 42.8207 42.7661L46.7174 46.5835C48.4366 48.2676 51.2238 48.2676 52.943 46.5835L56.8397 42.7661C58.5588 41.082 58.5588 38.3516 56.8397 36.6674Z" fill="#212121"/>
+          <circle cx="27.5" cy="35.5" r="4" fill="#212121"/>
+          <circle cx="72.5" cy="35.5" r="4" fill="#212121"/>
+          <path d="M44.9453 51.7172L49.9344 49.2576L54.6952 51.7172" stroke="#1E1E1E" stroke-width="3.79062" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <div>
+          <div style="font-size:18px;font-weight:700;color:#222726">Richor</div>
+          <div style="font-size:12px;color:#A0ACA9;margin-top:2px">旅行探索者</div>
+        </div>
+      </div>
+
+      <!-- Stats grid -->
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:14px 18px 16px;background:#fff;margin-bottom:8px">
+        <div class="prof-stat"><div class="prof-stat-ic">📍</div><div class="prof-stat-val">3</div><div class="prof-stat-lbl">已收集贴纸</div></div>
+        <div class="prof-stat"><div class="prof-stat-ic">🗺️</div><div class="prof-stat-val">1</div><div class="prof-stat-lbl">探索中区域</div></div>
+        <div class="prof-stat"><div class="prof-stat-ic">📅</div><div class="prof-stat-val">1</div><div class="prof-stat-lbl">旅行天数</div></div>
+        <div class="prof-stat"><div class="prof-stat-ic">🔖</div><div class="prof-stat-val">3</div><div class="prof-stat-lbl">收藏地点</div></div>
+      </div>
+
+      <!-- Tokyo unlock progress -->
+      <div style="padding:0 18px 14px">
+        <div style="font-size:14px;font-weight:700;color:#222726;margin-bottom:12px">🗼 东京地区解锁进度</div>
+        <div style="background:#fff;border-radius:16px;padding:14px;box-shadow:0 2px 8px rgba(0,0,0,.06);border:1px solid #D1D1D6">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
+            <div style="font-size:13px;font-weight:600;color:#222726">港区 · 东京塔周边</div>
+            <div style="font-size:13px;font-weight:700;color:#00A17B">30%</div>
+          </div>
+          <div style="background:#EFF1F1;border-radius:99px;height:10px;overflow:hidden;margin-bottom:10px">
+            <div style="height:100%;width:30%;background:linear-gradient(90deg,#00A17B,#24B48F);border-radius:99px"></div>
+          </div>
+          <div style="display:flex;gap:7px;flex-wrap:wrap">
+            <div class="tata-slot tata-slot-done" style="width:36px;height:36px">✓</div>
+            <div class="tata-slot tata-slot-done" style="width:36px;height:36px">✓</div>
+            <div class="tata-slot tata-slot-done" style="width:36px;height:36px">✓</div>
+            <div class="tata-slot" style="width:36px;height:36px">＋</div>
+            <div class="tata-slot" style="width:36px;height:36px">＋</div>
+            <div class="tata-slot" style="width:36px;height:36px">＋</div>
+          </div>
+          <div style="font-size:11.5px;color:#A0ACA9;margin-top:10px">再收集 6 个贴纸解锁东京地区成就 ✨</div>
+        </div>
+      </div>
+
+      <!-- Stamp collection -->
+      <div style="padding:0 18px 14px">
+        <div style="font-size:14px;font-weight:700;color:#222726;margin-bottom:12px">🎫 旅行印章集</div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+          <!-- Stamp 1: unlocked -->
+          <div style="background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,.07);border:1px solid #BDECDE">
+            <div style="height:64px;background:linear-gradient(135deg,#E2F6EF,#D0EDE6);display:flex;align-items:center;justify-content:center;font-size:28px">🗼</div>
+            <div style="padding:8px 10px 10px">
+              <div style="font-size:11px;font-weight:700;color:#222726">Asakusa Rambler</div>
+              <div style="font-size:10px;color:#00A17B;margin-top:1px">✓ 已解锁</div>
+            </div>
+          </div>
+          <!-- Stamp 2: locked -->
+          <div style="background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,.07);border:1px solid #D1D1D6;opacity:.5;position:relative">
+            <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(255,255,255,.4)"><span style="font-size:24px">🔒</span></div>
+            <div style="height:64px;background:#EFF1F1;display:flex;align-items:center;justify-content:center;font-size:28px;opacity:.4">🛍</div>
+            <div style="padding:8px 10px 10px">
+              <div style="font-size:11px;font-weight:700;color:#A0ACA9">Shibuya Crosser</div>
+              <div style="font-size:10px;color:#A0ACA9;margin-top:1px">未解锁</div>
+            </div>
+          </div>
+          <!-- Stamp 3: locked -->
+          <div style="background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,.07);border:1px solid #D1D1D6;opacity:.5;position:relative">
+            <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(255,255,255,.4)"><span style="font-size:24px">🔒</span></div>
+            <div style="height:64px;background:#EFF1F1;display:flex;align-items:center;justify-content:center;font-size:28px;opacity:.4">🌸</div>
+            <div style="padding:8px 10px 10px">
+              <div style="font-size:11px;font-weight:700;color:#A0ACA9">Ueno Sakura-Spotter</div>
+              <div style="font-size:10px;color:#A0ACA9;margin-top:1px">未解锁</div>
+            </div>
+          </div>
+          <!-- Stamp 4: locked -->
+          <div style="background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,.07);border:1px solid #D1D1D6;opacity:.5;position:relative">
+            <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(255,255,255,.4)"><span style="font-size:24px">🔒</span></div>
+            <div style="height:64px;background:#EFF1F1;display:flex;align-items:center;justify-content:center;font-size:28px;opacity:.4">🍣</div>
+            <div style="padding:8px 10px 10px">
+              <div style="font-size:11px;font-weight:700;color:#A0ACA9">Tsukiji Sushi-Taster</div>
+              <div style="font-size:10px;color:#A0ACA9;margin-top:1px">未解锁</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Soul chart teaser -->
+      <div style="padding:0 18px 28px">
+        <div style="font-size:14px;font-weight:700;color:#222726;margin-bottom:12px">✦ 灵魂成分表</div>
+        <div style="background:#F8F5FF;border-radius:16px;padding:16px;border:1px solid #E8E0FF;text-align:center">
+          <div style="font-size:13px;color:#7C5CBF;margin-bottom:8px;font-weight:500">继续探索解锁你的旅行人格</div>
+          <div style="display:flex;justify-content:center;gap:8px;font-size:12px;color:#A0ACA9">
+            <span>孤独巡礼者</span><span>·</span><span>亚文化拾荒者</span><span>·</span><span>深夜漫游者</span>
+          </div>
+          <div style="margin-top:12px;background:#E8E0FF;border-radius:99px;height:6px;overflow:hidden">
+            <div style="height:100%;width:15%;background:linear-gradient(90deg,#9B7EF0,#C4B0F8);border-radius:99px"></div>
+          </div>
+          <div style="font-size:11px;color:#A0ACA9;margin-top:6px">已解锁 15% · 还需更多探索</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="screen-label">我的档案</div>
+  </div>
+
+</div>
+</body>
+</html>

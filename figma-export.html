@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1800">
+<title>Triplabo 旅伴 — Figma Export</title>
+<style>
+/* ── Canvas ── */
+*{box-sizing:border-box;margin:0;padding:0;}
+body{
+  background:#8C949C;
+  font-family:'PingFang SC','Noto Sans JP','Noto Sans SC',sans-serif;
+  padding:48px;
+  display:flex;flex-direction:column;align-items:center;gap:0;
+}
+.page-title{font-size:16px;font-weight:600;color:#fff;margin-bottom:32px;letter-spacing:.02em;opacity:.7}
+
+/* ── Row ── */
+.row{display:flex;flex-direction:row;gap:40px;align-items:flex-start;margin-bottom:40px}
+.phone-col{display:flex;flex-direction:column;align-items:center;gap:10px}
+.screen-label{font-size:12px;color:rgba(255,255,255,.65);font-weight:500;text-align:center}
+
+/* ── Phone ── */
+.phone{
+  width:390px;height:844px;
+  border-radius:44px;
+  background:#EFF1F1;
+  overflow:hidden;
+  position:relative;
+  box-shadow:0 32px 72px rgba(0,0,0,.38),inset 0 0 0 1px rgba(255,255,255,.16);
+  flex-shrink:0;
+}
+
+/* ── STATUS BAR ── */
+.sb{
+  position:absolute;top:0;left:0;right:0;height:52px;
+  display:flex;align-items:center;justify-content:space-between;
+  padding:0 24px;z-index:100;
+}
+.sb-time{font-size:15px;font-weight:600;color:#222726}
+.sb-icons{display:flex;align-items:center;gap:5px;font-size:11px;color:#222726}
+
+/* ── HEADER ── */
+.hdr{
+  position:absolute;top:0;left:0;right:0;height:52px;
+  padding:0 20px;display:flex;align-items:center;z-index:100;
+}
+.logo{font-size:18px;font-weight:700;color:#222726;letter-spacing:-.3px}
+.logo b{color:#00A17B}
+
+/* ── MAP ── */
+.map-wrap{
+  position:absolute;top:0;left:0;right:0;
+  overflow:hidden;background:#E8EDE9;
+}
+/* Simulated map tiles */
+.map-bg{
+  position:absolute;inset:0;
+  background:
+    linear-gradient(0deg,rgba(200,215,202,.6) 0%,rgba(220,232,221,.8) 100%);
+}
+.map-road-h{position:absolute;left:0;right:0;height:5px;background:rgba(255,255,255,.75);border-radius:2px}
+.map-road-v{position:absolute;top:0;bottom:0;width:5px;background:rgba(255,255,255,.75);border-radius:2px}
+.map-block{position:absolute;background:rgba(170,196,174,.55);border-radius:3px}
+.map-block-dk{position:absolute;background:rgba(140,170,144,.6);border-radius:3px}
+/* Water/park patches */
+.map-water{position:absolute;background:#C0D9EC;border-radius:8px}
+.map-park{position:absolute;background:#A8CC9A;border-radius:8px}
+
+/* ── CENTER CARD ── */
+.cc{
+  position:absolute;left:50%;transform:translateX(-50%);
+  width:136px;height:158px;
+  border-radius:16px;overflow:hidden;
+  box-shadow:0 10px 32px rgba(0,0,0,.32);z-index:25;
+  background:#1a1a2e;
+}
+.cc-img-area{
+  width:100%;height:100%;
+  display:flex;align-items:flex-end;justify-content:center;
+  padding-bottom:0;
+  background:linear-gradient(180deg,#0a0a1e 0%,#1a2a4a 40%,#2a3a5a 70%,#1a1a2e 100%);
+  position:relative;overflow:hidden;
+}
+.cc-tower{
+  position:absolute;bottom:24px;left:50%;transform:translateX(-50%);
+  width:32px;
+  /* Tokyo Tower shape via CSS */
+}
+.cc-tower-svg{position:absolute;bottom:0;left:0;right:0;display:flex;justify-content:center}
+.cc-lbl{
+  position:absolute;bottom:0;left:0;right:0;
+  padding:20px 6px 6px;
+  background:linear-gradient(to top,rgba(0,0,0,.62),transparent);
+  font-size:10px;font-weight:600;color:#fff;text-align:center;
+}
+.cc-dot{
+  position:absolute;bottom:4px;left:50%;transform:translateX(-50%);
+  width:8px;height:8px;border-radius:50%;background:#2196F3;
+  border:2px solid #fff;box-shadow:0 0 0 3px rgba(33,150,243,.3);
+}
+
+/* Pulse ring */
+.pr{
+  position:absolute;left:50%;
+  width:156px;height:178px;
+  margin-left:-78px;
+  border-radius:16px;
+  border:2px solid rgba(0,161,123,.45);
+  pointer-events:none;z-index:24;
+  opacity:.5;
+}
+
+/* ── POI BUBBLES ── */
+.poi{position:absolute;display:flex;flex-direction:column;align-items:center;z-index:30}
+.poi::after{content:'';width:2px;height:5px;background:rgba(0,0,0,.12);border-radius:1px;margin-top:1px}
+.poi-card{
+  background:rgba(255,255,255,.95);border-radius:11px;
+  padding:6px 8px 5px;
+  box-shadow:0 3px 12px rgba(0,0,0,.14);
+  min-width:64px;max-width:88px;
+  display:flex;flex-direction:column;align-items:center;
+}
+.poi-ic{width:36px;height:36px;display:flex;align-items:center;justify-content:center;margin-bottom:3px;font-size:20px}
+.poi-name{font-size:10px;font-weight:700;color:#222726;text-align:center;line-height:1.2;white-space:nowrap}
+.poi-sub{font-size:8.5px;color:#6B7573;text-align:center;line-height:1.3;margin-top:1px;white-space:nowrap}
+.poi-dist{margin-top:3px;font-size:9px;font-weight:700;color:#fff;padding:1px 6px;border-radius:7px;white-space:nowrap}
+.g .poi-dist{background:#00A17B}.p .poi-dist{background:#9B7EF0}.o .poi-dist{background:#F5873C}.b .poi-dist{background:#3B82F6}
+
+/* ── MAIN SHEET ── */
+.sheet{
+  position:absolute;left:0;right:0;
+  background:#fff;
+  border-radius:26px 26px 0 0;
+  box-shadow:0 -3px 20px rgba(0,0,0,.08);
+  z-index:200;
+  overflow:hidden;
+}
+.hdl-wrap{padding:10px 0 4px;display:flex;justify-content:center}
+.hdl{width:36px;height:4px;border-radius:2px;background:#D1D1D6}
+
+/* Sheet search bar */
+.sheet-search{
+  margin:0 18px 10px;
+  display:flex;align-items:center;gap:8px;
+  background:#EFF1F1;border-radius:11px;
+  padding:10px 14px;cursor:text;
+}
+.sheet-search-ic{color:#00A17B;font-size:14px}
+.sheet-search-ph{color:#A0ACA9;font-size:13px;flex:1}
+
+/* Hero */
+.hero{padding:2px 18px 12px}
+.hero-title{font-size:19px;font-weight:700;color:#222726;display:flex;align-items:center;gap:8px;margin-bottom:11px}
+.hi-list{display:flex;flex-direction:column;gap:6px}
+.hi-row{display:flex;gap:8px;font-size:13px;color:#6B7573;line-height:1.5;align-items:flex-start}
+.hi-ic{font-size:13px;flex-shrink:0;margin-top:2px}
+
+/* Ticket */
+.tkt{margin:0 14px 12px;border:1px solid #BDECDE;border-radius:16px;background:#fff;padding:12px 14px;position:relative;overflow:hidden}
+.tkt::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,#00A17B,#24B48F)}
+.tkt-hd{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}
+.tkt-ttl{display:flex;align-items:center;gap:6px;font-size:14px;font-weight:600;color:#222726}
+.tkt-bdg{font-size:10.5px;color:#00A17B;background:#E2F6EF;padding:3px 8px;border-radius:18px;font-weight:600;border:1px solid #BDECDE}
+.tkt-rows{display:flex;flex-direction:column;gap:4px}
+.tkt-lbl{font-size:10.5px;color:#A0ACA9}
+.tkt-val{font-size:12.5px;color:#00A17B;font-weight:500}
+.tkt-meta{margin-top:6px;display:flex;flex-direction:column;gap:3px}
+.tkt-mr{display:flex;align-items:center;gap:5px;font-size:11.5px;color:#6B7573}
+.tkt-tip{margin-top:8px;background:#FEF3EB;border-radius:8px;padding:7px 9px;display:flex;gap:7px;font-size:11.5px;color:#C05C1A;line-height:1.5}
+.tip-ic{width:19px;height:19px;border-radius:50%;background:#F5873C;display:flex;align-items:center;justify-content:center;font-size:11px;flex-shrink:0}
+.tkt-acts{display:flex;gap:8px;margin-top:10px}
+.btn{flex:1;height:40px;border-radius:8px;border:1px solid #D1D1D6;background:#fff;font-size:14px;font-weight:600;color:#222726;display:flex;align-items:center;justify-content:center;gap:5px}
+.btn-g{background:#00A17B;border-color:#00A17B;color:#fff}
+
+/* Section heading */
+.sec-hd{padding:2px 18px 9px;display:flex;justify-content:space-between;align-items:center}
+.sec-ttl{font-size:14.5px;font-weight:700;color:#222726}
+.sec-more{font-size:12px;color:#00A17B;font-weight:500;cursor:pointer;padding:4px 0}
+
+/* Horizontal scroll */
+.hscroll{display:flex;gap:10px;padding:0 18px 16px;overflow:hidden}
+
+/* Horizontal card */
+.rc{flex-shrink:0;width:158px;border-radius:16px;background:#fff;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,.07);border:1px solid #D1D1D6}
+.rc-iw{position:relative;height:102px;overflow:hidden;display:flex;align-items:center;justify-content:center;font-size:38px}
+.rc-iw-zoji{background:#5B8A5C}
+.rc-iw-red{background:#7B3FAB}
+.rc-iw-coffee{background:#5D3A1A}
+.rc-iw-shiba{background:#C2547A}
+.rc-tag{position:absolute;top:6px;left:6px;font-size:9.5px;font-weight:600;padding:2px 6px;border-radius:5px;color:#fff}
+.ta{background:rgba(0,161,123,.9)}.tf{background:rgba(245,135,60,.9)}.tac{background:rgba(155,126,240,.9)}.ts{background:rgba(59,130,246,.9)}
+.rc-dist{position:absolute;top:6px;right:6px;font-size:9.5px;font-weight:600;color:#fff;background:rgba(0,0,0,.36);padding:2px 6px;border-radius:5px}
+.rc-star{position:absolute;bottom:6px;left:6px;font-size:10px;font-weight:600;color:#fff}
+.rc-body{padding:8px 8px 7px}
+.rc-name{font-size:11.5px;font-weight:600;color:#222726;margin-bottom:3px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}
+.rc-desc{font-size:10px;color:#6B7573;line-height:1.4;margin-bottom:3px;display:flex;gap:3px}
+.rc-di{font-size:9px;color:#00A17B;flex-shrink:0;margin-top:1px}
+.rc-pills{display:flex;gap:3px;flex-wrap:wrap;margin-bottom:3px}
+.rc-pill{font-size:9px;color:#A0ACA9;background:#EFF1F1;padding:1px 5px;border-radius:18px}
+.rc-price{font-size:10.5px;font-weight:600;color:#F5873C;text-align:right}
+.rc-price.fr{color:#00A17B}
+.sep{height:1px;background:#E9EAEC;margin:0 18px 12px}
+
+/* ── MAP FULLSCREEN UI ELEMENTS ── */
+.msearch-bar{
+  position:absolute;top:62px;left:14px;right:14px;
+  background:#fff;border-radius:8px;padding:10px 14px;
+  display:flex;align-items:center;gap:9px;
+  box-shadow:0 3px 16px rgba(0,0,0,.1);z-index:45;
+}
+.ms-ic{color:#00A17B;font-size:14px}
+.ms-tx{color:#A0ACA9;font-size:13px;flex:1}
+
+.wbadge{
+  position:absolute;top:110px;left:14px;
+  background:#fff;border-radius:18px;padding:5px 11px;
+  display:flex;align-items:center;gap:5px;
+  font-size:11.5px;font-weight:500;color:#222726;
+  box-shadow:0 2px 8px rgba(0,0,0,.1);z-index:45;
+}
+.wd{width:7px;height:7px;border-radius:50%;background:#00A17B}
+
+.zctrl{
+  position:absolute;top:192px;right:14px;
+  display:flex;flex-direction:column;border-radius:9px;overflow:hidden;
+  box-shadow:0 2px 10px rgba(0,0,0,.12);z-index:45;
+}
+.zb{
+  width:36px;height:36px;background:#fff;
+  display:flex;align-items:center;justify-content:center;
+  font-size:20px;font-weight:300;color:#222726;
+}
+.zb+.zb{border-top:1px solid #EEF1F0}
+
+.mstrip{
+  position:absolute;bottom:0;left:0;right:0;
+  padding:10px 0 14px;
+  background:linear-gradient(to top,rgba(255,255,255,.97) 50%,transparent);
+  z-index:45;
+}
+
+.vaBtn{
+  position:absolute;bottom:18px;left:50%;transform:translateX(-50%);
+  background:#00A17B;color:#fff;border-radius:22px;
+  padding:10px 28px;font-size:13.5px;font-weight:600;
+  white-space:nowrap;z-index:46;
+}
+
+/* ── SEARCH OVERLAY ── */
+.so-overlay{
+  position:absolute;inset:0;
+  background:#F9F9F9;z-index:700;
+  display:flex;flex-direction:column;
+}
+.so-bar{
+  flex-shrink:0;background:#fff;
+  padding:14px 16px 10px;
+  border-bottom:1px solid #D1D1D6;
+}
+.so-row{display:flex;align-items:center;gap:10px}
+.so-back{
+  width:32px;height:32px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  font-size:18px;color:#222726;background:none;border:none;
+}
+.so-input-wrap{
+  flex:1;display:flex;align-items:center;gap:8px;
+  background:#EFF1F1;border-radius:8px;padding:9px 12px;
+}
+.so-ic{color:#00A17B;font-size:14px;flex-shrink:0}
+.so-input-mock{flex:1;font-size:14px;color:#222726}
+.so-clear{font-size:13px;color:#A0ACA9}
+
+/* Tag panel */
+.so-tags{flex:1;overflow:hidden;padding:16px}
+.so-section{margin-bottom:20px}
+.so-section-title{font-size:12px;font-weight:600;color:#A0ACA9;letter-spacing:.5px;margin-bottom:10px}
+.so-tag-grid{display:flex;flex-wrap:wrap;gap:8px}
+.so-tag{
+  display:flex;align-items:center;gap:6px;
+  background:#fff;border-radius:20px;
+  padding:8px 14px;font-size:13px;font-weight:500;color:#222726;
+  box-shadow:0 1px 6px rgba(0,0,0,.07);
+  border:1px solid #D1D1D6;
+  white-space:nowrap;
+}
+.so-tag-ic{font-size:16px}
+.so-tag.active{background:#E2F6EF;border-color:#00A17B;color:#00A17B}
+
+/* Chat mode */
+.so-chat{flex:1;overflow:hidden;display:flex;flex-direction:column}
+.chat-msgs{flex:1;overflow:hidden;padding:14px 14px 0}
+.chat-msg{margin-bottom:12px;display:flex;gap:8px;align-items:flex-start}
+.chat-msg.user{flex-direction:row-reverse}
+.chat-avatar{width:28px;height:28px;border-radius:50%;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:14px}
+.chat-avatar.bot{background:linear-gradient(135deg,#00A17B,#008669);color:#fff;font-size:11px;font-weight:700}
+.chat-avatar.user{background:#222726;color:#fff;font-size:11px}
+.chat-bubble{max-width:72%;padding:9px 12px;border-radius:16px;font-size:13px;line-height:1.5;color:#222726;background:#fff;box-shadow:0 1px 6px rgba(0,0,0,.07)}
+.chat-msg.user .chat-bubble{background:#00A17B;color:#fff}
+.chat-chips{display:flex;flex-wrap:wrap;gap:6px;padding:6px 0 0 36px}
+.chat-chip{font-size:12px;padding:6px 12px;border-radius:18px;background:#fff;border:1px solid #D1D1D6;color:#222726}
+.chat-input-row{
+  flex-shrink:0;display:flex;align-items:center;gap:8px;
+  padding:10px 14px 14px;background:#fff;border-top:1px solid #D1D1D6;
+}
+.chat-input-box{
+  flex:1;border:1.5px solid #D1D1D6;border-radius:22px;
+  padding:9px 14px;font-size:13.5px;color:#A0ACA9;background:#F9F9F9;
+}
+.chat-send{
+  width:36px;height:36px;border-radius:50%;background:#00A17B;
+  display:flex;align-items:center;justify-content:center;flex-shrink:0;
+  color:#fff;font-size:16px;
+}
+
+/* ── LIST SHEET ── */
+.list-sheet{
+  position:absolute;left:0;right:0;bottom:0;
+  height:92%;background:#F9F9F9;
+  border-radius:24px 24px 0 0;
+  box-shadow:0 -8px 40px rgba(0,0,0,.18);
+  z-index:600;
+  display:flex;flex-direction:column;overflow:hidden;
+}
+.ls-hdr{flex-shrink:0;background:#fff;border-radius:24px 24px 0 0;padding:10px 18px 0}
+.ls-bar-wrap{display:flex;justify-content:center;padding-bottom:10px}
+.ls-bar{width:36px;height:4px;border-radius:2px;background:#D1D1D6}
+.ls-title-row{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px}
+.ls-title{font-size:17px;font-weight:700;color:#222726}
+.ls-right{display:flex;align-items:center;gap:10px}
+.ls-map-btn{
+  display:flex;align-items:center;gap:4px;font-size:12px;font-weight:600;
+  color:#00A17B;background:none;border:1.5px solid #BDECDE;border-radius:18px;padding:5px 11px;
+}
+.ls-close{width:30px;height:30px;border-radius:50%;background:#EFF1F1;display:flex;align-items:center;justify-content:center;font-size:13px;color:#6B7573}
+.ls-search-row{
+  display:flex;align-items:center;gap:8px;background:#EFF1F1;
+  border-radius:8px;padding:9px 13px;margin-bottom:12px;
+}
+.ls-si{color:#00A17B;font-size:14px;flex-shrink:0}
+.ls-input-mock{flex:1;font-size:13px;color:#A0ACA9}
+.ls-cats{display:flex;gap:8px;padding-bottom:12px;overflow:hidden}
+.ls-cat{
+  flex-shrink:0;display:flex;align-items:center;gap:5px;
+  padding:7px 14px;border-radius:22px;font-size:12.5px;font-weight:600;
+  border:1px solid #D1D1D6;background:#fff;color:#6B7573;
+}
+.ls-cat.active{background:#00A17B;border-color:#00A17B;color:#fff}
+.ls-count{font-size:12px;color:#A0ACA9;padding-bottom:8px}
+
+/* List card */
+.lc{background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,.06);border:1px solid #D1D1D6;margin-bottom:12px}
+.lc-iw{position:relative;height:160px;overflow:hidden;display:flex;align-items:center;justify-content:center;font-size:56px}
+.lc-iw-zoji{background:#5B8A5C}
+.lc-iw-red{background:#7B3FAB}
+.lc-iw-shiro{background:#C0392B}
+.lc-img-tag{position:absolute;top:10px;left:10px;font-size:10px;font-weight:700;padding:4px 8px;border-radius:6px;color:#fff}
+.lc-img-dist{position:absolute;top:10px;right:10px;font-size:10px;font-weight:600;color:#fff;background:rgba(0,0,0,.36);padding:4px 8px;border-radius:6px}
+.lc-body{padding:12px 14px 10px}
+.lc-name{font-size:15px;font-weight:700;color:#222726;margin-bottom:4px}
+.lc-desc{font-size:12px;color:#6B7573;line-height:1.5;margin-bottom:8px}
+.lc-meta{display:flex;flex-direction:column;gap:3px;margin-bottom:8px}
+.lc-mr{display:flex;align-items:center;gap:6px;font-size:11.5px;color:#6B7573}
+.lc-mr-ic{font-size:12px;width:16px;flex-shrink:0}
+.lc-pills{display:flex;gap:5px;flex-wrap:wrap;margin-bottom:10px}
+.lc-pill{font-size:10px;color:#6B7573;background:#EFF1F1;padding:3px 8px;border-radius:16px}
+.lc-foot{display:flex;align-items:center;justify-content:space-between}
+.lc-price{font-size:14px;font-weight:700;color:#F5873C}
+.lc-price.fr{color:#00A17B}
+.lc-cta{background:#00A17B;color:#fff;border-radius:9px;padding:8px 16px;font-size:12.5px;font-weight:600}
+
+/* ── DETAIL SHEET ── */
+.detail-backdrop{position:absolute;inset:0;background:rgba(0,0,0,.32);z-index:750}
+.detail-sheet{
+  position:absolute;left:0;right:0;bottom:0;height:90%;
+  background:#fff;border-radius:22px 22px 0 0;
+  box-shadow:0 -6px 32px rgba(0,0,0,.16);
+  z-index:800;display:flex;flex-direction:column;overflow:hidden;
+}
+.ds-hd{padding:10px 0 0;display:flex;justify-content:center;flex-shrink:0}
+.ds-bar{width:36px;height:4px;border-radius:2px;background:#D1D1D6}
+.ds-close{
+  position:absolute;top:12px;right:14px;
+  width:30px;height:30px;border-radius:50%;background:#EFF1F1;
+  display:flex;align-items:center;justify-content:center;font-size:13px;color:#6B7573;
+  z-index:10;
+}
+.d-iw{height:210px;overflow:hidden;display:flex;align-items:center;justify-content:center;font-size:72px}
+.d-iw-zoji{background:#5B8A5C}
+.d-body{padding:16px 18px 28px;overflow:hidden}
+.d-tags{display:flex;gap:6px;margin-bottom:10px;flex-wrap:wrap}
+.d-tag{font-size:11px;font-weight:600;padding:4px 10px;border-radius:20px;color:#00A17B;background:#E2F6EF;border:1px solid #BDECDE}
+.d-tag.loc{color:#6B7573;background:#EFF1F1;border-color:#D1D1D6}
+.d-name{font-size:21px;font-weight:700;color:#222726;margin-bottom:6px}
+.d-desc{font-size:13.5px;color:#6B7573;line-height:1.65;margin-bottom:16px}
+.d-meta{display:flex;margin-bottom:16px}
+.d-mc{flex:1;display:flex;flex-direction:column;gap:3px}
+.d-mc+.d-mc{border-left:1px solid #D1D1D6;padding-left:16px}
+.d-ml{font-size:11px;color:#A0ACA9}
+.d-mv{font-size:13.5px;font-weight:600;color:#222726}
+.d-hl{background:#F8FFFE;border:1.5px solid #BDECDE;border-radius:16px;padding:14px 16px;margin-bottom:16px}
+.d-hl-ttl{font-size:13px;font-weight:700;color:#222726;display:flex;align-items:center;gap:6px;margin-bottom:10px}
+.d-hl-row{display:flex;gap:8px;font-size:13px;color:#222726;line-height:1.5;padding:5px 0}
+.d-hl-row+.d-hl-row{border-top:1px solid rgba(181,237,218,.45)}
+.d-hl-ic{font-size:14px;flex-shrink:0}
+.d-acts{display:flex;gap:10px}
+
+/* ── TATA ── */
+.tata-wrap{position:absolute;left:50%;transform:translateX(-50%);z-index:195}
+</style>
+</head>
+<body>
+
+<div class="page-title">Triplabo 旅伴 — 6 UI Screens</div>
+
+<!-- ═══════════════════ ROW 1 ═══════════════════ -->
+<div class="row">
+
+  <!-- ① HOME DEFAULT -->
+  <div class="phone-col">
+  <div class="phone">
+    <!-- Header -->
+    <div class="hdr"><div class="logo">Triplabo<b>旅伴</b></div></div>
+
+    <!-- Map (MDEF = 388px) -->
+    <div class="map-wrap" style="height:388px">
+      <div class="map-bg"></div>
+      <!-- Road grid -->
+      <div class="map-road-h" style="top:38%"></div>
+      <div class="map-road-h" style="top:62%"></div>
+      <div class="map-road-v" style="left:32%"></div>
+      <div class="map-road-v" style="left:60%"></div>
+      <!-- Blocks -->
+      <div class="map-block" style="width:70px;height:45px;top:18%;left:36%"></div>
+      <div class="map-block" style="width:55px;height:38px;top:50%;left:62%"></div>
+      <div class="map-block-dk" style="width:80px;height:55px;top:10%;right:10%"></div>
+      <!-- Park patch -->
+      <div class="map-park" style="width:62px;height:48px;top:55%;left:15%"></div>
+      <!-- Center card -->
+      <div class="cc" style="top:calc(50% - 79px)">
+        <div class="cc-img-area">
+          <!-- Tokyo Tower SVG outline -->
+          <svg style="position:absolute;bottom:12px;width:40px;opacity:.9" viewBox="0 0 40 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <polygon points="20,0 28,24 32,24 26,40 28,40 22,60 18,60 12,40 14,40 8,24 12,24" fill="#FF4400" opacity=".9"/>
+            <rect x="16" y="60" width="8" height="6" fill="#FF4400" opacity=".9"/>
+            <line x1="20" y1="0" x2="20" y2="5" stroke="#FF4400" strokeWidth="2"/>
+            <rect x="10" y="22" width="20" height="3" fill="rgba(255,255,255,.3)" rx="1"/>
+            <rect x="12" y="36" width="16" height="3" fill="rgba(255,255,255,.3)" rx="1"/>
+          </svg>
+          <div class="cc-lbl">东京塔</div>
+          <div class="cc-dot"></div>
+        </div>
+      </div>
+      <!-- Pulse ring -->
+      <div class="pr" style="top:calc(50% - 89px)"></div>
+      <!-- POI n1 増上寺 (left:18,top:195) -->
+      <div class="poi g" style="left:18px;top:195px">
+        <div class="poi-card">
+          <div class="poi-ic">⛩️</div>
+          <div class="poi-name">増上寺</div>
+          <div class="poi-sub">600年历史</div>
+          <div class="poi-dist">450m</div>
+        </div>
+      </div>
+      <!-- POI n2 RED° (right:38,top:108) -->
+      <div class="poi p" style="right:38px;top:108px">
+        <div class="poi-card">
+          <div class="poi-ic">🎮</div>
+          <div class="poi-name">RED° TOKYO</div>
+          <div class="poi-sub">沉浸体验</div>
+          <div class="poi-dist">750m</div>
+        </div>
+      </div>
+      <!-- POI n3 炭火拉面 (right:32,top:248) -->
+      <div class="poi o" style="right:32px;top:248px">
+        <div class="poi-card">
+          <div class="poi-ic">🍜</div>
+          <div class="poi-name">炭火拉面</div>
+          <div class="poi-sub">百名店</div>
+          <div class="poi-dist">320m</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TaTa peeking (top: 388-86=302) -->
+    <div class="tata-wrap" style="top:302px">
+      <svg style="width:80px;height:auto;display:block" width="93" height="68" viewBox="0 0 93 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M89.0394 30.5064C89.0394 51.0144 69.9636 67.6571 46.4204 67.6571C22.8772 67.6571 3.83398 51.0144 3.83398 30.5064C3.83398 9.99843 22.9424 0 46.4856 0C70.0288 0 89.072 9.99843 89.072 30.5064H89.0394Z" fill="#D5E5F1"/>
+        <path d="M11.9379 27.8634C9.45963 32.0481 5.61185 33.0383 2.70971 31.3773C-0.192424 29.7162 -1.00763 26.1065 1.4706 21.9219C3.94883 17.7372 8.77485 14.5748 11.677 16.2039C14.5791 17.8331 14.4487 23.6788 11.9705 27.8634H11.9379Z" fill="#D5E5F1"/>
+        <path d="M80.8923 27.8634C83.3705 32.0481 87.2183 33.0383 90.1204 31.3773C93.0225 29.7162 93.8377 26.1065 91.3595 21.9219C88.8813 17.7372 84.0553 14.5748 81.1531 16.2039C78.251 17.8331 78.3814 23.6788 80.8596 27.8634H80.8923Z" fill="#D5E5F1"/>
+        <path d="M18.4252 51.9952C22.6997 51.9952 26.1648 48.6006 26.1648 44.4132C26.1648 40.2258 22.6997 36.8313 18.4252 36.8313C14.1507 36.8313 10.6855 40.2258 10.6855 44.4132C10.6855 48.6006 14.1507 51.9952 18.4252 51.9952Z" fill="#FFCACA"/>
+        <path d="M75.015 51.9952C79.2895 51.9952 82.7547 48.6006 82.7547 44.4132C82.7547 40.2258 79.2895 36.8313 75.015 36.8313C70.7405 36.8313 67.2754 40.2258 67.2754 44.4132C67.2754 48.6006 70.7405 51.9952 75.015 51.9952Z" fill="#FFCACA"/>
+        <path d="M53.4548 36.6674L49.5581 32.8501C47.8389 31.166 45.0517 31.166 43.3325 32.8501L39.4358 36.6675C37.7167 38.3516 37.7167 41.082 39.4358 42.7661L43.3325 46.5835C45.0517 48.2676 47.8389 48.2676 49.5581 46.5835L53.4548 42.7661C55.1739 41.082 55.1739 38.3516 53.4548 36.6674Z" fill="#212121"/>
+        <path d="M24.3442 40.0895C26.2531 40.0895 27.8006 37.9729 27.8006 35.3618C27.8006 32.7508 26.2531 30.6342 24.3442 30.6342C22.4352 30.6342 20.8877 32.7508 20.8877 35.3618C20.8877 37.9729 22.4352 40.0895 24.3442 40.0895Z" fill="#212121"/>
+        <path d="M68.5297 40.0895C70.4387 40.0895 71.9862 37.9729 71.9862 35.3618C71.9862 32.7508 70.4387 30.6342 68.5297 30.6342C66.6208 30.6342 65.0732 32.7508 65.0732 35.3618C65.0732 37.9729 66.6208 40.0895 68.5297 40.0895Z" fill="#212121"/>
+        <path d="M41.5605 51.7172L46.5496 49.2576L51.3104 51.7172" stroke="#1E1E1E" stroke-width="3.79062" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+
+    <!-- Main Sheet (default: top=388, height=456) -->
+    <div class="sheet" style="top:388px;height:456px">
+      <div class="hdl-wrap"><div class="hdl"></div></div>
+      <!-- Sheet search bar -->
+      <div class="sheet-search">
+        <span class="sheet-search-ic">✦</span>
+        <span class="sheet-search-ph">告诉我你想去什么地方…</span>
+      </div>
+      <!-- Hero -->
+      <div class="hero">
+        <div class="hero-title"><span>🗼</span>开启您的东京塔之旅</div>
+        <div class="hi-list">
+          <div class="hi-row"><span class="hi-ic">✨</span><span>360度俯瞰东京全景，夜景绝美</span></div>
+          <div class="hi-row"><span class="hi-ic">🪟</span><span>Skywalk Window 透明玻璃地板，刺激体验</span></div>
+          <div class="hi-row"><span class="hi-ic">⛩️</span><span>铁塔大神宫，东京23区最高神社</span></div>
+        </div>
+      </div>
+      <!-- Ticket -->
+      <div class="tkt">
+        <div class="tkt-hd">
+          <div class="tkt-ttl"><span>🎫</span>门票信息</div>
+          <div class="tkt-bdg">已出票</div>
+        </div>
+        <div class="tkt-rows">
+          <div><div class="tkt-lbl">套餐</div><div class="tkt-val">东京塔瞭望台 Main Deck（150m）门票</div></div>
+          <div><div class="tkt-lbl">参加日期</div><div class="tkt-val">2025-08-13　19:30</div></div>
+          <div><div class="tkt-lbl">参加人数</div><div class="tkt-val">大人 ×2　儿童 ×1</div></div>
+        </div>
+        <div class="tkt-meta">
+          <div class="tkt-mr"><span>🕐</span><span>营业时间：9:00–23:00　最晚入场 22:30</span></div>
+          <div class="tkt-mr"><span>📍</span><span>东京都港区芝公园4丁目2-8</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="screen-label">① 首页默认</div>
+  </div>
+
+  <!-- ② MAP FULLSCREEN -->
+  <div class="phone-col">
+  <div class="phone">
+    <!-- Header (glass) -->
+    <div class="hdr" style="background:rgba(238,241,239,.88);backdrop-filter:blur(14px)">
+      <div class="logo">Triplabo<b>旅伴</b></div>
+    </div>
+
+    <!-- Map (full height = 844) -->
+    <div class="map-wrap" style="height:844px">
+      <div class="map-bg"></div>
+      <div class="map-road-h" style="top:25%"></div>
+      <div class="map-road-h" style="top:46%"></div>
+      <div class="map-road-h" style="top:65%"></div>
+      <div class="map-road-h" style="top:80%"></div>
+      <div class="map-road-v" style="left:28%"></div>
+      <div class="map-road-v" style="left:52%"></div>
+      <div class="map-road-v" style="left:74%"></div>
+      <div class="map-block" style="width:65px;height:42px;top:12%;left:30%"></div>
+      <div class="map-block" style="width:80px;height:55px;top:28%;left:55%"></div>
+      <div class="map-block-dk" style="width:70px;height:50px;top:50%;left:15%"></div>
+      <div class="map-block" style="width:55px;height:38px;top:58%;left:58%"></div>
+      <div class="map-park" style="width:72px;height:52px;top:32%;left:8%"></div>
+      <div class="map-water" style="width:90px;height:40px;top:70%;left:55%"></div>
+
+      <!-- Center card — mapfull position -->
+      <div class="cc" style="top:422px;left:50%;transform:translateX(-50%)">
+        <div class="cc-img-area">
+          <svg style="position:absolute;bottom:12px;width:40px;opacity:.9" viewBox="0 0 40 80" fill="none">
+            <polygon points="20,0 28,24 32,24 26,40 28,40 22,60 18,60 12,40 14,40 8,24 12,24" fill="#FF4400" opacity=".9"/>
+            <rect x="16" y="60" width="8" height="6" fill="#FF4400" opacity=".9"/>
+            <rect x="10" y="22" width="20" height="3" fill="rgba(255,255,255,.3)" rx="1"/>
+            <rect x="12" y="36" width="16" height="3" fill="rgba(255,255,255,.3)" rx="1"/>
+          </svg>
+          <div class="cc-lbl">东京塔</div>
+        </div>
+      </div>
+
+      <!-- All near + extended POIs -->
+      <div class="poi g" style="left:18px;top:220px">
+        <div class="poi-card"><div class="poi-ic">⛩️</div><div class="poi-name">増上寺</div><div class="poi-sub">600年历史</div><div class="poi-dist">450m</div></div>
+      </div>
+      <div class="poi p" style="right:38px;top:148px">
+        <div class="poi-card"><div class="poi-ic">🎮</div><div class="poi-name">RED° TOKYO</div><div class="poi-sub">沉浸体验</div><div class="poi-dist">750m</div></div>
+      </div>
+      <div class="poi o" style="right:32px;top:280px">
+        <div class="poi-card"><div class="poi-ic">🍜</div><div class="poi-name">炭火拉面</div><div class="poi-sub">百名店</div><div class="poi-dist">320m</div></div>
+      </div>
+      <div class="poi b" style="top:82px;left:38px">
+        <div class="poi-card"><div class="poi-ic">☕</div><div class="poi-name">Blue Bottle</div><div class="poi-sub">精品咖啡</div><div class="poi-dist">600m</div></div>
+      </div>
+      <div class="poi g" style="top:158px;left:102px">
+        <div class="poi-card"><div class="poi-ic">🌸</div><div class="poi-name">芝公园</div><div class="poi-sub">都市公园</div><div class="poi-dist">900m</div></div>
+      </div>
+      <div class="poi p" style="top:488px;left:52px">
+        <div class="poi-card"><div class="poi-ic">🎨</div><div class="poi-name">森美术馆</div><div class="poi-sub">当代艺术</div><div class="poi-dist">1.1km</div></div>
+      </div>
+      <div class="poi o" style="top:528px;left:148px">
+        <div class="poi-card"><div class="poi-ic">🍣</div><div class="poi-name">鮨 田中</div><div class="poi-sub">米其林推荐</div><div class="poi-dist">800m</div></div>
+      </div>
+      <div class="poi b" style="top:70px;right:90px">
+        <div class="poi-card"><div class="poi-ic">🛍️</div><div class="poi-name">麻布台Hills</div><div class="poi-sub">新地标</div><div class="poi-dist">1.4km</div></div>
+      </div>
+
+      <!-- Map overlays -->
+      <div class="msearch-bar">
+        <span class="ms-ic">✦</span>
+        <span class="ms-tx">告诉我你想去什么地方…</span>
+      </div>
+      <div class="wbadge">
+        <div class="wd"></div>
+        <span>步行 10 min (800m)</span>
+      </div>
+      <div class="zctrl">
+        <div class="zb">+</div>
+        <div class="zb">−</div>
+      </div>
+      <!-- Bottom strip with cards -->
+      <div class="mstrip">
+        <div class="hscroll" style="padding:0 18px 8px">
+          <div class="rc">
+            <div class="rc-iw rc-iw-zoji">⛩️<span class="rc-tag ta">景点</span><span class="rc-dist">450m</span><span class="rc-star">⭐ 4.9</span></div>
+            <div class="rc-body">
+              <div class="rc-name">増上寺</div>
+              <div class="rc-desc"><span class="rc-di">●</span>600年历史菩提寺</div>
+              <div class="rc-pills"><span class="rc-pill">免费入场</span><span class="rc-pill">神社</span></div>
+              <div class="rc-price fr">免费入场</div>
+            </div>
+          </div>
+          <div class="rc">
+            <div class="rc-iw rc-iw-red">🎮<span class="rc-tag tac">活动</span><span class="rc-dist">750m</span><span class="rc-star">⭐ 4.3</span></div>
+            <div class="rc-body">
+              <div class="rc-name">RED° TOKYO TOWER</div>
+              <div class="rc-desc"><span class="rc-di">●</span>沉浸式娱乐设施</div>
+              <div class="rc-pills"><span class="rc-pill">亲子游</span><span class="rc-pill">VR</span></div>
+              <div class="rc-price">¥2,000起</div>
+            </div>
+          </div>
+          <div class="rc">
+            <div class="rc-iw rc-iw-coffee">☕<span class="rc-tag tf">美食</span><span class="rc-dist">600m</span><span class="rc-star">⭐ 4.5</span></div>
+            <div class="rc-body">
+              <div class="rc-name">Blue Bottle Coffee</div>
+              <div class="rc-desc"><span class="rc-di">●</span>精品咖啡 · 塔景</div>
+              <div class="rc-pills"><span class="rc-pill">打卡</span><span class="rc-pill">下午茶</span></div>
+              <div class="rc-price">¥600起</div>
+            </div>
+          </div>
+        </div>
+        <div class="vaBtn" style="position:relative;bottom:auto;left:auto;transform:none;display:inline-block;margin:0 auto;display:flex;justify-content:center">
+          <div style="background:#00A17B;color:#fff;border-radius:22px;padding:10px 28px;font-size:13.5px;font-weight:600;white-space:nowrap;display:inline-block">探索全部 ›</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="screen-label">② 地图全屏</div>
+  </div>
+
+  <!-- ③ SEARCH — TAGS -->
+  <div class="phone-col">
+  <div class="phone">
+    <div class="so-overlay">
+      <!-- Search bar -->
+      <div class="so-bar">
+        <div class="hdr" style="position:relative;height:auto;padding:0;margin-bottom:10px">
+          <div class="logo">Triplabo<b>旅伴</b></div>
+        </div>
+        <div class="so-row">
+          <button class="so-back">←</button>
+          <div class="so-input-wrap">
+            <span class="so-ic">✦</span>
+            <span class="so-input-mock">告诉我你想去什么地方…</span>
+          </div>
+        </div>
+      </div>
+      <!-- Tags -->
+      <div class="so-tags">
+        <div class="so-section">
+          <div class="so-section-title">✦ 智能推荐</div>
+          <div class="so-tag-grid">
+            <div class="so-tag"><span class="so-tag-ic">🌸</span>春日东京好去处</div>
+            <div class="so-tag"><span class="so-tag-ic">☕</span>东京精品咖啡</div>
+            <div class="so-tag"><span class="so-tag-ic">👨‍👩‍👧</span>亲子友好活动</div>
+            <div class="so-tag"><span class="so-tag-ic">🆓</span>免费打卡景点</div>
+            <div class="so-tag"><span class="so-tag-ic">⭐</span>米其林美食</div>
+            <div class="so-tag"><span class="so-tag-ic">🌃</span>夜景推荐</div>
+          </div>
+        </div>
+        <div class="so-section">
+          <div class="so-section-title">📍 根据你的行程</div>
+          <div class="so-tag-grid">
+            <div class="so-tag"><span class="so-tag-ic">📍</span>东京塔周边500m</div>
+            <div class="so-tag"><span class="so-tag-ic">🫖</span>下午茶好去处</div>
+            <div class="so-tag"><span class="so-tag-ic">⛩️</span>神社寺庙巡礼</div>
+            <div class="so-tag"><span class="so-tag-ic">🎨</span>艺术文化探索</div>
+          </div>
+        </div>
+        <div class="so-section">
+          <div class="so-section-title">🔥 最近热门</div>
+          <div class="so-tag-grid">
+            <div class="so-tag"><span class="so-tag-ic">🛍️</span>东京购物新地标</div>
+            <div class="so-tag"><span class="so-tag-ic">🍜</span>拉面百名店</div>
+            <div class="so-tag"><span class="so-tag-ic">🎮</span>沉浸体验</div>
+            <div class="so-tag"><span class="so-tag-ic">✅</span>无需预约</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="screen-label">③ 搜索 — 标签</div>
+  </div>
+
+</div><!-- end row 1 -->
+
+<!-- ═══════════════════ ROW 2 ═══════════════════ -->
+<div class="row">
+
+  <!-- ④ SEARCH — CHAT MODE -->
+  <div class="phone-col">
+  <div class="phone">
+    <div class="so-overlay">
+      <!-- Search bar with typed text -->
+      <div class="so-bar">
+        <div class="hdr" style="position:relative;height:auto;padding:0;margin-bottom:10px">
+          <div class="logo">Triplabo<b>旅伴</b></div>
+        </div>
+        <div class="so-row">
+          <button class="so-back">←</button>
+          <div class="so-input-wrap">
+            <span class="so-ic">✦</span>
+            <span class="so-input-mock" style="color:#222726">帮我找亲子活动</span>
+            <span class="so-clear">✕</span>
+          </div>
+        </div>
+      </div>
+      <!-- Chat -->
+      <div class="so-chat" style="background:#F9F9F9">
+        <div class="chat-msgs">
+          <!-- TaTa greeting -->
+          <div class="chat-msg">
+            <div class="chat-avatar bot">TT</div>
+            <div>
+              <div class="chat-bubble">你好！我是 TaTa 🦦 请问你在寻找什么类型的亲子活动？</div>
+              <div class="chat-chips">
+                <div class="chat-chip">室内体验</div>
+                <div class="chat-chip">户外公园</div>
+                <div class="chat-chip">文化展览</div>
+              </div>
+            </div>
+          </div>
+          <!-- User -->
+          <div class="chat-msg user">
+            <div class="chat-avatar user">我</div>
+            <div class="chat-bubble">想找适合5岁小孩的沉浸体验</div>
+          </div>
+          <!-- TaTa reply -->
+          <div class="chat-msg">
+            <div class="chat-avatar bot">TT</div>
+            <div>
+              <div class="chat-bubble">根据你的行程，东京塔内的 <b>RED° TOKYO TOWER</b> 非常适合！50+ 互动项目，全年龄友好，无需预约，距离仅 750m 🎮</div>
+              <div class="chat-chips">
+                <div class="chat-chip">查看详情</div>
+                <div class="chat-chip">还有其他吗？</div>
+              </div>
+            </div>
+          </div>
+          <!-- User -->
+          <div class="chat-msg user">
+            <div class="chat-avatar user">我</div>
+            <div class="chat-bubble">有没有免费的？</div>
+          </div>
+          <!-- TaTa reply 2 -->
+          <div class="chat-msg">
+            <div class="chat-avatar bot">TT</div>
+            <div class="chat-bubble"><b>芝公园</b> 和 <b>増上寺</b> 都免费入场，绿地宽敞很适合孩子玩耍，还能和东京塔合影 🌸</div>
+          </div>
+        </div>
+        <!-- Input -->
+        <div class="chat-input-row">
+          <div class="chat-input-box">输入你的想法…</div>
+          <div class="chat-send">↑</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="screen-label">④ TaTa AI 对话</div>
+  </div>
+
+  <!-- ⑤ LIST SHEET -->
+  <div class="phone-col">
+  <div class="phone">
+    <!-- Map peeking at top -->
+    <div class="map-wrap" style="height:844px">
+      <div class="map-bg"></div>
+      <div class="map-road-h" style="top:35%"></div>
+      <div class="map-road-v" style="left:45%"></div>
+      <div class="map-block" style="width:60px;height:40px;top:15%;left:20%"></div>
+    </div>
+    <!-- Header -->
+    <div class="hdr" style="background:rgba(238,241,239,.88);backdrop-filter:blur(14px)">
+      <div class="logo">Triplabo<b>旅伴</b></div>
+    </div>
+    <!-- List Sheet -->
+    <div class="list-sheet">
+      <div class="ls-hdr">
+        <div class="ls-bar-wrap"><div class="ls-bar"></div></div>
+        <div class="ls-title-row">
+          <div class="ls-title">探索附近</div>
+          <div class="ls-right">
+            <div class="ls-map-btn">🗺 地图模式</div>
+            <div class="ls-close">✕</div>
+          </div>
+        </div>
+        <div class="ls-search-row">
+          <span class="ls-si">✦</span>
+          <span class="ls-input-mock">告诉我你想去什么地方…</span>
+        </div>
+        <div class="ls-cats">
+          <div class="ls-cat active">🗺 全部</div>
+          <div class="ls-cat">🎭 文化</div>
+          <div class="ls-cat">🌿 自然</div>
+          <div class="ls-cat">🍽 美食</div>
+          <div class="ls-cat">🎪 活动</div>
+          <div class="ls-cat">🛍 购物</div>
+        </div>
+        <div class="ls-count">共 10 个地点</div>
+      </div>
+      <div style="flex:1;overflow:hidden;padding:0 14px 20px">
+        <!-- Card 1 -->
+        <div class="lc">
+          <div class="lc-iw lc-iw-zoji">⛩️
+            <span class="lc-img-tag ta">景点</span>
+            <span class="lc-img-dist">450m</span>
+          </div>
+          <div class="lc-body">
+            <div class="lc-name">増上寺</div>
+            <div class="lc-desc">600年历史菩提寺，以"胜运"和"除厄"能量闻名，可与东京塔和樱花绝景同框。</div>
+            <div class="lc-meta">
+              <div class="lc-mr"><span class="lc-mr-ic">🕐</span><span>6:00-17:30</span></div>
+              <div class="lc-mr"><span class="lc-mr-ic">⭐</span><span>4.9 · 港区</span></div>
+            </div>
+            <div class="lc-pills">
+              <span class="lc-pill">散步好去处</span>
+              <span class="lc-pill">神社寺庙</span>
+              <span class="lc-pill">免费入场</span>
+            </div>
+            <div class="lc-foot">
+              <div class="lc-price fr">免费入场</div>
+              <button class="lc-cta">查看详情</button>
+            </div>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="lc">
+          <div class="lc-iw lc-iw-red">🎮
+            <span class="lc-img-tag tac">活动</span>
+            <span class="lc-img-dist">750m</span>
+          </div>
+          <div class="lc-body">
+            <div class="lc-name">RED° TOKYO TOWER</div>
+            <div class="lc-desc">东京塔内大型沉浸式娱乐设施，融合电竞、VR、桌游于一体，亲子皆宜。</div>
+            <div class="lc-meta">
+              <div class="lc-mr"><span class="lc-mr-ic">🕐</span><span>11:00-21:00</span></div>
+              <div class="lc-mr"><span class="lc-mr-ic">⭐</span><span>4.3 · 港区</span></div>
+            </div>
+            <div class="lc-pills">
+              <span class="lc-pill">亲子游</span>
+              <span class="lc-pill">沉浸体验</span>
+              <span class="lc-pill">无需预约</span>
+            </div>
+            <div class="lc-foot">
+              <div class="lc-price">¥2,000起</div>
+              <button class="lc-cta">查看详情</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="screen-label">⑤ 地点列表</div>
+  </div>
+
+  <!-- ⑥ DETAIL SHEET -->
+  <div class="phone-col">
+  <div class="phone">
+    <!-- Map behind -->
+    <div class="map-wrap" style="height:844px">
+      <div class="map-bg"></div>
+      <div class="map-road-h" style="top:40%"></div>
+      <div class="map-road-v" style="left:50%"></div>
+    </div>
+    <!-- Header -->
+    <div class="hdr" style="background:rgba(238,241,239,.88);backdrop-filter:blur(14px)">
+      <div class="logo">Triplabo<b>旅伴</b></div>
+    </div>
+    <!-- Backdrop -->
+    <div class="detail-backdrop"></div>
+    <!-- Detail Sheet -->
+    <div class="detail-sheet">
+      <div class="ds-hd"><div class="ds-bar"></div></div>
+      <div class="ds-close">✕</div>
+      <div style="flex:1;overflow:hidden">
+        <!-- Hero image -->
+        <div class="d-iw d-iw-zoji">⛩️</div>
+        <div class="d-body">
+          <div class="d-tags">
+            <span class="d-tag">景点</span>
+            <span class="d-tag">免费入场</span>
+            <span class="d-tag loc">港区</span>
+          </div>
+          <div class="d-name">増上寺</div>
+          <div class="d-desc">600年历史菩提寺，以"胜运"和"除厄"能量闻名，可与东京塔和樱花绝景同框。</div>
+          <div class="d-meta">
+            <div class="d-mc">
+              <div class="d-ml">🕐 营业时间</div>
+              <div class="d-mv">6:00–17:30</div>
+            </div>
+            <div class="d-mc">
+              <div class="d-ml">⏱ 畅游路程</div>
+              <div class="d-mv">1-2小时</div>
+            </div>
+          </div>
+          <div class="d-hl">
+            <div class="d-hl-ttl">✨ 亮点推荐</div>
+            <div class="d-hl-row"><span class="d-hl-ic">✨</span><span>东京塔与大殿同框绝景</span></div>
+            <div class="d-hl-row"><span class="d-hl-ic">🌸</span><span>春季樱花盛开，人气极旺</span></div>
+            <div class="d-hl-row"><span class="d-hl-ic">🔔</span><span>德川将军菩提寺，历史厚重</span></div>
+          </div>
+          <div class="d-acts">
+            <button class="btn">导航</button>
+            <button class="btn btn-g">官网</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="screen-label">⑥ 地点详情</div>
+  </div>
+
+</div><!-- end row 2 -->
+
+</body>
+</html>

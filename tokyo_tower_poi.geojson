@@ -1,0 +1,115 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tokyo Tower",
+        "name_ja": "東京タワー",
+        "name_zh": "东京塔",
+        "type": "attraction",
+        "category": "landmark"
+      },
+      "geometry": { "type": "Point", "coordinates": [139.7454, 35.6586] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Zojo-ji Temple",
+        "name_ja": "増上寺",
+        "name_zh": "增上寺",
+        "type": "attraction",
+        "category": "temple"
+      },
+      "geometry": { "type": "Point", "coordinates": [139.7493, 35.6558] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Shiba Park",
+        "name_ja": "芝公園",
+        "name_zh": "芝公园",
+        "type": "attraction",
+        "category": "park"
+      },
+      "geometry": { "type": "Point", "coordinates": [139.7479, 35.6574] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Roppongi Hills",
+        "name_ja": "六本木ヒルズ",
+        "name_zh": "六本木之丘",
+        "type": "attraction",
+        "category": "landmark"
+      },
+      "geometry": { "type": "Point", "coordinates": [139.7292, 35.6604] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mori Art Museum",
+        "name_ja": "森美術館",
+        "name_zh": "森美术馆",
+        "type": "attraction",
+        "category": "museum"
+      },
+      "geometry": { "type": "Point", "coordinates": [139.7314, 35.6600] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "The Prince Park Tower Restaurant",
+        "name_ja": "ブラッスリー・ポール・ボキューズ",
+        "name_zh": "王子公园大厦餐厅",
+        "type": "food",
+        "category": "restaurant"
+      },
+      "geometry": { "type": "Point", "coordinates": [139.7445, 35.6563] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Toranomon Hills Café",
+        "name_ja": "虎ノ門ヒルズカフェ",
+        "name_zh": "虎之门之丘咖啡",
+        "type": "food",
+        "category": "cafe"
+      },
+      "geometry": { "type": "Point", "coordinates": [139.7499, 35.6667] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Azabu Juban Ramen",
+        "name_ja": "麻布十番ラーメン",
+        "name_zh": "麻布十番拉面",
+        "type": "food",
+        "category": "restaurant"
+      },
+      "geometry": { "type": "Point", "coordinates": [139.7368, 35.6534] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tokyo Midtown",
+        "name_ja": "東京ミッドタウン",
+        "name_zh": "东京中城",
+        "type": "event",
+        "category": "venue"
+      },
+      "geometry": { "type": "Point", "coordinates": [139.7311, 35.6654] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Roppongi Hills Arena",
+        "name_ja": "六本木ヒルズアリーナ",
+        "name_zh": "六本木之丘广场",
+        "type": "event",
+        "category": "venue"
+      },
+      "geometry": { "type": "Point", "coordinates": [139.7298, 35.6598] }
+    }
+  ]
+}

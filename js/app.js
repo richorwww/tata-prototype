@@ -19,6 +19,64 @@ var TAG_FILTERS = {
   '无需预约': function(pl){return pl.ps.join('').includes('无需预约');},
 };
 
+/* Category icons via Feather Icons (stroke-based, white) */
+var CAT_FEATHER={
+  '景点':'map-pin',
+  '美食':'coffee',
+  '自然':'sun',
+  '活动':'film',
+  '购物':'shopping-bag',
+};
+
+function getCatIcon(cat,sz){
+  sz=sz||16;
+  var name=CAT_FEATHER[cat]||'map-pin';
+  if(typeof feather!=='undefined'&&feather.icons[name]){
+    return feather.icons[name].toSvg({color:'white',width:sz,height:sz,'stroke-width':2});
+  }
+  /* Fallback minimal SVGs if Feather not loaded */
+  var fb={
+    'map-pin':'<svg width="'+sz+'" height="'+sz+'" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>',
+    'coffee':'<svg width="'+sz+'" height="'+sz+'" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"><path d="M18 8h1a4 4 0 010 8h-1"/><path d="M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>',
+    'sun':'<svg width="'+sz+'" height="'+sz+'" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/></svg>',
+    'film':'<svg width="'+sz+'" height="'+sz+'" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"><rect x="2" y="2" width="20" height="20" rx="2.18"/><line x1="7" y1="2" x2="7" y2="22"/><line x1="17" y1="2" x2="17" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="2" y1="7" x2="7" y2="7"/><line x1="2" y1="17" x2="7" y2="17"/><line x1="17" y1="17" x2="22" y2="17"/><line x1="17" y1="7" x2="22" y2="7"/></svg>',
+    'shopping-bag':'<svg width="'+sz+'" height="'+sz+'" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>',
+  };
+  return fb[name]||fb['map-pin'];
+}
+
+function injectCatIcons(lv){
+  document.querySelectorAll('.poi[data-i]').forEach(function(el){
+    var old=el.querySelector('.poi-cat-icon');
+    if(old)old.remove();
+    if(lv>=1){
+      var idx=parseInt(el.dataset.i);
+      var pl=PL[idx];if(!pl)return;
+      var sz=lv===1?16:11;
+      var d=document.createElement('div');
+      d.className='poi-cat-icon';
+      d.innerHTML=getCatIcon(pl.cat,sz);
+      var card=el.querySelector('.poi-card');
+      if(card)card.insertBefore(d,card.firstChild);
+    }
+  });
+}
+
+/* Compact card for Level 1 carousel */
+function mkCompactCard(pl,idx){
+  return '<div class="cc2" onclick="openDetail('+idx+')">'
+    +'<div class="cc2-iw" style="background:'+pl.bg+'">'
+    +'<img src="'+pl.img+'" alt="'+pl.n+'" onload="this.style.opacity=1" onerror="this.style.display=\'none\'">'
+    +'<div class="rc-ov"></div>'
+    +'<div class="rc-tag '+pl.tc+'">'+pl.tag+'</div>'
+    +'<div class="rc-dist">'+pl.d+'</div>'
+    +'</div>'
+    +'<div class="cc2-body">'
+    +'<div class="cc2-name">'+pl.n+'</div>'
+    +'<div class="cc2-price'+(pl.fr?' fr':'')+'">'+pl.p+'</div>'
+    +'</div></div>';
+}
+
 /* Card builders — Unsplash images for real browser, bg+emoji as fallback */
 function mkCard(pl,idx){
   return '<div class="rc" onclick="openDetail('+idx+')">'
@@ -57,7 +115,7 @@ mapboxgl.accessToken = 'pk.eyJ1IjoicG9wb3YyMzMiLCJhIjoiY21uemxpcmc3MGVyejJ4cHZnN
 
 var map = new mapboxgl.Map({
   container: 'map',
-  style: 'mapbox://styles/popov233/cmogt88uf000z01ree8rk4nvp',
+  style: 'mapbox://styles/popov233/cmogt89bl005d01sx1blv8jce',
   center: [139.7454, 35.6586],
   zoom: 15.5,
   interactive: true,
@@ -65,7 +123,8 @@ var map = new mapboxgl.Map({
 });
 
 var ZOOM_CLOSE = 15.5;
-var ZOOM_FAR   = 14.8;
+var ZOOM_MED   = 14.8;
+var ZOOM_FAR   = 13.5;
 
 var TT_LL=[139.7454,35.6586];
 
@@ -134,7 +193,7 @@ ccImg.style.opacity = '0';
 ccImg.style.transition = 'opacity .3s';
 ccImg.onload = function(){ this.style.opacity = '1'; };
 ccImg.onerror = function(){ this.style.display = 'none'; };
-ccImg.src = 'https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=400&q=80&fit=crop&crop=center';
+ccImg.src = 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Tokyo_Tower_2023.jpg/400px-Tokyo_Tower_2023.jpg';
 
 /* ══════════════════════════════════════════════════════
    GEOMETRY + STATE
@@ -153,7 +212,8 @@ var sheet=document.getElementById('sheet'),sscr=document.getElementById('sscr');
 var hdr=document.getElementById('hdr'),hint=document.getElementById('hint');
 var grabStrip=document.getElementById('grabStrip');
 var nearPOIs=['n1','n2','n3'].map(function(id){return document.getElementById(id);});
-var extPOIs=document.querySelectorAll('.epoi');
+var extPOIs=document.querySelectorAll('.epoi:not(.lv2poi)');
+var lv2POIs=document.querySelectorAll('.lv2poi');
 var mapUIs=document.querySelectorAll('.muo');
 var appState='def',zoomLv=0,curTop=SS.def.top,activeCat='全部';
 
@@ -265,31 +325,109 @@ function setState(next){
 }
 
 function setZoom(lv,showMsg){
-  zoomLv=lv;var far=(lv>=1);
-  map.flyTo({zoom: far ? ZOOM_FAR : ZOOM_CLOSE, duration: 600});
-  extPOIs.forEach(function(p){p.classList.toggle('show',far);});
+  zoomLv=lv;
+  var zoomVals=[ZOOM_CLOSE,ZOOM_MED,ZOOM_FAR];
+  map.flyTo({zoom:zoomVals[lv],duration:600});
+
   var cc=document.getElementById('cc');
   var ccLbl=document.getElementById('ccLabel');
-  cc.classList.toggle('far',far);
-  document.getElementById('pr').style.opacity=far?'0':'1';
-  if(far){
-    /* Position label just below the red dot: dot is 12px, so top = cc.top + 6 + 6 + 10 */
+  var pr=document.getElementById('pr');
+  var mcards=document.getElementById('mcards');
+  var vaBtn=document.getElementById('vaBtn');
+  var mCountBar=document.getElementById('mCountBar');
+  var mstrip=document.getElementById('mstrip');
+
+  /* ── POI visual levels ── */
+  document.querySelectorAll('.poi[data-i]').forEach(function(el){
+    el.classList.remove('zoom-lv0','zoom-lv1','zoom-lv2');
+  });
+  nearPOIs.forEach(function(p){
+    p.style.display='flex';
+    p.classList.add('zoom-lv'+lv);
+  });
+  extPOIs.forEach(function(p){
+    p.classList.remove('show');
+    if(lv>=1){p.classList.add('show','zoom-lv'+lv);}
+  });
+  lv2POIs.forEach(function(p){
+    p.classList.remove('show');
+    if(lv>=2){p.classList.add('show','zoom-lv2');}
+  });
+  injectCatIcons(lv);
+
+  /* ── Center card ── */
+  cc.classList.toggle('far',lv>=1);
+  pr.style.opacity=lv===0?'1':'0';
+  if(lv>=1){
     var ccTop=parseInt(cc.style.top)||Math.round(PH/2);
     ccLbl.style.top=(ccTop+18)+'px';
     ccLbl.classList.add('show');
   } else {
     ccLbl.classList.remove('show');
   }
-  document.getElementById('wbtxt').textContent=far?'地铁3站以内 (5km)':'步行 10 min (800m)';
-  /* close zoom: 3 cards | far zoom: exactly 10 cards (near map spots only) */
-  var list=far?PL.slice(0,10):PL.slice(0,3);
-  document.getElementById('mcards').innerHTML=list.map(function(pl,i){return mkCard(pl,i);}).join('');
-  document.getElementById('vaBtn').classList.toggle('show',far);
-  if(showMsg)showHint(far?'已缩小 · 发现10个附近地点':'已放大');
+
+  /* ── Distance badge ── */
+  var distLabels=['徒步 15min · 800m','地铁 2站以内 · 2km','地铁 5站以内 · 5km'];
+  document.getElementById('wbtxt').textContent=distLabels[lv];
+
+  /* ── Bottom area ── */
+  closeMiniPop();
+  if(lv===0){
+    mstrip.style.display='';
+    mcards.innerHTML=PL.slice(0,3).map(function(pl,i){return mkCard(pl,i);}).join('');
+    vaBtn.classList.remove('show');
+    mCountBar.classList.remove('show-bar');
+  } else if(lv===1){
+    mstrip.style.display='';
+    mcards.innerHTML=PL.slice(0,10).map(function(pl,i){return mkCompactCard(pl,i);}).join('');
+    vaBtn.classList.remove('show');
+    mCountBar.classList.remove('show-bar');
+  } else {
+    mstrip.style.display='none';
+    mCountBar.classList.remove('show-bar');
+    vaBtn.classList.add('show');
+  }
+
+  if(showMsg){
+    var msgs=['已放大','已缩小 · 地铁2站范围','已缩小 · 地铁5站范围'];
+    showHint(msgs[lv]);
+  }
 }
 
-document.getElementById('zinBtn').onclick=function(){if(zoomLv===1)setZoom(0,true);};
-document.getElementById('zoutBtn').onclick=function(){if(zoomLv===0)setZoom(1,true);};
+/* ── Mini popup ── */
+var miniPopIdx=-1;
+function openMiniPop(idx,x,y){
+  var pl=PL[idx];if(!pl)return;
+  miniPopIdx=idx;
+  var mp=document.getElementById('miniPop');
+  /* Category icon with color */
+  var catColors={'景点':'#0393F4','美食':'#F5873C','自然':'#38B2F5','活动':'#9B7EF0','购物':'#3B82F6'};
+  var icEl=document.getElementById('miniPopIc');
+  icEl.style.background=catColors[pl.cat]||'#0393F4';
+  icEl.innerHTML=getCatIcon(pl.cat,18);
+  document.getElementById('miniPopName').textContent=pl.n;
+  /* Distance + tag */
+  document.getElementById('miniPopMeta').textContent=(pl.d?pl.d+' · ':'')+pl.tag;
+  /* Transit info */
+  var transitEl=document.getElementById('miniPopTransit');
+  if(pl.transit){
+    transitEl.style.display='flex';
+    transitEl.querySelector('span').textContent=pl.transit;
+  } else {
+    transitEl.style.display='none';
+  }
+  document.getElementById('miniPopBtn').onclick=function(){closeMiniPop();openDetail(idx);};
+  mp.style.left=x+'px';
+  mp.style.top=y+'px';
+  mp.style.display='block';
+}
+function closeMiniPop(){
+  document.getElementById('miniPop').style.display='none';
+  miniPopIdx=-1;
+}
+
+document.getElementById('zinBtn').onclick=function(){if(zoomLv>0)setZoom(zoomLv-1,true);};
+document.getElementById('zoutBtn').onclick=function(){if(zoomLv<2)setZoom(zoomLv+1,true);};
 document.getElementById('vaBtn').onclick=openListSheet;
 document.getElementById('seeAllBtn').onclick=openListSheet;
 document.getElementById('cc').onclick=function(){
@@ -302,10 +440,25 @@ document.getElementById('ccLabel').onclick=function(){
 /* Pinch */
 var pd=0,pinching=false;
 mapWrap.addEventListener('touchstart',function(e){if(appState!=='map'||e.touches.length!==2)return;pinching=true;pd=Math.hypot(e.touches[0].clientX-e.touches[1].clientX,e.touches[0].clientY-e.touches[1].clientY);},{passive:true});
-mapWrap.addEventListener('touchmove',function(e){if(!pinching||e.touches.length!==2)return;var d=Math.hypot(e.touches[0].clientX-e.touches[1].clientX,e.touches[0].clientY-e.touches[1].clientY);if(Math.abs(d-pd)>30){setZoom(d<pd?1:0,true);pinching=false;}},{passive:true});
+mapWrap.addEventListener('touchmove',function(e){if(!pinching||e.touches.length!==2)return;var d=Math.hypot(e.touches[0].clientX-e.touches[1].clientX,e.touches[0].clientY-e.touches[1].clientY);if(Math.abs(d-pd)>30){if(d<pd&&zoomLv<2)setZoom(zoomLv+1,true);else if(d>pd&&zoomLv>0)setZoom(zoomLv-1,true);pinching=false;}},{passive:true});
 mapWrap.addEventListener('touchend',function(){pinching=false;},{passive:true});
-var lt=0;mapWrap.addEventListener('click',function(){if(appState!=='map')return;var now=Date.now();if(now-lt<300){setZoom(zoomLv===0?1:0,true);}lt=now;});
-document.querySelectorAll('.poi').forEach(function(el){el.addEventListener('click',function(e){e.stopPropagation();openDetail(parseInt(el.dataset.i||'0'));});});
+var lt=0;mapWrap.addEventListener('click',function(){if(appState!=='map')return;var now=Date.now();if(now-lt<300){setZoom(zoomLv<2?zoomLv+1:0,true);}lt=now;closeMiniPop();});
+document.querySelectorAll('.poi').forEach(function(el){
+  el.addEventListener('click',function(e){
+    e.stopPropagation();
+    var idx=parseInt(el.dataset.i||'0');
+    if(zoomLv>=1){
+      /* Show mini popup positioned at the POI */
+      var rect=el.getBoundingClientRect();
+      var mapRect=document.getElementById('mapWrap').getBoundingClientRect();
+      var x=rect.left+rect.width/2-mapRect.left;
+      var y=rect.top-mapRect.top;
+      openMiniPop(idx,x,y);
+    } else {
+      openDetail(idx);
+    }
+  });
+});
 
 /* ── DRAG — only triggered from the handle strip ── */
 var dragging=false,cancelled=false,dragSY=0,dragSX=0,dragSTOP=0,vel=0,prevY=0,prevT=0;
@@ -549,7 +702,7 @@ function openDetail(idx){
   document.getElementById('d-desc').textContent=pl.desc;
   document.getElementById('d-hrs').textContent=pl.hrs;
   document.getElementById('d-dur').textContent=pl.dur;
-  document.getElementById('d-hl').innerHTML='<div class="d-hl-ttl"><span style="color:#00A17B">✦</span> 智能看点</div>'+pl.hl.map(function(h){return'<div class="d-hl-row"><span class="d-hl-ic">'+h[0]+'</span><span>'+h[1]+'</span></div>';}).join('');
+  document.getElementById('d-hl').innerHTML='<div class="d-hl-ttl"><span style="color:#0393F4">✦</span> 智能看点</div>'+pl.hl.map(function(h){return'<div class="d-hl-row"><span class="d-hl-ic">'+h[0]+'</span><span>'+h[1]+'</span></div>';}).join('');
   document.getElementById('dscr').scrollTop=0;
   var webBtn=document.getElementById('d-web-btn');
   if(pl.url){webBtn.onclick=function(){window.open(pl.url,'_blank');};webBtn.style.opacity='1';webBtn.style.pointerEvents='auto';}

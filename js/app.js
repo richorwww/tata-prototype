@@ -193,7 +193,7 @@ ccImg.style.opacity = '0';
 ccImg.style.transition = 'opacity .3s';
 ccImg.onload = function(){ this.style.opacity = '1'; };
 ccImg.onerror = function(){ this.style.display = 'none'; };
-ccImg.src = 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Tokyo_Tower_2023.jpg/400px-Tokyo_Tower_2023.jpg';
+ccImg.src = 'https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=400&q=80&fit=crop&crop=center';
 
 /* ══════════════════════════════════════════════════════
    GEOMETRY + STATE

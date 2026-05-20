@@ -208,6 +208,7 @@
         <span class="ms-ic">✦</span><span class="ms-tx" id="msearchTxt">春日好去处 🌸</span>
       </div>
       <div id="wbadge" class="muo"><div class="wd"></div><span id="wbtxt">步行 10 min (800m)</span></div>
+      <button id="listModeBtn" class="muo" onclick="openListSheet()">列表模式</button>
       <div id="zctrl" class="muo">
         <button class="zb" id="zinBtn">+</button>
         <button class="zb" id="zoutBtn">−</button>
@@ -247,50 +248,35 @@
       </div>
 
       <div class="hero">
-        <div class="hero-title"><span>🗼</span>开启您的东京塔之旅</div>
+        <div class="hero-title"><span>🗼</span>开启晴空塔之旅</div>
         <div class="hi-list">
           <div class="hi-row"><span class="hi-ic">✨</span><span>360度俯瞰东京全景，夜景绝美</span></div>
-          <div class="hi-row"><span class="hi-ic">🪟</span><span>Skywalk Window 透明玻璃地板，刺激体验</span></div>
-          <div class="hi-row"><span class="hi-ic">⛩️</span><span>铁塔大神宫，东京23区最高神社</span></div>
+          <div class="hi-row"><span class="hi-ic">🪟</span><span>天望回廊（450米）体验空中漫步</span></div>
+          <div class="hi-row"><span class="hi-ic">⛩️</span><span>东京第一夜景，日落后最美</span></div>
         </div>
       </div>
       <div class="tkt">
-        <div class="tkt-hd"><div class="tkt-ttl"><span>🎫</span>门票信息</div><div class="tkt-bdg">已出票</div></div>
+        <div class="tkt-hd"><div class="tkt-ttl">门票信息</div><div class="tkt-bdg">已出票</div></div>
         <div class="tkt-rows">
-          <div><div class="tkt-lbl">套餐</div><div class="tkt-val">东京塔瞭望台 Main Deck（150m）门票</div></div>
-          <div><div class="tkt-lbl">参加日期</div><div class="tkt-val">2025-08-13　19:30</div></div>
+          <div><div class="tkt-lbl">套餐</div><div class="tkt-val">天望甲板（350米）入场券</div></div>
+          <div><div class="tkt-lbl">参加日期</div><div class="tkt-val">2026-07-15、19:00</div></div>
           <div><div class="tkt-lbl">参加人数</div><div class="tkt-val lg">大人 ×2　儿童 ×1</div></div>
         </div>
         <div class="tkt-meta">
-          <div class="tkt-mr"><span>🕐</span><span>营业时间：9:00–23:00　最晚入场 22:30</span></div>
-          <div class="tkt-mr"><span>📍</span><span>东京都港区芝公园4丁目2-8</span></div>
+          <div class="tkt-mr"><span>营业时间：10:00～22:00　最终入场 21:30</span></div>
+          <div class="tkt-mr"><span>东京都港区芝公园4丁目2-8</span></div>
+          <div class="tkt-mr"><a href="https://www.tokyo-skytree.jp/" target="_blank" class="tkt-web-link">tokyo-skytree.jp</a></div>
         </div>
-        <div class="tkt-tip"><div class="tip-ic">💡</div><div style="display:flex;flex-direction:column;gap:4px">
-  <span><b>时间：</b>建议上午10点前或下午3点后前往，避开午餐高峰。</span>
+        <div class="tkt-tip"><div style="display:flex;flex-direction:column;gap:4px">
+  <span><b>时间：</b>上午或傅晒后人少，推荐前往。</span>
   <span><b>亲子：</b>Main Deck 宽敞，Café La Tour 适合带孩子休憩，可体验玻璃地板。</span>
-  <span><b>纪念：</b>别忘了在东京铁塔造型原创邮筒寄一张明信片！</span>
+  <span><b>购物：</b>别忘了在索拉玛奇买限定周边和伴手礼！</span>
 </div></div>
-        <div class="tkt-acts"><button class="btn">去导航</button><button class="btn btn-g" onclick="window.open('https://cn.tokyotower.co.jp/','_blank')">查看官网</button></div>
+        <div class="tkt-acts"><button class="btn tkt-nav-btn">导航</button></div>
       </div>
 
       <!-- 下一站推荐 -->
-      <div style="margin:0 14px 12px;border:1.5px solid #D1D1D6;border-radius:16px;background:#FAFAFA;padding:12px 14px">
-        <div style="font-size:11px;font-weight:700;color:#A0ACA9;letter-spacing:.5px;text-transform:uppercase;margin-bottom:10px">✦ 开启您的下一站</div>
-        <div style="display:flex;gap:12px;align-items:flex-start">
-          <div style="width:72px;height:72px;border-radius:10px;overflow:hidden;background:#0a0a1a;flex-shrink:0;position:relative">
-            <img src="https://images.unsplash.com/photo-1633356122102-3fe601e05bd2?w=200&q=80&fit=crop&crop=center" style="width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .3s" onload="this.style.opacity='1'" onerror="this.style.display='none'">
-          </div>
-          <div style="flex:1;min-width:0">
-            <div style="font-size:13px;font-weight:700;color:#222726;margin-bottom:2px">teamLab Planets TOKYO</div>
-            <div style="font-size:11px;color:#6B7573;margin-bottom:6px">沉浸式数字艺术 · 豊洲 · 2025新展区</div>
-            <div style="display:flex;gap:5px;align-items:center;margin-bottom:6px">
-              <span style="font-size:11px">🚕</span>
-              <span style="font-size:11px;color:#92681A">约20min · 预计¥1,800–2,200</span>
-            </div>
-            <button onclick="window.open('https://www.triplabo.jp/activity/zh/LINKTIVITY-XRUX6','_blank')" style="font-size:12px;font-weight:600;color:#0393F4;background:transparent;border:1.5px solid #0393F4;border-radius:8px;padding:5px 14px;cursor:pointer;font-family:inherit">查看详情</button>
-          </div>
-        </div>
-      </div>
+      <div style="margin:0 14px 12px;border:1.5px solid #D1D1D6;border-radius:16px;background:#FAFAFA;padding:12px 14px"><div style="font-size:11px;font-weight:700;color:#A0ACA9;letter-spacing:.5px;text-transform:uppercase;margin-bottom:10px">✶ 开启您的下一站</div><div style="display:flex;gap:12px;align-items:flex-start"><div style="width:72px;height:72px;border-radius:10px;overflow:hidden;background:#3A7A45;flex-shrink:0;position:relative"><img src="https://lh3.googleusercontent.com/place-photos/AJRVUZO5fccHmOSJp2lcL2X1TmLVFJfwI_GC--978cPWh6PC5IWxF3ZyCEbjtHSVPf45tuzeCiCl--GOcS9_Fej4e1jAJ5xv4ApDTZ5TlNDAQchE44fXGwxx-0xFC_LJDA1yGnXYrQeoThNysqHqrAo=s200" style="width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .3s" onload="this.style.opacity='1'" onerror="this.style.display='none'"></div><div style="flex:1;min-width:0"><div style="font-size:13px;font-weight:700;color:#222726;margin-bottom:2px">浅草寺</div><div style="font-size:11px;color:#6B7573;margin-bottom:6px">东京最古老的寺院 · 浅草 · 免费入场</div><div style="display:flex;gap:5px;align-items:center;margin-bottom:6px"><span style="font-size:11px;color:#92681A">步行剀15分钟可达</span></div><button onclick="openDetail(4)" style="font-size:12px;font-weight:600;color:#0393F4;background:transparent;border:1.5px solid #0393F4;border-radius:8px;padding:5px 14px;cursor:pointer;font-family:inherit">查看详情</button></div></div></div>
       <div class="sep"></div>
       <div class="sec-hd">
         <div class="sec-ttl">周边推荐</div>
@@ -384,14 +370,6 @@
         <span class="ls-si">✦</span>
         <input id="lsInput" type="text" placeholder="告诉我你想去什么地方…" oninput="renderList()" autocomplete="off">
       </div>
-      <div class="ls-cats" id="lsCats">
-        <div class="ls-cat active" data-cat="全部" onclick="selectCat(this)">🗺 全部</div>
-        <div class="ls-cat" data-cat="景点" onclick="selectCat(this)">🎭 文化</div>
-        <div class="ls-cat" data-cat="自然" onclick="selectCat(this)">🌿 自然</div>
-        <div class="ls-cat" data-cat="美食" onclick="selectCat(this)">🍽 美食</div>
-        <div class="ls-cat" data-cat="活动" onclick="selectCat(this)">🎪 活动</div>
-        <div class="ls-cat" data-cat="购物" onclick="selectCat(this)">🛍 购物</div>
-      </div>
       <div class="ls-count-row"><div class="ls-count" id="lsCount">共 10 个地点</div></div>
     </div>
     <div id="lsScroll"></div>
@@ -414,18 +392,18 @@
         <div class="d-name" id="d-name"></div>
         <div class="d-desc" id="d-desc"></div>
         <div class="d-meta">
-          <div class="d-mc"><div class="d-ml" id="d-hrs-lbl">🕐 营业时间</div><div class="d-mv" id="d-hrs"></div></div>
-          <div class="d-mc"><div class="d-ml" id="d-dur-lbl">⏱ 畅游路程</div><div class="d-mv" id="d-dur"></div></div>
+          <div class="d-mc"><div class="d-ml" id="d-hrs-lbl">营业时间</div><div class="d-mv" id="d-hrs"></div></div>
+          <div class="d-mc"><div class="d-ml" id="d-dur-lbl">游览时长</div><div class="d-mv" id="d-dur"></div></div>
         </div>
         <div id="d-venue" style="display:none;margin-bottom:10px">
-          <span class="d-ml">📍 地点：</span><span id="d-venue-txt" style="font-size:12px;font-weight:600;color:#222726"></span>
+          <span class="d-ml">地点：</span><span id="d-venue-txt" style="font-size:12px;font-weight:600;color:#222726"></span>
         </div>
         <div id="d-website" style="display:none;margin-bottom:14px">
-          <span class="d-ml">🌐 官网：</span><a id="d-web-link" href="#" target="_blank" class="d-web-url"></a>
+          <span class="d-ml">官网：</span><a id="d-web-link" href="#" target="_blank" class="d-web-url"></a>
         </div>
         <div class="d-hl" id="d-hl"></div>
         <div id="d-ticket-section"></div>
-        <div class="d-acts"><button class="btn d-nav-btn">🗺 导航</button></div>
+        <div class="d-acts"><button class="btn d-nav-btn">导航</button></div>
       </div>
     </div>
   </div>

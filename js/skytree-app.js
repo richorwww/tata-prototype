@@ -59,12 +59,7 @@ function injectCatIcons(lv){
       d.innerHTML=getCatSVG(iconCat,sz);
       /* Event badge: animated star dot in top-right corner */
       if(pl.isEvent&&lv===1){
-        d.innerHTML+=
-          '<span style="position:absolute;top:-3px;right:-3px;width:12px;height:12px;'
-          +'background:#F4CF6E;border-radius:50%;border:2px solid #fff;'
-          +'display:flex;align-items:center;justify-content:center;'
-          +'font-size:7px;line-height:1;z-index:2;'
-          +'animation:evStarPulse 1.8s ease-in-out infinite">✦</span>';
+        d.innerHTML+='<span style="position:absolute;top:-2px;right:-2px;width:9px;height:9px;background:#F4CF6E;border-radius:50%;border:2px solid #fff;z-index:2;display:block;animation:evStarPulse 1.8s ease-in-out infinite"></span>';
       }
       card.insertBefore(d,card.firstChild);
     } else if(lv===0&&card){
@@ -869,9 +864,9 @@ function _renderEventTab(pl){
   document.getElementById('d-name').textContent=pl.n;
   document.getElementById('d-desc').textContent=pl.desc;
   /* 时间: 活动时间 + 开放时间 */
-  document.getElementById('d-hrs-lbl').textContent='🗓 活动时间';
+  document.getElementById('d-hrs-lbl').textContent='活动时间';
   document.getElementById('d-hrs').textContent=pl.eventPeriod||pl.hrs;
-  document.getElementById('d-dur-lbl').textContent='🕐 开放时间';
+  document.getElementById('d-dur-lbl').textContent='开放时间';
   document.getElementById('d-dur').textContent=pl.hrs;
   /* 地点 */
   var venueSec=document.getElementById('d-venue');
@@ -884,7 +879,7 @@ function _renderEventTab(pl){
   }
   document.getElementById('d-tags').innerHTML=
     '<span class="d-tag ev-tag">限时活动</span>'
-    +'<span class="d-tag loc">📍 '+pl.loc+'</span>';
+    ;
 
   var menuBlock='';
   if(pl.eventMenu&&pl.eventMenu.length){
@@ -930,14 +925,14 @@ function _renderVenueTab(pl){
   _setDetailImage(pl.poiImg||pl.img, '#4A4A5A');
   document.getElementById('d-name').textContent=pl.poiName;
   document.getElementById('d-desc').textContent=pl.poiDesc;
-  document.getElementById('d-hrs-lbl').textContent='🕐 营业时间';
+  document.getElementById('d-hrs-lbl').textContent='营业时间';
   document.getElementById('d-hrs').textContent=pl.poiHrs;
-  document.getElementById('d-dur-lbl').textContent='⏱ 畅游路程';
+  document.getElementById('d-dur-lbl').textContent='游览时长';
   document.getElementById('d-dur').textContent=pl.poiDur||'2-3小时';
   document.getElementById('d-venue').style.display='none';
   document.getElementById('d-tags').innerHTML=
     '<span class="d-tag">设施</span>'
-    +'<span class="d-tag loc">📍 '+pl.loc+'</span>';
+    ;
   document.getElementById('d-hl').innerHTML=
     '<div class="d-hl-ttl"><span style="color:#0393F4">✦</span> 设施亮点</div>'
     +(pl.poiHl||[]).map(function(h){return'<div class="d-hl-row"><span class="d-hl-ic">'+h[0]+'</span><span>'+h[1]+'</span></div>';}).join('');
@@ -975,14 +970,16 @@ function openDetail(idx){
     document.getElementById('d-name').textContent=pl.n;
     document.getElementById('d-desc').textContent=pl.desc;
     /* Reset meta labels */
-    document.getElementById('d-hrs-lbl').textContent='🕐 营业时间';
+    document.getElementById('d-hrs-lbl').textContent='营业时间';
     document.getElementById('d-hrs').textContent=pl.hrs;
-    document.getElementById('d-dur-lbl').textContent='⏱ 畅游路程';
+    document.getElementById('d-dur-lbl').textContent='游览时长';
     document.getElementById('d-dur').textContent=pl.dur;
     document.getElementById('d-venue').style.display='none';
     /* Tags: add free badge if applicable */
     var freeBadge=pl.fr?'<span class="d-tag d-tag-free">🆓 免费</span>':'';
-    document.getElementById('d-tags').innerHTML=freeBadge+'<span class="d-tag">'+pl.tag+'</span><span class="d-tag loc">📍 '+pl.loc+'</span>';
+    var ratingBadge=pl.r?'<span class="d-tag d-tag-rating">⭐ '+pl.r+'</span>':'';
+    
+    document.getElementById('d-tags').innerHTML=freeBadge+ratingBadge+'<span class="d-tag">'+pl.tag+'</span>';
     document.getElementById('d-hl').innerHTML='<div class="d-hl-ttl"><span style="color:#0393F4">✦</span> 智能看点</div>'+pl.hl.map(function(h){return'<div class="d-hl-row"><span class="d-hl-ic">'+h[0]+'</span><span>'+h[1]+'</span></div>';}).join('');
     _setDetailWebsite(pl.url);
     _setDetailTicket(pl);
@@ -1001,8 +998,8 @@ function closeDetail(){
   _clearDetailTicket();
   _setDetailWebsite('');
   document.getElementById('d-venue').style.display='none';
-  document.getElementById('d-hrs-lbl').textContent='🕐 营业时间';
-  document.getElementById('d-dur-lbl').textContent='⏱ 畅游路程';
+  document.getElementById('d-hrs-lbl').textContent='营业时间';
+  document.getElementById('d-dur-lbl').textContent='游览时长';
   _dEvIdx=-1;
 }
 var dsDrag=false,dsY0=0;

@@ -1,0 +1,2707 @@
+{
+    "pois": [
+        {
+            "place_id": "ChIJ35ov0dCOGGARKvdDH7NPHX0",
+            "language_code": "JA",
+            "title": "東京スカイツリー",
+            "description": "東京スカイツリー®は、高さ634mを誇る自立式電波塔で、東京のシンボルです。展望台からは360度のパノラマビューが楽しめます。",
+            "amount": "1800",
+            "image_urls": [
+                "https://lh3.googleusercontent.com/place-photos/AJRVUZNwXcpxVpNWj09JFD_vC4CgB0lPXnTuk2RAx7sWbI_KmRo9bPCc4OYgFX4qkLow4kUHUg13nCQpEOFf_Y0nahQ3Jd7gOKWj_iNKVXfDiy74O6JyYd3x821Cq0EeazciAGdZsokRRApxz5a6vg=s4800-w1600",
+                "https://lh3.googleusercontent.com/place-photos/AJRVUZMw6J4L4Z6EX394r1wFYYQ7AXOptzqv2dbWcQdHwI74ISlvmv78vjqIDTDndLc1xEbId6-LYV2eqMiPEE-Q6B7t3F3iUtybG3qnU-gxK2_SJMBzjKz99okSGquhXPwA4JNW-8W-Mnq49YFpWqw=s4800-w1200",
+                "https://lh3.googleusercontent.com/place-photos/AJRVUZMTf65vbc_q1SEpRdpgNdG9o2cJZUky_dObQ2StcY9V8go2n2o_EOJBfuthZb0ogjeip66njg1wAEEFhfues7Zs4wiZW62ZyyM2c2rTIEcDuXnnfMW55y7DxUGccEcPuR3hp-UtQgzvdNoOqw=s4800-w1600"
+            ],
+            "highlights": [
+                "地上350mの天望デッキ",
+                "空中散歩気分を味わえる天望回廊",
+                "圧巻の夜景"
+            ],
+            "suggestions": [
+                "東京スカイツリー駅、押上駅直結",
+                "最新のイベント情報を公式サイトで確認",
+                "夜景観賞におすすめ"
+            ],
+            "chips": [
+                "夜景",
+                "東京",
+                "展望台",
+                "駅直結",
+                "人気"
+            ],
+            "opening_times": "10:00～22:00",
+            "official_website": "https://www.tokyo-skytree.jp/?utm_source=google&utm_medium=maps",
+            "google_rating": "4.400000",
+            "location": {
+                "latitude": 35.710064,
+                "longitude": 139.8107
+            },
+            "address": "日本、〒131-0045 東京都墨田区押上１丁目１−２",
+            "category": [
+                "ACTIVITY_CATEGORY_TOWER_BUILDING",
+                "ACTIVITY_CATEGORY_ATTRACTION"
+            ],
+            "products": [],
+            "events": [
+                {
+                    "title": "BLUE LOCK EPISODE 空(SKY) in 東京スカイツリー",
+                    "description": "人気アニメ「ブルーロック」との初コラボイベント。作品の世界観を体験できる展示や限定グッズ販売、カフェなどを展開。",
+                    "highlights": [
+                        "「ブルーロック」の世界観",
+                        "限定グッズ",
+                        "コラボカフェ"
+                    ],
+                    "opening_times": "",
+                    "from_date": "2026-04-09",
+                    "suggest_visiting_time": "",
+                    "amount": ""
+                },
+                {
+                    "title": "TOKYO Matcha Time at SKYTREE",
+                    "description": "抹茶をテーマにした期間限定のイベント。抹茶スイーツやドリンク、オリジナルグッズなどを楽しめます。",
+                    "highlights": [
+                        "抹茶スイーツ",
+                        "限定ドリンク",
+                        "オリジナルグッズ"
+                    ],
+                    "opening_times": "",
+                    "from_date": "2026-04-23",
+                    "suggest_visiting_time": "",
+                    "amount": ""
+                },
+                {
+                    "title": "東京スカイツリー 14周年イベント",
+                    "description": "東京スカイツリータウンの14周年を記念した感謝祭。限定メニューや商品、抽選会などが開催されます。",
+                    "highlights": [
+                        "14周年記念メニュー",
+                        "限定商品",
+                        "抽選会"
+                    ],
+                    "opening_times": "",
+                    "from_date": "2026-04-23",
+                    "suggest_visiting_time": "",
+                    "amount": ""
+                },
+                {
+                    "title": "台湾祭 in 東京スカイツリータウン®2026ー台南ランタン祭ー",
+                    "description": "台湾のグルメや文化を楽しめるイベント。台南ランタン祭をテーマに、夜市グルメやランタン展示などを展開します。",
+                    "highlights": [
+                        "台湾グルメ",
+                        "台南ランタン祭",
+                        "夜市"
+                    ],
+                    "opening_times": "平日 10:00～21:00、土日祝 9:00～21:00",
+                    "from_date": "2026-04-29",
+                    "suggest_visiting_time": "",
+                    "amount": ""
+                }
+            ],
+            "tags": [
+                "夜景ビュー"
+            ]
+        },
+        {
+            "place_id": "ChIJP7KkV1ePGGARnAp_ETT56kA",
+            "language_code": "JA",
+            "title": "SKYTREE GALLERY",
+            "description": "東京スカイツリー®の建設の裏側を学べる無料展示エリア。貴重な写真や構造、デザインの秘密に触れて、タワーの魅力をさらに深く理解しよう。",
+            "amount": "0",
+            "image_urls": [
+                "https://lh3.googleusercontent.com/place-photos/AJRVUZPYEMAJLsdlP9gcr43W95AqYcHv68tPU4PSXrWElm_GjnX6TFygzEXAOgzmsJBdVqj6MHckKuZXzqaTQyfs_B9yFcX-y0DiJOb6B9o1svOEwYAj6ltmWKDondfpuEs2Nmc8JY4DpDqQ_e-sp_E=s4800-w1600",
+                "https://lh3.googleusercontent.com/place-photos/AJRVUZNXt3MfI-ls_n7v1jrSvJ3AoLz2G49etHvGvWRZiawQMkxeqIJ26YPpGyyy4yucL80jYVTr8y9PcglIoxez2B-v6kweKOIL7lHI0fGwZnnlxqxaMW2Q8N9nJcla5mGH4U_ZNwG0PP_s7Ue35CI=s4800-w1600",
+                "https://lh3.googleusercontent.com/place-photos/AJRVUZMTvNS96O5O01JKwvLI7GYm4mWhXkouVQPe0SI_n2iltJ3pRiQKW0z_4zOT4YmyCj90xSdIDkrkH2WnpzHu2NfaMbrbHIWpb-4yqOTytHTS1L3N0ux_w7EYtSdmDg1QVzmbt6lErTJr49tK4BfJakD6_g=s4800-w1600"
+            ],
+            "highlights": [
+                "建設当時の貴重な写真展示",
+                "タワーの構造やデザインの秘密",
+                "無料で学べる学習スペース"
+            ],
+            "suggestions": [
+                "東京スカイツリー®の展望台見学の前後に立ち寄るのがおすすめ",
+                "タワーの技術や歴史について理解を深める",
+                "お子様連れでも楽しめる知的好奇心を刺激する展示"
+            ],
+            "chips": [
+                "無料",
+                "展示",
+                "学習",
+                "豆知識",
+                "タワー"
+            ],
+            "opening_times": "10:00～22:00",
+            "official_website": "http://www.tokyo-skytree.jp/enjoy/skytreegallery/",
+            "google_rating": "4.600000",
+            "location": {
+                "latitude": 35.71005,
+                "longitude": 139.81075
+            },
+            "address": "日本、〒131-0045 東京都墨田区押上１丁目１−８３",
+            "category": [
+                "ACTIVITY_CATEGORY_MUSEUM_GALLERY"
+            ],
+            "products": [],
+            "events": [
+                {
+                    "title": "BLUE LOCK EPISODE SKY in 東京スカイツリー",
+                    "description": "「ブルーロック」のキャラクターたちが東京スカイツリー®をジャック！地上350mの天望デッキに、作品の世界観を体感できる展示やオリジナルグッズが登場。",
+                    "highlights": [
+                        "「ブルーロック」の世界観を体験",
+                        "限定グッズ販売",
+                        "天望デッキでの展示"
+                    ],
+                    "opening_times": "10:00～22:00",
+                    "from_date": "2026-04-09",
+                    "suggest_visiting_time": "イベント期間中の日中や夜景の時間帯",
+                    "amount": ""
+                },
+                {
+                    "title": "TOKYO Matcha Time at SKYTREE",
+                    "description": "東京スカイツリー®で抹茶をテーマにした期間限定のカフェ＆グルメイベント。抹茶スイーツやドリンク、オリジナルグッズを楽しめる。",
+                    "highlights": [
+                        "抹茶をテーマにしたカフェ＆グルメ",
+                        "期間限定のオリジナルメニュー",
+                        "スカイツリー限定グッズ"
+                    ],
+                    "opening_times": "10:00～22:00",
+                    "from_date": "2026-04-23",
+                    "suggest_visiting_time": "カフェ利用やショッピングを楽しむ時間帯",
+                    "amount": ""
+                },
+                {
+                    "title": "東京スカイツリー® 14周年イベント",
+                    "description": "東京スカイツリー®の14周年を記念した特別イベント。限定装飾や記念グッズ、特別なライトアップなどが予定されている。",
+                    "highlights": [
+                        "14周年記念の特別装飾",
+                        "限定記念グッズ",
+                        "特別ライトアップ"
+                    ],
+                    "opening_times": "10:00～22:00",
+                    "from_date": "2026-04-23",
+                    "suggest_visiting_time": "イベント期間中の特別ライトアップの時間帯",
+                    "amount": ""
+                }
+            ],
+            "tags": []
+        },
+        {
+            "place_id": "ChIJO6bK3daOGGARYEFGg4Xm-VI",
+            "language_code": "JA",
+            "title": "すみだ水族館",
+            "description": "東京スカイツリータウン®直下！都心で癒やしのひとときを。ペンギンやクラゲ、小笠原諸島の生き物たちと間近に触れ合える屋内型水族館。",
+            "amount": "2700",
+            "image_urls": [
+                "https://lh3.googleusercontent.com/place-photos/AJRVUZMdybgzeKeGeI2pTCuHg3owJN1q_2zDo72rrAbLJO9RijfzTLKoCZg-7rO9GzG7XfYyMeWL_OCnU6AuQp6AT5gg5A5ac9C-aQE7UlIjgrKjjGNmAghp4GlQczTmVLNO-berKj0589Tw7OkYKlZ4ir-h=s4800-w1600",
+                "https://lh3.googleusercontent.com/place-photos/AJRVUZNPDWZ4QPDyX6X_tp-GjYAMHUMejvJ2bnr04J9VMvcQFAoBJzrYpYY-Odi0q3IPbYyPWHuhKp4Bu21uUFbHxeFa5j-djcZshXl3QhPM-h5qO4TmyTxWPxhg_bnrmORUVy4XTEcDWUYe9WmRuA=s4800-w1600",
+                "https://lh3.googleusercontent.com/place-photos/AJRVUZP3AxUpMWtTUUNHmNPx1xsdqLiia7bVN8DgGwG5zhpisb6IsDMJjlZ_cTtE_RzKkF4zY03Uj6UoTdaI7A7_iSgOzDt1wLBxoLsJmLb8v5SC69SITDvaF8sGH9pNbGoSqFx0neLDNwB3Sr9uiJ0=s4800-w1600"
+            ],
+            "highlights": [
+                "いきものとの距離が近い展示",
+                "約500匹のミズクラゲが漂うビッグシャーレ",
+                "国内最大級の屋内開放型ペンギンプール"
+            ],
+            "suggestions": [
+                "東京スカイツリータウン®直結、押上駅・とうきょうスカイツリー駅から徒歩すぐです。",
+                "年間パスポートは、入館後インフォメーションでアップグレード可能です。",
+                "「ペンギンカフェ」ではオリジナルメニューも楽しめます。"
+            ],
+            "chips": [
+                "屋内施設",
+                "水族館",
+                "ペンギン",
+                "クラゲ",
+                "東京"
+            ],
+            "opening_times": "平日10:00～20:00、土日祝9:00～21:00",
+            "official_website": "http://www.sumida-aquarium.com/",
+            "google_rating": "4.200000",
+            "location": {
+                "latitude": 35.70993,
+                "longitude": 139.80959
+            },
+            "address": "日本、〒131-0045 東京都墨田区押上１丁目１−２ 東京スカイツリータウン・ソラマチ ５階～６階",
+            "category": [
+                "ACTIVITY_CATEGORY_AQUARIUM_ZOO",
+                "ACTIVITY_CATEGORY_ATTRACTION"
+            ],
+            "products": [],
+            "events": [],
+            "tags": []
+        },
+        {
+            "place_id": "ChIJZ4oTScOOGGAR16BfN7ADXMk",
+            "language_code": "JA",
+            "title": "台東区立隅田公園",
+            "description": "隅田川沿いに広がる、東京スカイツリー®を望む風光明媚な公園。春の桜、夏の隅田川花火大会、秋の紅葉、冬のイルミネーションなど、四季折々の風景が楽しめます。",
+            "amount": "0",
+            "image_urls": [
+                "https://lh3.googleusercontent.com/place-photos/AJRVUZP7bxcPT2BOdRKNYEWqpAr-jXTAuZp5_W0TvCWdPIBUMJoG_wY9UCLVcoVp5ZktR-SliHho6xICW5Bq8Eprps1xIojiplQxJiBLs42KUVa4HLxUr-1JliQ2LC0GwT2vtmpdD9S7cTxOJNRj8w=s4800-w1600",
+                "https://lh3.googleusercontent.com/place-photos/AJRVUZPcNMArhRaHvwkXWx13H7dajym_13MA2h6VS5_y6w5d3YpjoiJcC1v3tnpGekOC1Hxmh377beaXr_Vz8rP2EUK6UDUfLuANHxzT4_NEDpgkjc1S1u_ZeZ27kW14HWWinq-gUoIE3LaXj671kw=s4800-w1600",
+                "https://lh3.googleusercontent.com/place-photos/AJRVUZMhulvpXU9x3yiScJw2uIEgB2N6JhwZT0GHaHD7KulyVUQFrXiPAXRmg5dNIPRrjGa56eg27jo3fnzl7FCBbl9OUh5WWjcu6KflcTMnEWWrBINYoCeLEAj-rggm129O44YVLvo6wcN3gf_M6g=s4800-w1600"
+            ],
+            "highlights": [
+                "東京スカイツリー®の絶景ビュースポット",
+                "日本さくら名所100選",
+                "隅田川花火大会の会場"
+            ],
+            "suggestions": [
+                "東京スカイツリー®から徒歩約20分、または電車で1駅（押上駅→浅草駅）＋徒歩約5分",
+                "水上バスや屋形船から公園の桜や景色を楽しむ",
+                "公園内のカフェでリバーサイドの雰囲気を満喫"
+            ],
+            "chips": [
+                "公園",
+                "桜",
+                "夜景",
+                "水辺",
+                "イベント"
+            ],
+            "opening_times": "常時開園",
+            "official_website": "https://www.city.taito.lg.jp/kenchiku/hanamidori/koen/sumidapamphlet.html",
+            "google_rating": "4.200000",
+            "location": {
+                "latitude": 35.71376,
+                "longitude": 139.80145
+            },
+            "address": "日本、〒111-0033 東京都台東区花川戸１丁目１",
+            "category": [
+                "ACTIVITY_CATEGORY_ATTRACTION"
+            ],
+            "products": [],
+            "events": [
+                {
+                    "title": "隅田公園桜まつり",
+                    "description": "隅田川沿いに約500本の桜が咲き誇る、都内屈指の桜の名所で開催されるお祭り。ライトアップされた夜桜や、スカイツリーとのコラボレーションが楽しめます。",
+                    "highlights": [
+                        "桜とスカイツリーの共演",
+                        "ライトアップされた夜桜",
+                        "屋形船からのお花見"
+                    ],
+                    "opening_times": "",
+                    "from_date": "2026-03-20",
+                    "suggest_visiting_time": "",
+                    "amount": ""
+                },
+                {
+                    "title": "隅田川水面の祭典",
+                    "description": "初夏の隅田川で開催される恒例イベント。隅田川の風物詩として親しまれています。",
+                    "highlights": [
+                        "初夏の隅田川",
+                        "恒例イベント"
+                    ],
+                    "opening_times": "",
+                    "from_date": "2026-05-31",
+                    "suggest_visiting_time": "",
+                    "amount": ""
+                },
+                {
+                    "title": "三社祭",
+                    "description": "浅草神社の例大祭で、江戸の三大祭りの一つとして知られています。多くの神輿が町を練り歩き、大変な賑わいを見せます。",
+                    "highlights": [
+                        "浅草の勇壮な祭り",
+                        "江戸三大祭り",
+                        "多数の神輿"
+                    ],
+                    "opening_times": "",
+                    "from_date": "2026-05-15",
+                    "suggest_visiting_time": "",
+                    "amount": ""
+                },
+                {
+                    "title": "世界グルメフェス",
+                    "description": "隅田公園で開催される食のイベント。世界各国のグルメが集まります。",
+                    "highlights": [
+                        "世界各国のグルメ",
+                        "食の祭典"
+                    ],
+                    "opening_times": "",
+                    "from_date": "2026-06-06",
+                    "suggest_visiting_time": "",
+                    "amount": ""
+                }
+            ],
+            "tags": [
+                "夜景ビュー",
+                "自然散策"
+            ]
+        },
+        {
+            "place_id": "ChIJ0YwG28aOGGARvRKAXIBWqNk",
+            "language_code": "JA",
+            "title": "雷門",
+            "description": "浅草寺の総門として知られ、雷門の巨大な提灯は浅草のシンボルです。",
+            "amount": "",
+            "image_urls": [
+                "https://lh3.googleusercontent.com/place-photos/AJRVUZOU2Xqxzez3WOi8U0AL78fTP5C03P7H6hVzYMbiuoCBb5rAorH78ICiETgMp6iLyO3A1SSSCZ8QHUZvhlvTBqZrGQdIt4DrsC8TV-iIyocbVTdI8f3YFPcqSAqPi2-CE129-nHkk0EVs3_QdA=s4800-w1600",
+                "https://lh3.googleusercontent.com/place-photos/AJRVUZOsT13xMHj_b4O5sfWe3AMrDde8zXW4wqcrVeYzk9PhR27WMmACVZHeSpjMgWzvBVFuo1NH8BBeMucV45rNAks04nQTxEVhbEzxtD5fjl4prYv2yjdn3GFwRtuI19uyAcVDUh2OYetMuxHz5g=s4800-w1600",
+                "https://lh3.googleusercontent.com/place-photos/AJRVUZMzQPdgD0pA1ebEeHheCWZcb52_JDeGh9DxzL5oyRJYU3RGuEH_cc743HICYgDjwMHFRETX7f5FRuwQM82HTt_D5GIZDTXMo8TfoHwfZbLl8msaAwZGv7yfhaqod_0EVeLiMEt8anXztdiSgQ=s4800-w1600"
+            ],
+            "highlights": [
+                "巨大な提灯がシンボル",
+                "風神雷神像が門を守る",
+                "夜のライトアップも幻想的"
+            ],
+            "suggestions": [
+                "東京スカイツリー®から電車で約15分、徒歩約30分です。",
+                "早朝や夜のライトアップ時が比較的空いていておすすめです。",
+                "仲見世商店街や浅草寺と合わせて散策するのが定番コースです。"
+            ],
+            "chips": [
+                "寺社",
+                "象徴",
+                "夜景",
+                "歴史",
+                "徒歩5分"
+            ],
+            "opening_times": "6:00～17:00",
+            "official_website": "http://www.senso-ji.jp/guide/guide01.html",
+            "google_rating": "4.500000",
+            "location": {
+                "latitude": 35.711117,
+                "longitude": 139.79637
+            },
+            "address": "日本、〒111-0032 東京都台東区浅草２丁目３−１",
+            "category": [
+                "ACTIVITY_CATEGORY_TEMPLES_SHINES",
+                "ACTIVITY_CATEGORY_ATTRACTION",
+                "ACTIVITY_CATEGORY_TEMPLES_SHINES",
+                "ACTIVITY_CATEGORY_ATTRACTION",
+                "ACTIVITY_CATEGORY_TEMPLES_SHINES"
+            ],
+            "products": [],
+            "events": [
+                {
+                    "title": "三社祭",
+                    "description": "浅草神社例大祭。神輿が町を練り歩く、浅草の春を彩る壮大な祭りです。",
+                    "highlights": [
+                        "神輿の渡御",
+                        "びんざさら舞奉納",
+                        "鳶頭木遣り"
+                    ],
+                    "opening_times": "",
+                    "from_date": "2026-05-15",
+                    "suggest_visiting_time": "5月15日～17日",
+                    "amount": ""
+                },
+                {
+                    "title": "ASAKUSA CULTURE & LIGHTS 2025",
+                    "description": "浅草寺の歴史と文化をテーマにしたプロジェクションマッピングイベント。伝法院庭園の特別公開も行われます。",
+                    "highlights": [
+                        "プロジェクションマッピング",
+                        "伝法院庭園特別公開",
+                        "浅草寺の歴史と文化"
+                    ],
+                    "opening_times": "",
+                    "from_date": "2025-12-03",
+                    "suggest_visiting_time": "12月3日～7日",
+                    "amount": ""
+                }
+            ],
+            "tags": [
+                "歴史探訪"
+            ]
+        },
+        {
+            "place_id": "ChIJa1XSANeIGGARF904YOese-U",
+            "language_code": "JA",
+            "title": "錦糸公園",
+            "description": "緑豊かな都会のオアシス、錦糸公園。広々とした芝生広場や子供向けの遊具、噴水があり、四季折々の自然を楽しめます。周辺にはスポーツ施設も充実。",
+            "amount": "0",
+            "image_urls": [
+                "https://lh3.googleusercontent.com/place-photos/AJRVUZOBRSqVccOp1BULoUeGwvn2HlYinh7ZyK1je6D2MobEkBj-q-SsJc1GC1dDVBPA0ZZAqjD3yjxKtu802t47W5ZPiAD2IE7rU_H8HC2IzKoOc8YpVwq8DWxHk3cda4TA5pfuDLwlDrOj08U9UA=s4800-w1600",
+                "https://lh3.googleusercontent.com/place-photos/AJRVUZOIPCQOi3Yof3xwYiRFbbRvWzbwTt4dMcE-FKZGc0NxZS-Juyu0hQf6bj_Keo3L0MgD0jdbJ6BRWPqFA3kr1inFIk3norrUZfCDHkOaWZH0rBHvlfWYDe9KXq2Td5vnJM_L_U_nDDgl2rrPyw=s4800-w1600",
+                "https://lh3.googleusercontent.com/place-photos/AJRVUZNx_4JAMcjzDZXE3V-0l6Cy1-nMVaREPpgs5E3ZKfFZttJVi6C6QTi3uNS2wC672MeZCJSxmk5JzVAhJ46wq6VbE-DH1b63c5u9f5LLlSfEPzZN2Xlbt4J-lSF4ddGDKT0ue9BS4kJsHQdwVfY=s4800-w1600"
+            ],
+            "highlights": [
+                "桜の名所",
+                "遊具広場",
+                "広々とした芝生",
+                "水遊び場"
+            ],
+            "suggestions": [
+                "東京スカイツリー®から徒歩約25分、または電車で錦糸町駅へ",
+                "春は桜、夏は水遊びと、季節ごとの自然を満喫しましょう",
+                "公園内のスポーツ施設（野球場、テニスコート、体育館など）も利用可能です"
+            ],
+            "chips": [
+                "無料",
+                "桜",
+                "夏",
+                "水遊び",
+                "遊具"
+            ],
+            "opening_times": "常時開園",
+            "official_website": "http://www.city.sumida.lg.jp/sisetu_info/kouen/kunai_park_annai/sumida_park/park14.html",
+            "google_rating": "4.000000",
+            "location": {
+                "latitude": 35.698887,
+                "longitude": 139.81639
+            },
+            "address": "日本、〒130-0013 東京都墨田区錦糸４丁目１５−１",
+            "category": [
+                "ACTIVITY_CATEGORY_ATTRACTION",
+                "ACTIVITY_CATEGORY_ATTRACTION"
+            ],
+            "products": [],
+            "events": [
+                {
+                    "title": "ニクオン2026",
+                    "description": "肉料理と音楽のフード＆ミュージックフェス。全国から厳選された肉料理店やアーティストが出演。入場無料。",
+                    "highlights": [
+                        "肉料理",
+                        "音楽ライブ",
+                        "フードフェス"
+                    ],
+                    "opening_times": "2026年5月23日(土)～24日(日) 11:00〜19:00",
+                    "from_date": "2026-05-23",
+                    "suggest_visiting_time": "",
+                    "amount": "0"
+                },
+                {
+                    "title": "やきいも友の会 in 錦糸公園2026",
+                    "description": "焼き芋やスイーツ、芋焼酎などが楽しめる、お芋好きのためのイベント。",
+                    "highlights": [
+                        "焼き芋",
+                        "スイーツ",
+                        "芋焼酎"
+                    ],
+                    "opening_times": "2026年2月1日(日) 10:00～16:00",
+                    "from_date": "2026-02-01",
+                    "suggest_visiting_time": "",
+                    "amount": "0"
+                },
+                {
+                    "title": "レイアロハフェスティバル 2026",
+                    "description": "ハワイアンカルチャーを楽しめるフェスティバル。ステージパフォーマンスやワークショップなどが開催される。",
+                    "highlights": [
+                        "ハワイアンカルチャー",
+                        "ステージパフォーマンス",
+                        "ワークショップ"
+                    ],
+                    "opening_times": "2026年4月25日(土)～26日(日)",
+                    "from_date": "2026-04-25",
+                    "suggest_visiting_time": "",
+                    "amount": "0"
+                }
+            ],
+            "tags": [
+                "自然散策"
+            ]
+        },
+        {
+            "place_id": "ChIJ8T1GpMGOGGARDYGSgpooDWw",
+            "language_code": "JA",
+            "title": "浅草寺",
+            "description": "東京最古のお寺で、都心にありながら歴史と静寂を感じられるパワースポット。雷門や五重塔など見どころが多く、仲見世通りでの食べ歩きも楽しい。",
+            "amount": "0",
+            "image_urls": [
+                "https://lh3.googleusercontent.com/place-photos/AJRVUZO5fccHmOSJp2lcL2X1TmLVFJfwI_GC--978cPWh6PC5IWxF3ZyCEbjtHSVPf45tuzeCiCl--GOcS9_Fej4e1jAJ5xv4ApDTZ5TlNDAQchE44fXGwxx-0xFC_LJDA1yGnXYrQeoThNysqHqrAo=s4800-w1600",
+                "https://lh3.googleusercontent.com/place-photos/AJRVUZOELf5Pwtejh8_rJEhqlAtuDjdXCjXkM1BV8aNVZgWmKbu1akSCv6K4Cmf49W7EiPUrlA7cGjUiSEOv2rw6k2QBCXscAPU6x3F40E-5yqhltWzFZrsbB3zxWdVBFBhVU7v5ArMGb0JwPvmIlg=s4800-w1600",
+                "https://lh3.googleusercontent.com/place-photos/AJRVUZNeMhvOOF0jChqqh7OR3nJ7wOYQsJjAcsj0NpYUkT2joQ8Z2IkOp4e8nyb9QfByE_O7ftxEwJ4YLSJA09r883sR8dwiUVS1kYUPtmCK6qP9I0xnIjA7cgGxHNjMhA0nfLRlfugRq0yJiza50Gkk-zj64w=s4800-w1600"
+            ],
+            "highlights": [
+                "東京最古の寺院",
+                "雷門、五重塔、宝蔵門",
+                "仲見世通りの食べ歩き"
+            ],
+            "suggestions": [
+                "東京スカイツリー®から徒歩約15分、または電車で数分",
+                "香炉の煙を浴びて健康を祈願しましょう",
+                "仲見世通りで様々なお土産や食べ物を楽しめます"
+            ],
+            "chips": [
+                "寺社仏閣",
+                "歴史",
+                "人気スポット",
+                "無料",
+                "徒歩5分"
+            ],
+            "opening_times": "6:00～17:00 (夏季は18:00まで延長)",
+            "official_website": "https://www.senso-ji.jp/",
+            "google_rating": "4.600000",
+            "location": {
+                "latitude": 35.714764,
+                "longitude": 139.79666
+            },
+            "address": "日本、〒111-0032 東京都台東区浅草２丁目３−１",
+            "category": [
+                "ACTIVITY_CATEGORY_TEMPLES_SHINES",
+                "ACTIVITY_CATEGORY_ATTRACTION"
+            ],
+            "products": [],
+            "events": [
+                {
+                    "title": "ほおずき市",
+                    "description": "7月9日・10日に開催される、浅草寺の夏の風物詩。境内には約100軒の露店が並び、賑わいを見せます。",
+                    "highlights": [
+                        "夏の風物詩",
+                        "約100軒の露店",
+                        "雷除けのお札授与"
+                    ],
+                    "opening_times": "9:00～18:00頃",
+                    "from_date": "0000-07-09",
+                    "suggest_visiting_time": "",
+                    "amount": "0"
+                },
+                {
+                    "title": "羽子板市",
+                    "description": "12月17日～19日に開催される、新年の縁起物である羽子板を売る市。数多くの露店が並び、一年を締めくくる風物詩となっています。",
+                    "highlights": [
+                        "新年の縁起物",
+                        "数十軒の露店",
+                        "歳の市"
+                    ],
+                    "opening_times": "9:00～18:00頃",
+                    "from_date": "0000-12-17",
+                    "suggest_visiting_time": "",
+                    "amount": "0"
+                },
+                {
+                    "title": "三社祭",
+                    "description": "5月に行われる浅草神社の例大祭。神輿渡御が盛大に行われ、浅草の街が一年で最も賑わう時期の一つです。",
+                    "highlights": [
+                        "浅草神社の例大祭",
+                        "神輿渡御",
+                        "浅草の街が賑わう"
+                    ],
+                    "opening_times": "-",
+                    "from_date": "0000-05-15",
+                    "suggest_visiting_time": "",
+                    "amount": "0"
+                }
+            ],
+            "tags": [
+                "歴史探訪",
+                "グルメ発見"
+            ]
+        },
+        {
+            "place_id": "ChIJPXcZIsCOGGARsYimyXoHsms",
+            "language_code": "JA",
+            "title": "浅草花やしき",
+            "description": "日本最古の遊園地！レトロなアトラクションと浅草の風情が融合した、大人も子供も楽しめる体験。",
+            "amount": "1600",
+            "image_urls": [
+                "https://lh3.googleusercontent.com/place-photos/AJRVUZMrfYVYIuZmppiKdSPwYcea2Dd6ZYTH6ELKefpUB5DRGyuedCSzvzDcBtROn_zdgRIFeobdeIhRGQ9zRcu1xyRe4NSt688BI-6-XLpcDqwlaJsxeIC2kSIwp1iSkagSQHeAVDJEJrGP8Ovm6pm9aYmplw=s4800-w1600",
+                "https://lh3.googleusercontent.com/place-photos/AJRVUZMU_Owh3-RehtJSo4QvXm3PSQfG8DjHOsdF88IF6-e0Gdq6I7um07Em9CWIL9V1c8DKugZIqVRnMBgG4tTrSLRgx_Tj0-fsKjItCp-NIRFop5Hk8Andt-sLbpWkszulRlWextDwQanV4RrOj0A=s4800-w1600",
+                "https://lh3.googleusercontent.com/place-photos/AJRVUZMtDTOvxwL8FmkHl58E7iRD-5cv1t5DksaRbY6pyPC6NOutrPIwxc-VlR6INc11EIWi1YVr8USsZXVQx2IdRiswkqzb7SMct_qbn7I30oc-aov1mI1ZUEjoZnDKJJawDdopLO-aLOi0-jSPGA=s4800-w1600"
+            ],
+            "highlights": [
+                "現存する日本最古のコースター",
+                "昭和レトロな雰囲気",
+                "コンパクトながら多様なアトラクション"
+            ],
+            "suggestions": [
+                "東京スカイツリー®から徒歩または電車で約20分",
+                "園内マップを事前に確認して効率よく回ろう",
+                "夜間営業や季節イベントもチェック"
+            ],
+            "chips": [
+                "昭和レトロ",
+                "夜景",
+                "遊園地",
+                "子供と",
+                "散策"
+            ],
+            "opening_times": "10:00–18:00",
+            "official_website": "https://www.hanayashiki.net/",
+            "google_rating": "4.100000",
+            "location": {
+                "latitude": 35.71546,
+                "longitude": 139.79488
+            },
+            "address": "日本、〒111-0032 東京都台東区浅草２丁目２８−１",
+            "category": [
+                "ACTIVITY_CATEGORY_THEME_PARK",
+                "ACTIVITY_CATEGORY_ATTRACTION",
+                "ACTIVITY_CATEGORY_THEME_PARK"
+            ],
+            "products": [],
+            "events": [
+                {
+                    "title": "しゅごキャラ！ × 浅草花やしき「花なり🌸花やしき」",
+                    "description": "人気キャラクター「しゅごキャラ！」とのコラボイベント。園内装飾、限定グッズ、謎解きラリー、コラボフードなどを楽しめます。",
+                    "highlights": [
+                        "キャラクターパネル展示",
+                        "限定グッズ販売",
+                        "謎解きラリー"
+                    ],
+                    "opening_times": "10:00～18:00",
+                    "from_date": "2026-05-13",
+                    "suggest_visiting_time": "イベント期間中の午前中がおすすめ",
+                    "amount": "1600"
+                },
+                {
+                    "title": "GW前の平日限定「ふらっと花やしき」",
+                    "description": "平日13時以降の入園とアトラクション3回券がセットになったお得なチケット。浅草花やしきを気軽に楽しめます。",
+                    "highlights": [
+                        "平日限定のお得なチケット",
+                        "アトラクション3回券付き",
+                        "事前予約可能"
+                    ],
+                    "opening_times": "13:00～18:00",
+                    "from_date": "2025-05-18",
+                    "suggest_visiting_time": "",
+                    "amount": "2500"
+                }
+            ],
+            "tags": []
+        },
+        {
+            "place_id": "ChIJm6kfD4IJAWAR8e9bSVIKXXc",
+            "language_code": "JA",
+            "title": "Samurai Ninja Museum Asakusa Tokyo",
+            "description": "",
+            "amount": "",
+            "image_urls": [
+                "https://lh3.googleusercontent.com/places/ANXAkqEK70Lctf-OiN1OzUo58vpuSVOlqD6t8V1hFMD9GZkblS6nS2mfcqJ74sGf_Iv2tPD2OR3_JUdoiKvp6PEm2nJR29vURe1qqr4=s4800-w1200",
+                "https://lh3.googleusercontent.com/place-photos/AJRVUZOUp7TlWesY-NS64IbkBUCBaiVzyxXx5O6mjaOQYk0HYTf_6Hv_YxaqWHawPLpzap57O7MVlf7erkN7ltvWs4YY4M3CJzmpc-j4YecgyrTXN9laG1LfFRE7MgP5G1UclWRB26ewSxUrJmJtjw8eX57F6Q=s4800-w1600",
+                "https://lh3.googleusercontent.com/place-photos/AJRVUZOJOinCSdo-WKIMiDPLFD64Uh9QST4xY5O4BZdW_cJTRfkczG93EJOOu41akbiLis8PXuVuP6X-H4ec05nP053aHLIOQXsKx5sv17aBQ45cH-6-pso2J7himw5Ur0wNOYRWRk312I9Q8tqJcM8=s4800-w1600"
+            ],
+            "highlights": [],
+            "suggestions": [],
+            "chips": [],
+            "opening_times": "",
+            "official_website": "https://mai-ko.com/samurai/",
+            "google_rating": "4.900000",
+            "location": {
+                "latitude": 35.711514,
+                "longitude": 139.79178
+            },
+            "address": "日本、〒111-0035 東京都台東区西浅草１丁目８−１３",
+            "category": [
+                "ACTIVITY_CATEGORY_MUSEUM_GALLERY",
+                "ACTIVITY_CATEGORY_ATTRACTION"
+            ],
+            "products": [],
+            "events": [],
+            "tags": [
+                "歴史探訪",
+                "アート体験"
+            ]
+        },
+        {
+            "place_id": "ChIJgRjTtzOJGGARqoKBtB8BAno",
+            "language_code": "JA",
+            "title": "すみだ北斎美術館",
+            "description": "葛飾北斎の生誕の地に建つ、世界的に有名な美術館。北斎の作品や浮世絵に関する資料が豊富に展示されています。",
+            "amount": "400",
+            "image_urls": [
+                "https://lh3.googleusercontent.com/place-photos/AJRVUZN8DIwPinR4rcXqflGrOnHwYPHCC3QDm-HyxLs9q-VH-50Jlsf_GmAHadoNKfxaBuTjz3HtcLmODtGNnYCTv1IycN4APzRy17deDW94tD9x2minUW0_ZtpPHhbVc-1eczqr6xOtbLl3uFurxQ=s4800-w1600",
+                "https://lh3.googleusercontent.com/place-photos/AJRVUZN-aPs973q598sNEFYWRKru2lRe0-_uIPGeu2UMD7XN_FFJtjHTj-1Z902HxFszbSGWJsA1Li6iljYBiAmFzyGBVFNn-3oYuW7eg47Bq8StFEZtEIJGqXcSdSmtvURdKeaF9wPYiXGlC1spcA=s4800-w1600",
+                "https://lh3.googleusercontent.com/place-photos/AJRVUZMugCKcIftFAcvUQCaaJATP7jjQndEpmXKk55GozQuJRfTnKDBDcA6zo3JUiJR8WlnYaa0RrPFPeFK01N4rQfuh699Kla49cT-NHB8gUB0Uva1q7zgr6-3HneKFy1d-jiEPt7ZWD2agfauPXg=s4800-w1600"
+            ],
+            "highlights": [
+                "北斎の代表作「冨嶽三十六景」など多数の錦絵を展示",
+                "妹島和世設計の斬新な建築デザイン",
+                "浮世絵に関する専門書を閲覧できる図書室"
+            ],
+            "suggestions": [
+                "都営地下鉄大江戸線「両国駅」A3出口から徒歩5分。JR総武線「両国駅」東口から徒歩9分。",
+                "「北斎を学ぶ部屋」では、錦絵ができるまでの工程や北斎の生涯を学べます。",
+                "美術館周辺には、北斎通りに面したカフェ「ORI TOKYO」など、散策を楽しめるスポットがあります。"
+            ],
+            "chips": [
+                "美術館",
+                "浮世絵",
+                "両国",
+                "墨田",
+                "芸術"
+            ],
+            "opening_times": "9:30-17:30",
+            "official_website": "https://hokusai-museum.jp/",
+            "google_rating": "4.100000",
+            "location": {
+                "latitude": 35.69633,
+                "longitude": 139.80042
+            },
+            "address": "日本、〒130-0014 東京都墨田区亀沢２丁目７−２",
+            "category": [
+                "ACTIVITY_CATEGORY_MUSEUM_GALLERY",
+                "ACTIVITY_CATEGORY_ATTRACTION",
+                "ACTIVITY_CATEGORY_MUSEUM_GALLERY"
+            ],
+            "products": [],
+            "events": [
+                {
+                    "title": "開館10周年記念 北斎 広重 ふたりの富士、それぞれの富士",
+                    "description": "葛飾北斎と歌川広重、二人の浮世絵師が描いた富士山の作品を中心に、表現方法の違いや影響関係を比較展示します。「冨嶽三十六景」や広重の「冨士三十六景」などを展示。",
+                    "highlights": [
+                        "北斎と広重の富士山絵画を比較",
+                        "「冨嶽三十六景」全点展示",
+                        "広重の「冨士三十六景」「不二三十六景」も展示"
+                    ],
+                    "opening_times": "9:30～17:30（入館は17:00まで）",
+                    "from_date": "2026-06-23",
+                    "suggest_visiting_time": "7月下旬～8月下旬",
+                    "amount": "1000"
+                },
+                {
+                    "title": "開館10周年記念 ひらけ、絵手本！『北斎漫画』エトセトラ",
+                    "description": "「北斎漫画」や北斎の絵手本の実物約10冊を展示するほか、「今月の逸品」として「冨嶽三十六景」などの錦絵の実物から毎月1作品を選び展示替えを行います。レプリカの絵手本も展示。",
+                    "highlights": [
+                        "『北斎漫画』と北斎の絵手本",
+                        "「今月の逸品」として毎月展示替え",
+                        "『北斎漫画』などレプリカ約15冊も展示"
+                    ],
+                    "opening_times": "9:30～17:30",
+                    "from_date": "2026-03-17",
+                    "suggest_visiting_time": "",
+                    "amount": "700"
+                }
+            ],
+            "tags": [
+                "アート体験"
+            ]
+        },
+        {
+            "place_id": "ChIJee5OKiKPGGARIv3keU0niPk",
+            "language_code": "JA",
+            "title": "東武博物館",
+            "description": "",
+            "amount": "",
+            "image_urls": [
+                "https://lh3.googleusercontent.com/place-photos/AJRVUZP6iqy9XF2uS-J2JO1IKrB1EdGn1_Fil8rNMxlVN0s-7uheNTy1rfPbaFu2nPNcrbPj5izZkqupa62u2LOolonEhxxwHGVTSCyRa1SBBMJHwmxv3TTmOiczpeJL_PybmRasx0HQ-NCGU-P6qCEBHQcL=s4800-w1600",
+                "https://lh3.googleusercontent.com/place-photos/AJRVUZPhM_lWkOSL3_4F-zCaWTq_wxUwXno6w5k7aw-psnqoPmZ2B5Us2-8gfMVpQ0staLxl8jVTOeWlor-_TSRRX_aQx0aMKcmYXNQ1ihc-dm3BvPy9ziZFYWRAdPiyRkhbCuwkSY2kk5k1nIK46w=s4800-w1600",
+                "https://lh3.googleusercontent.com/place-photos/AJRVUZOUT6AKJNzocrschjLzz0dtPs7T5L9TofkWYzOoLqXkYnjLVin_EPc8ehnX4GqZCg28Yf6q6Yqk6_2gqqgNK_aiJuZ6HUY-YA7tA_0Lurq93vNFFEHqdcvmUg6IFJaBvujEaVj7IbCXQIJk=s4800-w1600"
+            ],
+            "highlights": [],
+            "suggestions": [],
+            "chips": [],
+            "opening_times": "",
+            "official_website": "http://www.tobu.co.jp/museum/",
+            "google_rating": "4.300000",
+            "location": {
+                "latitude": 35.72478,
+                "longitude": 139.81944
+            },
+            "address": "日本、〒131-0032 東京都墨田区東向島４丁目２８−１６",
+            "category": [
+                "ACTIVITY_CATEGORY_ATTRACTION",
+                "ACTIVITY_CATEGORY_MUSEUM_GALLERY"
+            ],
+            "products": [],
+            "events": [],
+            "tags": [
+                "アート体験"
+            ]
+        },
+        {
+            "place_id": "ChIJXYV-6JWOGGAR85vIZbM1RCE",
+            "language_code": "JA",
+            "title": "かっぱ橋道具街",
+            "description": "料理道具、食器、食品サンプルなど、食に関わるあらゆるものが揃うユニークな専門店街。プロの料理人から一般家庭まで、宝探しのような体験ができます。",
+            "amount": "",
+            "image_urls": [
+                "https://lh3.googleusercontent.com/place-photos/AJRVUZPteVlomTqmT6CtKJivaIy7ixkILogBjJpVa5_RUGJiqT9oBE1YNHeblVZBPpzLqoaxzA-aH7dhnCCfwtLaoyq2SRFn_rLeCRE9BQlvKUHV7MqrMkp_ZI4ujrne2DuGROfxVaw84HX3DW376Jg=s4800-w1600",
+                "https://lh3.googleusercontent.com/place-photos/AJRVUZNBO2w6TgK2sLXneBW-AiOGSN8dGhlwmzz1oRxo4r6OXvy1kLCjUeNa4d8xoMN0mMfIF-v-aPlOLzIT_BMWpyHDBBFP5f3uZHxDOcoLPRNbuQ9Ud1xCxMXCgJ7EveUIVf0sy9N5iCwK7g-JoIkwxjss1A=s4800-w1600",
+                "https://lh3.googleusercontent.com/place-photos/AJRVUZNPDMqnzx01G7tSpHJ-Ixn5epq2az-1neVjRIx1uG63y4qNUYJK2PgU5N22x2rkn_LvqKvVuoSznLcv5x86y3LMJkuHaH1itf894hZBOq4FuLXRRZrHg2HGu6OYuTRv_jELVqr0vbx9QJJ6OWvnTzEvkQ=s4800-w1600"
+            ],
+            "highlights": [
+                "調理道具・食器の品揃え豊富",
+                "食品サンプル体験・購入",
+                "プロ仕様から家庭用まで対応"
+            ],
+            "suggestions": [
+                "東京スカイツリー®から徒歩または電車で約15分です。",
+                "食品サンプル作り体験ができるお店を事前に調べておくと、より楽しめます。",
+                "掘り出し物を見つけるために、じっくり時間をかけて散策するのがおすすめです。"
+            ],
+            "chips": [
+                "専門店街",
+                "料理好き",
+                "お土産",
+                "散策",
+                "雑貨"
+            ],
+            "opening_times": "10:00～17:00 (店舗により異なる)",
+            "official_website": "http://www.kappabashi.or.jp/",
+            "google_rating": "4.300000",
+            "location": {
+                "latitude": 35.71058,
+                "longitude": 139.78796
+            },
+            "address": "日本、〒110-0036 東京都台東区松が谷３丁目１８−２",
+            "category": [
+                "ACTIVITY_CATEGORY_ATTRACTION"
+            ],
+            "products": [],
+            "events": [
+                {
+                    "title": "かっぱ橋道具まつり",
+                    "description": "毎年10月上旬に開催される、かっぱ橋道具街の一大イベント。特価品や掘り出し物の販売、抽選会、コンテストなど、様々な催しが行われます。",
+                    "highlights": [
+                        "謝恩抽選会",
+                        "かっぱ市（特価品販売）",
+                        "キャラ弁・キャラスイーツコンテスト"
+                    ],
+                    "opening_times": "10:00～17:00 (歩行者天国になる日あり)",
+                    "from_date": "2024-10-07",
+                    "suggest_visiting_time": "イベント期間中の週末が特に賑わいます。",
+                    "amount": ""
+                },
+                {
+                    "title": "キャラ弁・キャラスイーツコンテスト",
+                    "description": "かっぱ橋道具まつりにて開催されるコンテスト。かっぱをテーマにしたキャラ弁やキャラスイーツの作品を募集し、優秀者には豪華賞品が贈られます。",
+                    "highlights": [
+                        "「かっぱ」モチーフの作品",
+                        "料理作りが楽しくなる賞品",
+                        "家族で楽しめる"
+                    ],
+                    "opening_times": "",
+                    "from_date": "2024-10-07",
+                    "suggest_visiting_time": "コンテスト応募期間中に訪れると、作品の展示などが見られる場合があります。",
+                    "amount": ""
+                },
+                {
+                    "title": "かっぱ橋川柳募集",
+                    "description": "かっぱ橋道具まつりの関連イベントとして実施される川柳募集。かっぱ橋をテーマにした川柳を募集し、優秀作品が発表されます。",
+                    "highlights": [
+                        "かっぱ橋をテーマにした川柳",
+                        "応募者には豪華賞品",
+                        "地域のイベント"
+                    ],
+                    "opening_times": "",
+                    "from_date": "2024-10-07",
+                    "suggest_visiting_time": "",
+                    "amount": ""
+                }
+            ],
+            "tags": [
+                "ショッピング"
+            ]
+        },
+        {
+            "place_id": "ChIJd14cuP6OGGARTRJpZL0QhWc",
+            "language_code": "JA",
+            "title": "汐入公園",
+            "description": "",
+            "amount": "",
+            "image_urls": [
+                "https://lh3.googleusercontent.com/place-photos/AJRVUZPMO2b0fxw97iL7Yh7wHbrmCRp35YCTQvekXiQeHaNZdx0pqDtqaT686P9EprfCEeBnC1du8mJUXDjmY2vQHIMwdRLiUwRC51dyjXO9gAGscCQbhLZEFEIclPLX0JQoJ9wqsEJfdm8fCqE72Q=s4800-w1600",
+                "https://lh3.googleusercontent.com/place-photos/AJRVUZPra6iMplCGM15SzgADegeD1ALSHwkD2iVk7qIcdEuPmsd9xnPd45dxOqZib1renANqRpZboMbPjXwthG2jrTvwHoca4cC6ikmKDSR-Ex5qG5DxSXPf-ulGYSdNYtdaUbhUZz3GGA2I6egAHw=s4800-w1477",
+                "https://lh3.googleusercontent.com/place-photos/AJRVUZM6iN8TgqVDq4MyOW9s07VgfXhccaNPq1eEtkGj9aK9wfwrfo9S1aCwOpS8UxwZvoUTsD6jt0-lAKPqRTf1vsT34isznww4Ognyljk4crDyw9BZXPT8dYxKYcOiCl-C5WWnHNH_95diw2gaTgo=s4800-w1600"
+            ],
+            "highlights": [],
+            "suggestions": [],
+            "chips": [],
+            "opening_times": "",
+            "official_website": "https://www.tokyo-park.or.jp/park/format/index017.html",
+            "google_rating": "4.100000",
+            "location": {
+                "latitude": 35.736576,
+                "longitude": 139.80972
+            },
+            "address": "日本、〒116-0003 東京都荒川区南千住８丁目１３−１",
+            "category": [
+                "ACTIVITY_CATEGORY_ATTRACTION",
+                "ACTIVITY_CATEGORY_ATTRACTION"
+            ],
+            "products": [],
+            "events": [],
+            "tags": []
+        },
+        {
+            "place_id": "ChIJ8Vuh65yOGGARyj4L5IBFiIk",
+            "language_code": "JA",
+            "title": "国立科学博物館",
+            "description": "東京上野にある国立科学博物館。恐竜の化石や剥製、月の石など、地球の歴史と生命の進化、科学技術の進歩を体感できる日本最大級の総合科学博物館です。",
+            "amount": "630",
+            "image_urls": [
+                "https://lh3.googleusercontent.com/place-photos/AJRVUZP7YEOa6DexWzHLwEsgbinZx0156XLuP2oXSlLjRqj3cPdMkX8poZzjSLTCEIIc-Qwx1k35oSwDB64uwMwHNY9LiggG1B7Dpb--zYGK5whLMqzUhCCUJ8s6lSmX60Qy2I5F9AQbP5mqEpmbvMw=s4800-w1600",
+                "https://lh3.googleusercontent.com/place-photos/AJRVUZNgQuKjixAvI0a_CKFtIKpUTBiZphrg9FPl0sKy1cHYzmj0zq9ec-_Wvmm3OfLWZXGrj5UiYx6-M1gqyzSzNSAtYmjCI7gMN-XAAyVwwgmraZvgq4Os9zsTBbh65PkfRukkpoziiHfb_hkhwQ=s4800-w1600",
+                "https://lh3.googleusercontent.com/place-photos/AJRVUZOjD8DOEPitHAwZi2Wg1he444f53sG7veyfzoAn2TORxtdbsFL1zHs9X_xvvihXarM12oiMPtoXt4XcNfEtJetvHJDFf6qSHhduKEL7GI0GX9jGbQYH_MoAHJlOy8vIcWQWLMOKtHt6sbMjpY4=s4800-w1600"
+            ],
+            "highlights": [
+                "貴重なコレクション多数",
+                "地球館と日本館の2棟",
+                "恐竜や剥製の展示"
+            ],
+            "suggestions": [
+                "JR上野駅公園口から徒歩5分。",
+                "週末は混雑するため、平日の午前中が比較的空いています。",
+                "特別展は別途料金がかかる場合があるので、公式サイトで事前に確認しましょう。"
+            ],
+            "chips": [
+                "博物館",
+                "科学",
+                "恐竜",
+                "無料(高校生以下)",
+                "歴史"
+            ],
+            "opening_times": "9:00–17:00",
+            "official_website": "https://www.kahaku.go.jp/",
+            "google_rating": "4.500000",
+            "location": {
+                "latitude": 35.716427,
+                "longitude": 139.77634
+            },
+            "address": "日本、〒110-8718 東京都台東区上野公園７−２０",
+            "category": [
+                "ACTIVITY_CATEGORY_ATTRACTION",
+                "ACTIVITY_CATEGORY_MUSEUM_GALLERY"
+            ],
+            "products": [],
+            "events": [],
+            "tags": [
+                "アート体験"
+            ]
+        },
+        {
+            "place_id": "ChIJf8xB-pyOGGARizzhlNTcI7s",
+            "language_code": "JA",
+            "title": "国立西洋美術館",
+            "description": "ル・コルビュジエ設計の世界遺産でもある建物自体も鑑賞の対象。松方コレクションを中心に、西洋美術の流れを体験できる美術館。",
+            "amount": "500",
+            "image_urls": [
+                "https://lh3.googleusercontent.com/place-photos/AJRVUZN1dEuJb5QrJ4tui6_XwNgXFW9DZU4EcMqIc2Ozlgz_cu2UjCgGv91tqm1ZReI7YHYIywT8VfmwEIHu7h7UWbjYEV9vDx7TzhLbLk3oPEUVQu1FXvulzUauVVs9RkKu3exQhoODY9QsjhV6dHvweVQW4A=s4800-w1600",
+                "https://lh3.googleusercontent.com/place-photos/AJRVUZPexpWBHdML3-j6Bg6jmN67tChQ-IEICbNpHxcfC_sCxPZVN-5ezY-nKvbjL26XGHMc8QmwaaPwNgVmXPkgTmB9VYntFCk9qqHdllZMBCtkVYRnccfETBIZPQywmI-O9EE7PO1WRPmFUotcqI0=s4800-w1600",
+                "https://lh3.googleusercontent.com/place-photos/AJRVUZPuDOOiavU9JkLoi8Fgig4iUgXRy0PgbSqqM2pBe_8Wp3MYgsIxkkw7doy_3tlvCYxL1eh0U43eHuC0EoR42XZ7iRN8lFiCBkTHzZu1YhAGRJODeDRnnpA4u1qfKSEAd9ywv7QmUL5-o1RO1A4Om3FR=s4800-w1600"
+            ],
+            "highlights": [
+                "世界遺産「ル・コルビュジエの建築作品」",
+                "松方コレクション（印象派・ロダン）",
+                "屋外彫刻庭園"
+            ],
+            "suggestions": [
+                "東京スカイツリー®から電車で約15分、上野駅公園口から徒歩1分です。",
+                "休館日や特別展の有無は公式サイトでご確認ください。",
+                "併設のミュージアムショップやレストランも楽しめます。"
+            ],
+            "chips": [
+                "美術",
+                "世界遺産",
+                "常設展",
+                "彫刻",
+                "西洋美術"
+            ],
+            "opening_times": "9:30-17:30 (金・土曜は20:00まで)",
+            "official_website": "https://www.nmwa.go.jp/jp/?utm_source=google&utm_medium=map",
+            "google_rating": "4.500000",
+            "location": {
+                "latitude": 35.715385,
+                "longitude": 139.77582
+            },
+            "address": "日本、〒110-0007 東京都台東区上野公園７−７",
+            "category": [
+                "ACTIVITY_CATEGORY_MUSEUM_GALLERY",
+                "ACTIVITY_CATEGORY_ATTRACTION",
+                "ACTIVITY_CATEGORY_MUSEUM_GALLERY"
+            ],
+            "products": [],
+            "events": [
+                {
+                    "title": "オルセー美術館所蔵 印象派―室内をめぐる物語",
+                    "description": "パリ・オルセー美術館所蔵の傑作約70点に加え、国内外の重要作品約100点を展示。印象派画家たちの関心や表現上の挑戦を、室内というテーマで辿ります。",
+                    "highlights": [
+                        "オルセー美術館コレクション約70点",
+                        "室内をテーマにした印象派絵画",
+                        "日本初展示のドガ作品"
+                    ],
+                    "opening_times": "",
+                    "from_date": "2025-11-25",
+                    "suggest_visiting_time": "2026-02-15",
+                    "amount": ""
+                }
+            ],
+            "tags": []
+        },
+        {
+            "place_id": "ChIJEX3XFIOOGGAR3XdJvRjWLyM",
+            "language_code": "JA",
+            "title": "東京国立博物館",
+            "description": "日本と東洋の美術・考古作品を収蔵する日本最古の博物館。国宝級の展示品が豊富で、見ごたえ抜群です。",
+            "amount": "1000",
+            "image_urls": [
+                "https://lh3.googleusercontent.com/place-photos/AJRVUZMewaRrUeavVkQYXCkYBn3nyT1E-6ZsBCi83-Y8ToEaJdyCiUnbnmtCkJ92sKgZmf1QEcTX_k6SwK0QqcPDR1zpKAHSLTJHAFY4h_gRnC6HuDl5j6akH0L3496-76LuOx02yg4NvOMPdjeHDA=s4800-w1600",
+                "https://lh3.googleusercontent.com/place-photos/AJRVUZNp0OYebUHgqxl2qCBdIuYyrf4vf_V_uu4yRTPerCNRrEQF98cEkXV9wNQhDs1vham_RhbnMHKOoQsIC0vpUtKLTsrYM4APtmxJq2WvhN2iz6FsHpf-vfBQ8KVd698t5XC5ITU9jM6Im_Nw=s4800-w1600",
+                "https://lh3.googleusercontent.com/place-photos/AJRVUZPy1HuWdmXVLqgqT3YOf6XUfCx_6tFijr9qbeTtWCaHt0JvwsSk0E4HZZwNqcd2WXTL21ER8uA04Bma8h4GhV3PW77cGc3ay2_NVx5NwfGzuMb79ZcsLQF_6hLhSV7zI2WJTEJZ6RkAjKoWDg=s4800-w1600"
+            ],
+            "highlights": [
+                "日本と東洋の美術・考古作品",
+                "国宝級の展示品多数",
+                "6つの展示館"
+            ],
+            "suggestions": [
+                "JR上野駅公園口から徒歩約10分",
+                "見たいジャンルに合わせてコースを選ぶ",
+                "特別展の開催情報を事前にチェック"
+            ],
+            "chips": [
+                "博物館",
+                "国宝",
+                "美術",
+                "歴史",
+                "常設展"
+            ],
+            "opening_times": "9:30–17:00",
+            "official_website": "https://www.tnm.jp/",
+            "google_rating": "4.500000",
+            "location": {
+                "latitude": 35.718834,
+                "longitude": 139.77652
+            },
+            "address": "日本、〒110-8712 東京都台東区上野公園１３−９",
+            "category": [
+                "ACTIVITY_CATEGORY_MUSEUM_GALLERY",
+                "ACTIVITY_CATEGORY_ATTRACTION",
+                "ACTIVITY_CATEGORY_MUSEUM_GALLERY"
+            ],
+            "products": [],
+            "events": [
+                {
+                    "title": "弘法大師生誕1250年記念 特別展「空海と真言の名宝」",
+                    "description": "真言宗の宗祖・弘法大師空海の生誕1250年を記念し、真言宗各派総大本山会が所蔵する国宝・重要文化財など寺宝が一堂に会する展覧会。",
+                    "highlights": [
+                        "国宝「信貴山縁起絵巻」",
+                        "秘仏開帳",
+                        "真言宗の歴史と美術"
+                    ],
+                    "opening_times": "9:30–17:00",
+                    "from_date": "2026-07-14",
+                    "suggest_visiting_time": "",
+                    "amount": "1000"
+                },
+                {
+                    "title": "東博能",
+                    "description": "東京国立博物館本館にて開催される能楽公演。歴史が呼吸する空間で、伝統芸能を体験できます。",
+                    "highlights": [
+                        "能楽公演",
+                        "東京国立博物館本館",
+                        "伝統芸能体験"
+                    ],
+                    "opening_times": "公演ごとに異なります",
+                    "from_date": "2026-04-17",
+                    "suggest_visiting_time": "",
+                    "amount": ""
+                }
+            ],
+            "tags": [
+                "歴史探訪",
+                "アート体験"
+            ]
+        },
+        {
+            "place_id": "ChIJh7eDrwCPGGARCs9fpCkKS2U",
+            "language_code": "JA",
+            "title": "アメ横商店街",
+            "description": "アメ横商店街は、活気あふれる東京の名物ストリート。約500店舗が軒を連ね、食料品からファッション、雑貨まで多彩なショッピングとグルメが楽しめます。",
+            "amount": "",
+            "image_urls": [
+                "https://lh3.googleusercontent.com/place-photos/AJRVUZOCz-ic1pQ798H9qMUODQRsqEDBgDyVCah3Ltfz28Pwi8uPwlEnaO22H8QoLMwILEoi5iKOAcSUfJHyMIdwoWd_WH0Jm9GhJDJXVgFRrJQZv_OCgF29OY_QoF7MJnBxJ6_wkFk9bd9_tKx5uw=s4800-w1600",
+                "https://lh3.googleusercontent.com/place-photos/AJRVUZNSGfDIkhMlEt8OMRcqKR4QyZmltcctLPA_ulm2vDT8HTVBpEeQNGr9zSD9mj4Hq450fVT4W18W27UT-ydQJECQFVXygWO2dbF6QenPpRk_QsENDXqXbMKnh3s2K0DXRs4pp2mm-MzHGNwnIU4=s4800-w1600",
+                "https://lh3.googleusercontent.com/place-photos/AJRVUZMdQL6ffF8S_LKRzR4N51-GUOu5h5Vdy5JgOXfpnThEp9vvE8M4fy9wcVBmgthsEsN2usgF61soR_LrAE6NVjbVFc_0WBWV4WClFjli8qvgjoRidCDrtGex1YRfggZA2u5D1Nbx3ECgQpvmJXz3hTrZZA=s4800-w1600"
+            ],
+            "highlights": [
+                "多種多様な商品が揃う",
+                "活気あふれる下町の賑わい",
+                "食べ歩きグルメ"
+            ],
+            "suggestions": [
+                "東京スカイツリー®から電車で約20分、上野駅または御徒町駅で下車。",
+                "掘り出し物を見つけるために、じっくりと店内を見て回るのがおすすめ。",
+                "年末には正月用品を買い求める人々で大変賑わいます。"
+            ],
+            "chips": [
+                "商店街",
+                "食べ歩き",
+                "グルメ",
+                "ショッピング",
+                "下町"
+            ],
+            "opening_times": "10:00-19:00 (店舗による)",
+            "official_website": "https://ameyokoinfo.com/",
+            "google_rating": "4.300000",
+            "location": {
+                "latitude": 35.709003,
+                "longitude": 139.77463
+            },
+            "address": "日本、〒110-0005 東京都台東区上野６丁目１０−７",
+            "category": [
+                "ACTIVITY_CATEGORY_ATTRACTION"
+            ],
+            "products": [],
+            "events": [
+                {
+                    "title": "アメ横さくら祭り2026",
+                    "description": "春のアメ横をもっと楽しく、もっと歩きたくなるように。商店街を巡りながら楽しめる仕掛けやプレゼント企画に加え、謎解きゲームも開催。",
+                    "highlights": [
+                        "桜の木が出現",
+                        "オリジナルノベルティプレゼント",
+                        "謎解きゲーム"
+                    ],
+                    "opening_times": "",
+                    "from_date": "2026-03-12",
+                    "suggest_visiting_time": "3月下旬～4月上旬",
+                    "amount": ""
+                },
+                {
+                    "title": "上川遊戯倶楽部KAMIKAWA LEISURE CLUB vol.2",
+                    "description": "アメ横というカオスの中で、北海道・上川町の食と文化がぶつかる3日間。日本酒の試飲体験、酒粕ラーメンの提供、限定商品の販売。",
+                    "highlights": [
+                        "北海道・上川町の食と文化",
+                        "日本酒試飲",
+                        "酒粕ラーメン"
+                    ],
+                    "opening_times": "12:00-22:00",
+                    "from_date": "2026-01-30",
+                    "suggest_visiting_time": "イベント期間中",
+                    "amount": ""
+                },
+                {
+                    "title": "2025春 アメ横表 桜まつり開催！",
+                    "description": "上野アメ横での春のお祭り。桜をテーマにしたイベントや、お買い物を楽しむ企画が予定されています。",
+                    "highlights": [
+                        "桜まつり",
+                        "春のイベント",
+                        "お買い物特典"
+                    ],
+                    "opening_times": "",
+                    "from_date": "2025-03-12",
+                    "suggest_visiting_time": "春",
+                    "amount": ""
+                },
+                {
+                    "title": "2025秋 アメ横おもての子供応援まつり",
+                    "description": "秋に開催される、子供向けの応援イベントです。",
+                    "highlights": [
+                        "子供向けイベント",
+                        "秋祭り",
+                        "応援企画"
+                    ],
+                    "opening_times": "",
+                    "from_date": "2025-10-11",
+                    "suggest_visiting_time": "秋",
+                    "amount": ""
+                },
+                {
+                    "title": "2025秋 アメ横表通り開運感謝まつり開催！",
+                    "description": "秋に開催される、開運と感謝をテーマにしたお祭りです。",
+                    "highlights": [
+                        "開運",
+                        "感謝",
+                        "秋祭り"
+                    ],
+                    "opening_times": "",
+                    "from_date": "2025-10-02",
+                    "suggest_visiting_time": "秋",
+                    "amount": ""
+                },
+                {
+                    "title": "2025夏 アメ横表のこども応援まつり",
+                    "description": "夏に開催される、子供向けの応援イベントです。",
+                    "highlights": [
+                        "子供向けイベント",
+                        "夏祭り",
+                        "応援企画"
+                    ],
+                    "opening_times": "",
+                    "from_date": "2025-07-01",
+                    "suggest_visiting_time": "夏",
+                    "amount": ""
+                }
+            ],
+            "tags": [
+                "ショッピング",
+                "グルメ発見"
+            ]
+        },
+        {
+            "place_id": "ChIJtYQV2p2OGGARqWfaLw8JTA0",
+            "language_code": "JA",
+            "title": "上野の森美術館",
+            "description": "上野の森美術館は、上野公園内にある現代美術中心の美術館です。多彩な企画展を開催し、アートに触れるひとときを提供します。",
+            "amount": "",
+            "image_urls": [
+                "https://lh3.googleusercontent.com/places/ANXAkqHbJOdICooY2MkYuLr4fOSKvmzOfbzgjC0qMDYwgY2wO8vtKVtHK4susG7R2WqgaRmKiI_KbiXp79cKVdC5eqTAZgFGRvpMDdc=s4800-w1600",
+                "https://lh3.googleusercontent.com/place-photos/AJRVUZM-2W0RiFT1kt_cnd2AefQYzZ7rQ5Z-_hRT1icjyWehdy5pMI7IM3wMMMk6jtDQulADZXKWAhyoUsDtXygmWmlMiQuJiQRkhl19Kxw_CE2qbmAOc3k8I4mgsIptqGzhX-mOfogAfiG4ScIz=s4800-w1600",
+                "https://lh3.googleusercontent.com/place-photos/AJRVUZPRTsfb9oikaKxnWuC1G6E5GDyenDLWGvQk5Pz1d94TTqOF5BpjlSCsU5yezVkm1ByoCKMTXiyEExLlC0Z4ixFhJ1LuJiDf8bwgapZK8s8655OjjLs26yHELR2Cul6htctvrRAo5iYZlBsuWg=s4800-w1600"
+            ],
+            "highlights": [
+                "現代美術中心の企画展",
+                "上野公園内の静かな環境",
+                "多彩なアート展示"
+            ],
+            "suggestions": [
+                "東京スカイツリー®から電車で約20分。銀座線で浅草駅まで行き、東武スカイツリーラインに乗り換え。",
+                "特別展の開催時期は混雑することがあるため、事前に公式サイトで詳細を確認することをおすすめします。",
+                "館内での写真撮影は、展示内容により制限がある場合があるので、ルールに従ってください。"
+            ],
+            "chips": [
+                "美術館",
+                "企画展",
+                "アート",
+                "上野",
+                "都内"
+            ],
+            "opening_times": "10:00～17:00",
+            "official_website": "https://www.ueno-mori.org/",
+            "google_rating": "4.100000",
+            "location": {
+                "latitude": 35.712734,
+                "longitude": 139.77469
+            },
+            "address": "日本、〒110-0007 東京都台東区上野公園１−２",
+            "category": [
+                "ACTIVITY_CATEGORY_MUSEUM_GALLERY",
+                "ACTIVITY_CATEGORY_MUSEUM_GALLERY"
+            ],
+            "products": [],
+            "events": [
+                {
+                    "title": "大ゴッホ展 夜のカフェテラス 東京展",
+                    "description": "オランダのクレラー・ミュラー美術館所蔵のゴッホ代表作と、同時代の印象派作品を集めた大規模な展覧会。",
+                    "highlights": [
+                        "ゴッホ代表作《夜のカフェテラス》来日",
+                        "同時代の印象派作品も展示",
+                        "2作品は撮影・SNS投稿OK"
+                    ],
+                    "opening_times": "10:00～17:00",
+                    "from_date": "2026-05-29",
+                    "suggest_visiting_time": "夏休み期間中は混雑が予想されるため、平日午前中の訪問がおすすめです。",
+                    "amount": ""
+                }
+            ],
+            "tags": [
+                "アート体験"
+            ]
+        },
+        {
+            "place_id": "ChIJ05k3KRaJGGARSFT1UW8wxkw",
+            "language_code": "JA",
+            "title": "江東区深川江戸資料館",
+            "description": "江戸時代、深川佐賀町の町並みを再現した資料館。当時の暮らしぶりをリアルに体験でき、子供から大人まで楽しめる。",
+            "amount": "400",
+            "image_urls": [
+                "https://lh3.googleusercontent.com/places/ANXAkqGypPTVML1PFp6Q4RVQAS7eUpMRa4zk58AHsMDgw94uDSur9UIBb03iOE4sMxYPetQYD0wWqbzJvV0tLEQw9M-RI57_LvkN61E=s4800-w1600",
+                "https://lh3.googleusercontent.com/place-photos/AJRVUZN8n5NV0p0gD6HdNvWilLjKgxEe5fjZO_98Xdve-Zj2aPYVmeSa-Tlij22ijELU0knkeGK_4ATLX5n9xdb55aQC0xbybZjdHofZH8q2SjDEgVwICKN0gYvACqHU5AJvCtLUXTczIAg7TYZSQN00iTt0=s4800-w1600",
+                "https://lh3.googleusercontent.com/place-photos/AJRVUZOTIVKFEo4dhPXJResxt-yVQuXnTK_4uOEXW2TZiG-jMSrr5qKSBVTVFtW8DAR2-lLhqTXVhWpY4A1Q_-UoqYNRZoaFPa1ifUCOVKYIy8iJC4RejHPqyDgetltObg9c_PvBGBxFDG0EqIA=s4800-w1600"
+            ],
+            "highlights": [
+                "江戸時代の町並みを実物大で再現",
+                "長屋や商店など、当時の建物に実際に触れられる",
+                "朝・昼・夜の照明演出で時間の移り変わりを体験"
+            ],
+            "suggestions": [
+                "東京スカイツリー®から清澄白河駅まで電車で移動し、徒歩3分",
+                "江戸時代の雰囲気をより深く味わうため、ボランティアガイドの解説を聞くのがおすすめ",
+                "館内での飲食は禁止されているため、近くの公園やカフェで休憩"
+            ],
+            "chips": [
+                "江戸",
+                "資料館",
+                "体験",
+                "清澄白河",
+                "徒歩"
+            ],
+            "opening_times": "9:30～17:00",
+            "official_website": "https://www.kcf.or.jp/fukagawa/",
+            "google_rating": "4.400000",
+            "location": {
+                "latitude": 35.681187,
+                "longitude": 139.8006
+            },
+            "address": "日本、〒135-0021 東京都江東区白河１丁目３−２８",
+            "category": [
+                "ACTIVITY_CATEGORY_ATTRACTION",
+                "ACTIVITY_CATEGORY_MUSEUM_GALLERY",
+                "ACTIVITY_CATEGORY_MUSEUM_GALLERY"
+            ],
+            "products": [],
+            "events": [],
+            "tags": [
+                "歴史探訪",
+                "アート体験"
+            ]
+        },
+        {
+            "place_id": "ChIJq6rq_BuJGGARh1qAooLX-as",
+            "language_code": "JA",
+            "title": "東京都現代美術館",
+            "description": "現代アートの宝庫！広大な空間で多彩な展示と建築美を楽しむ",
+            "amount": "500",
+            "image_urls": [
+                "https://lh3.googleusercontent.com/place-photos/AJRVUZPgdyDUadLP4iFah2gr3D9sD783jOXC9KgqqxO-K_eK_gfA9zLWlvxJZ0ZfIUziSiTQgVBdhviPygXfo-7GcVa5dyyJcJC_8pIPcn434nevc08NTZS3mnTYqcp3rd0snTmDZXSi49flbAZMbw=s4800-w1600",
+                "https://lh3.googleusercontent.com/place-photos/AJRVUZPnB3Fb8wzCtdYX_ztAwdZYxNtawWTqW3HENDLOoQY3kRTnOjKznkukwrLO13Fco_E7wMjMNAi1RVb1kO-AWeqcj4sC7z_5X2zU20AfvF8R18kfT2SJ41Z2NkdlXSUG71jMSkFLNZ0Ry3jSuw=s4800-w1600",
+                "https://lh3.googleusercontent.com/places/ANXAkqFkTZ3hhCSD9qk7EMQLZBTYlGJXODhAZGg2vIrteaISYppdXtshwyh1JxDDtZVyae9cPKgL-tjT9upri6bIn5sbowgp2a8svPc=s4800-w1600"
+            ],
+            "highlights": [
+                "約6000点の収蔵品",
+                "柳澤孝彦設計の建築",
+                "多彩な企画展"
+            ],
+            "suggestions": [
+                "清澄白河駅から徒歩9分",
+                "アート鑑賞の後は木場公園を散策",
+                "ミュージアムショップでオリジナルグッズを探す"
+            ],
+            "chips": [
+                "現代アート",
+                "美術館",
+                "企画展",
+                "東京",
+                "ミュージアム"
+            ],
+            "opening_times": "10:00～18:00",
+            "official_website": "https://www.mot-art-museum.jp/",
+            "google_rating": "4.400000",
+            "location": {
+                "latitude": 35.67975,
+                "longitude": 139.8082
+            },
+            "address": "日本、〒135-0022 東京都江東区三好４丁目１−１",
+            "category": [
+                "ACTIVITY_CATEGORY_MUSEUM_GALLERY",
+                "ACTIVITY_CATEGORY_MUSEUM_GALLERY"
+            ],
+            "products": [],
+            "events": [
+                {
+                    "title": "エリック・カール展 はじまりは、はらぺこあおむし",
+                    "description": "「はらぺこあおむし」で知られるエリック・カールの世界を、原画や制作資料を通して紹介。絵本の50周年を記念した回顧展。",
+                    "highlights": [
+                        "絵本の原画展示",
+                        "制作資料",
+                        "コラージュ素材"
+                    ],
+                    "opening_times": "10:00～18:00",
+                    "from_date": "2026-04-25",
+                    "suggest_visiting_time": "会期中随時",
+                    "amount": "2300"
+                },
+                {
+                    "title": "(UN)KNOWN HIROKO KOSHINO ―新説/真説 コシノヒロコ―",
+                    "description": "ファッションデザイナーコシノヒロコの活動を、ファッションの枠を超え、絵画、書、音楽、映像など多岐にわたる表現で紹介する過去最大規模の展覧会。",
+                    "highlights": [
+                        "ファッションデザイナー",
+                        "絵画・書・音楽",
+                        "多岐にわたる表現"
+                    ],
+                    "opening_times": "10:00～18:00",
+                    "from_date": "2026-05-26",
+                    "suggest_visiting_time": "会期中随時",
+                    "amount": "2200"
+                },
+                {
+                    "title": "MOTコレクション はじめて、びじゅつ",
+                    "description": "「MOTコレクション」の展示。「はじめて、びじゅつ」をテーマに、現代美術に親しむきっかけとなるような作品を展示。",
+                    "highlights": [
+                        "現代美術コレクション",
+                        "親しみやすいテーマ",
+                        "教育的展示"
+                    ],
+                    "opening_times": "10:00～18:00",
+                    "from_date": "2026-04-28",
+                    "suggest_visiting_time": "会期中随時",
+                    "amount": "500"
+                }
+            ],
+            "tags": []
+        },
+        {
+            "place_id": "ChIJw2qQRZuOGGARWmROEiM2y7E",
+            "language_code": "JA",
+            "title": "上野恩賜公園",
+            "description": "都心にありながら豊かな自然と文化に触れられる広大な公園。美術館、博物館、動物園などが集まり、歴史、芸術、自然を満喫できます。",
+            "amount": "",
+            "image_urls": [
+                "https://lh3.googleusercontent.com/place-photos/AJRVUZPS3_qG5jXZoCaL8FFKLMDMUNm7NBOuNUWv5nUUdoUJqRRQwqnLMQ2G8NNWGxKavCxBn7lKl5jaobXNlVZ005O5yyt4yEtHwCmVuvI0BOXAm4IskyW-dYJFvjbGBVS02sYdBOmc8H57QVSz2u0=s4800-w1600",
+                "https://lh3.googleusercontent.com/place-photos/AJRVUZPKOAYvKBQHDt0dIgMTzXw3HXnKaGE7myjS8QIb919nLetg5PEExxeICjNMsY5KttbhcXzftuxxrkFleDpN2L3IrTKSAbzThd0DaOML5CSjKdymwkfnSM-RGsFE9MKUbJO--OlhS1Mg05b4NTVZv46RCQ=s4800-w1600",
+                "https://lh3.googleusercontent.com/place-photos/AJRVUZPfFVe3zd_fWdmQSLPXwqvPd9EqpEzCG3ozI907ZlDrJxyTjbHj95mfgeAgTvb_aOQyYUzE6H0PW5VIYpJysF_a4JnHS_VITskb4dHhD0DncdJbG2TGGPcNTBgqq9UxrZD6NKQmRtXpTptlTA=s4800-w1600"
+            ],
+            "highlights": [
+                "日本初の都市公園",
+                "多数の文化施設",
+                "四季折々の自然"
+            ],
+            "suggestions": [
+                "JR上野駅公園口から徒歩すぐ",
+                "園内の博物館・美術館巡りもおすすめ",
+                "不忍池の蓮や桜、紅葉も楽しめる"
+            ],
+            "chips": [
+                "無料",
+                "桜の名所",
+                "紅葉",
+                "文化",
+                "広大"
+            ],
+            "opening_times": "常時開園（施設により異なる）",
+            "official_website": "https://www.kensetsu.metro.tokyo.lg.jp/jimusho/toubuk/ueno",
+            "google_rating": "4.400000",
+            "location": {
+                "latitude": 35.714756,
+                "longitude": 139.77344
+            },
+            "address": "日本、〒110-0007 東京都台東区上野公園４",
+            "category": [
+                "ACTIVITY_CATEGORY_ATTRACTION",
+                "ACTIVITY_CATEGORY_OUTDOOR_ACTIVITIES"
+            ],
+            "products": [],
+            "events": [
+                {
+                    "title": "うえの桜まつり",
+                    "description": "上野恩賜公園で開催される、都内有数の桜の名所での春の祭典。約1200本の桜が咲き誇り、夜間ライトアップも行われます。",
+                    "highlights": [
+                        "約1200本の桜",
+                        "夜間ライトアップ",
+                        "露店も並ぶ"
+                    ],
+                    "opening_times": "",
+                    "from_date": "",
+                    "suggest_visiting_time": "",
+                    "amount": ""
+                },
+                {
+                    "title": "上野東照宮 ぼたん苑",
+                    "description": "上野東照宮境内にあるぼたん苑では、春と秋に美しい牡丹やダリアが咲き、訪れる人々を楽しませます。",
+                    "highlights": [
+                        "春と秋に開花",
+                        "牡丹とダリア",
+                        "優雅な庭園"
+                    ],
+                    "opening_times": "",
+                    "from_date": "2026-04-15",
+                    "suggest_visiting_time": "見頃の時期（4月中旬～5月中旬）",
+                    "amount": "500"
+                },
+                {
+                    "title": "東京・春・音楽祭",
+                    "description": "上野公園を舞台に開催される、クラシック音楽を中心とした国際的な音楽祭。公園内の施設で様々なコンサートやイベントが行われます。",
+                    "highlights": [
+                        "クラシック音楽",
+                        "国際的な音楽祭",
+                        "公園各所で開催"
+                    ],
+                    "opening_times": "",
+                    "from_date": "2026-03-15",
+                    "suggest_visiting_time": "期間中（3月中旬～4月下旬）",
+                    "amount": ""
+                }
+            ],
+            "tags": [
+                "歴史探訪",
+                "自然散策",
+                "アート体験"
+            ]
+        },
+        {
+            "place_id": "ChIJf2129yiMGGAR9I6Yoe-1uHY",
+            "language_code": "JA",
+            "title": "恩賜上野動物園",
+            "description": "日本で最も歴史のある動物園で、約300種3,000点の動物が飼育されています。パンダやゴリラ、トラなど、多くの人気動物に会えます。",
+            "amount": "600",
+            "image_urls": [
+                "https://lh3.googleusercontent.com/place-photos/AJRVUZP73vE1NZOsv2S1blf4i5EDbIAHvXNu2DJhyrVN88sdZEzvPTL-ZQjpsugXzd8uvFdmzDw3-nSk16JVIdugEkXI2UPnAtvZojRGAt6vYPToLyhTheJ3iDw-LUjoNe1Yeda5TbjrX4dOpwO3Sg=s4800-w1600",
+                "https://lh3.googleusercontent.com/place-photos/AJRVUZMWmUhjHwNUDgm0vTd3Lq_33ha5WfPRY5Ly-NasnVIDB07l4HNXJT9dvv9tCzHXQDpZhZqey-uQf7x9TFckh-pkjWZzEgOKFfOPme7tAdN9LHsVI1KI0Ks5bgpeLfuJBz2SZuxTQkK9WNlb4K_w-HQ1=s4800-w1600",
+                "https://lh3.googleusercontent.com/place-photos/AJRVUZNMnh8BScWCVGIwackkBYhXjAE8ANXeIO9cuHLwuwvNX1bclYBq6uuwxV4dybJOx2qJsWg3YQIXRixd59fA5TRB0aSroBkAoUcxQRp9JPAiqgLjcpQVbab-CRr8GjtYFrg3H98dXnRLErnvXpKYWyfI=s4800-w1600"
+            ],
+            "highlights": [
+                "日本で最も歴史のある動物園",
+                "約300種3,000点の動物",
+                "パンダやゴリラ、トラなど人気動物"
+            ],
+            "suggestions": [
+                "東京スカイツリー®から電車で約30分、またはバスで約30分です。",
+                "事前にオンラインチケットを購入するとスムーズに入園できます。",
+                "園内は東園と西園に分かれているので、見たい動物に合わせて入場門を選ぶのがおすすめです。"
+            ],
+            "chips": [
+                "動物園",
+                "人気スポット",
+                "ファミリー",
+                "歴史",
+                "都内"
+            ],
+            "opening_times": "9:30-17:00",
+            "official_website": "https://www.tokyo-zoo.net/ueno/",
+            "google_rating": "4.200000",
+            "location": {
+                "latitude": 35.716015,
+                "longitude": 139.77289
+            },
+            "address": "日本、〒110-8711 東京都台東区上野公園９−８３",
+            "category": [
+                "ACTIVITY_CATEGORY_AQUARIUM_ZOO"
+            ],
+            "products": [],
+            "events": [
+                {
+                    "title": "土曜の夜のどうぶつえん",
+                    "description": "夜ならではの雰囲気を楽しめる夜間開園イベントです。事前申込制です。",
+                    "highlights": [
+                        "夜間開園",
+                        "事前申込制",
+                        "西園の一部エリアのみ"
+                    ],
+                    "opening_times": "18:00-20:00",
+                    "from_date": "",
+                    "suggest_visiting_time": "夜間",
+                    "amount": ""
+                }
+            ],
+            "tags": []
+        },
+        {
+            "place_id": "ChIJb_o7HiiMGGARUKu8uO7fGIQ",
+            "language_code": "JA",
+            "title": "東京都美術館",
+            "description": "1926年開館、日本初の公立美術館。国内外の名品を楽しめる特別展や企画展を年間約280本開催。建築家・前川國男設計の建物も魅力。カフェやショップも充実。",
+            "amount": "0",
+            "image_urls": [
+                "https://lh3.googleusercontent.com/place-photos/AJRVUZPWZdOtnfIISqFYxBnVKYVabQpcA8_U4OPEPKl9E2jI6O661QLOeDlVvgH19G6P5gDW2M8WdvUnAnXyhpDqXVUGBrbeizVWkbVGRofe-JbWtur5D-mIYifuRa0pjnGpvhV0-AXwZUPHJd8jLwbhVzPQDg=s4800-w1600",
+                "https://lh3.googleusercontent.com/place-photos/AJRVUZNQYjU0m5fm8FXlqPmzclCY1_rFKPWkDFgnFfvnikB_o47F54dtz2xLSE34O4wXI8R6_EecLuYN7VBoTnetH94TAZnkUCLb4L2zed_QoDN7mlDHeeXd_h4MF72eF18JbEmqJyuOrGKbWcBb7X4=s4800-w1600",
+                "https://lh3.googleusercontent.com/place-photos/AJRVUZOzw3WbEkHP4JfDLmf1mT-m02tvuk2d8pIUQQyGu1C8HoSVIqGVMsfLKvu8_bAODcXu5ekKIchn0Izh7BSeRuMvpkupLbJEePevIaToQ3vKOAMne6OkskO_Dbt5yX5VZfQYp0KL13eFw_a_CnQ=s4800-w1600"
+            ],
+            "highlights": [
+                "日本初の公立美術館",
+                "年間約280本の多彩な展覧会",
+                "建築家・前川國男設計の建物"
+            ],
+            "suggestions": [
+                "東京スカイツリー®から電車で約20分、上野駅下車すぐです。",
+                "特別展は別途観覧料が必要な場合があります。",
+                "上野公園散策と合わせて訪れるのがおすすめです。"
+            ],
+            "chips": [
+                "無料",
+                "展覧会",
+                "アート",
+                "都心",
+                "上野"
+            ],
+            "opening_times": "9:30～17:30 (金曜～20:00)",
+            "official_website": "https://www.tobikan.jp/",
+            "google_rating": "4.300000",
+            "location": {
+                "latitude": 35.717213,
+                "longitude": 139.77293
+            },
+            "address": "日本、〒110-0007 東京都台東区上野公園８−３６",
+            "category": [
+                "ACTIVITY_CATEGORY_MUSEUM_GALLERY",
+                "ACTIVITY_CATEGORY_ATTRACTION",
+                "ACTIVITY_CATEGORY_MUSEUM_GALLERY"
+            ],
+            "products": [],
+            "events": [
+                {
+                    "title": "東京都美術館開館100周年記念 アンドリュー・ワイエス展",
+                    "description": "普段は混雑している特別展を障害のある方が安心して鑑賞できるよう、休室日に鑑賞会を開催します。",
+                    "highlights": [
+                        "障害のある方も安心",
+                        "休室日に特別鑑賞会"
+                    ],
+                    "opening_times": "",
+                    "from_date": "2026-04-28",
+                    "suggest_visiting_time": "",
+                    "amount": ""
+                },
+                {
+                    "title": "東京都美術館開館100周年記念 この場所の風景―上野・大牟田・ブエノスアイレス",
+                    "description": "トーク・シリーズ①江上茂雄を語る。事前申込制、参加費無料（当日の展覧会チケットが必要）。情報保障あり。",
+                    "highlights": [
+                        "トーク・シリーズ",
+                        "事前申込制（無料）"
+                    ],
+                    "opening_times": "",
+                    "from_date": "2026-07-23",
+                    "suggest_visiting_time": "",
+                    "amount": ""
+                },
+                {
+                    "title": "東京都美術館開館100周年記念 都美セレクション グループ展 2026",
+                    "description": "東京都美術館開館100周年記念のグループ展です。",
+                    "highlights": [
+                        "開館100周年記念",
+                        "グループ展"
+                    ],
+                    "opening_times": "",
+                    "from_date": "2026-06-10",
+                    "suggest_visiting_time": "",
+                    "amount": ""
+                },
+                {
+                    "title": "東京都美術館開館100周年記念 大英博物館日本美術コレクション 百花繚乱～海を越えた江戸絵画",
+                    "description": "大英博物館所蔵の日本美術コレクションを紹介する特別展。",
+                    "highlights": [
+                        "大英博物館所蔵",
+                        "江戸絵画"
+                    ],
+                    "opening_times": "",
+                    "from_date": "2026-07-25",
+                    "suggest_visiting_time": "",
+                    "amount": ""
+                },
+                {
+                    "title": "東京都美術館開館100周年記念 オルセー美術館所蔵 いまを生きる歓び",
+                    "description": "普段は混雑している特別展を障害のある方が安心して鑑賞できるよう、休室日に鑑賞会を開催します。",
+                    "highlights": [
+                        "障害のある方も安心",
+                        "休室日に特別鑑賞会"
+                    ],
+                    "opening_times": "",
+                    "from_date": "",
+                    "suggest_visiting_time": "",
+                    "amount": ""
+                }
+            ],
+            "tags": []
+        },
+        {
+            "place_id": "ChIJddt-chuJGGARDHrwEnQv27I",
+            "language_code": "JA",
+            "title": "木場公園",
+            "description": "広大な敷地を誇る水と緑の森林公園。バラエティ豊かな施設が点在し、一日中楽しめます。",
+            "amount": "0",
+            "image_urls": [
+                "https://lh3.googleusercontent.com/place-photos/AJRVUZN1ZmFMPkn2I2i7_M4sKOdaLhYHKKh6q3jXaz6JpAboqgxqMGgwQztbE66r7zvG7R0JEbD5SfcbJ1FLgBqnhUVxuQ2l-smZapee7AMkY-40NhDCAmylug-y8M5F4o2hmhyNUYutl6rENm_g=s4800-w1600",
+                "https://lh3.googleusercontent.com/place-photos/AJRVUZPkxsbs5xuPZoLQKIpzTI3KH0RLJsxWtcgTOvhVeZP77XBECoasJdR-khnnDGzAbb-wramFfEdVDW_aOq710_C505o_EUtIKBRlUcaEPKHMyVtDYxIVdRnaxJqcewh-xDC9FEIUDfKFkU5MtEg=s4800-w1600",
+                "https://lh3.googleusercontent.com/place-photos/AJRVUZMntmv022JQsStojJ9MTcuzDdXwXkQzbQSme7CNAy7Kgx64o5OwDbXMmP2Zc1myCQe190_qBVqIQ6fJSQTnmMaas9jVclMdFnY1aAAUyNobQdl6Qhis0vph8DzTQMYFy1gNPYUQhZ9k9Lp7iFc=s4800-w1600"
+            ],
+            "highlights": [
+                "都民の憩いの場",
+                "バーベキューやイベントも開催",
+                "四季折々の自然を楽しめる"
+            ],
+            "suggestions": [
+                "東京スカイツリー®から電車と徒歩で約30分",
+                "お弁当を持参してピクニックを楽しむ",
+                "隣接する東京都現代美術館も訪れる",
+                "ドッグランで愛犬と遊ぶ"
+            ],
+            "chips": [
+                "公園",
+                "無料",
+                "BBQ",
+                "ピクニック",
+                "広々"
+            ],
+            "opening_times": "常時開園",
+            "official_website": "https://www.tokyo-park.or.jp/park/kiba/",
+            "google_rating": "4.200000",
+            "location": {
+                "latitude": 35.676773,
+                "longitude": 139.80766
+            },
+            "address": "日本、〒135-0023 東京都江東区平野４丁目６−１",
+            "category": [
+                "ACTIVITY_CATEGORY_ATTRACTION",
+                "ACTIVITY_CATEGORY_ATTRACTION"
+            ],
+            "products": [],
+            "events": [],
+            "tags": [
+                "自然散策"
+            ]
+        },
+        {
+            "place_id": "ChIJ7RsWzB6MGGARi3xBv7bkl_M",
+            "language_code": "JA",
+            "title": "神田神社（神田明神）",
+            "description": "東京の中心に位置し、商売繁盛や縁結びの神様として親しまれる神田明神。1300年の歴史を持ち、江戸時代から江戸の総鎮守として人々の信仰を集めています。",
+            "amount": "0",
+            "image_urls": [
+                "https://lh3.googleusercontent.com/place-photos/AJRVUZP1SPcIQsfv327afnaaAltIiA6PFOHtmK6HY2NOtXd4iLkbcaACWQ-320EAfkbkvEKhZeph7OLY9PbG4g2RBzbd0bbPOHGALGwOC8wzlv0olfZj8VbZ-kHBnZymh7OxuaSu13R5cgQf_grhALOzlKKF=s4800-w1600",
+                "https://lh3.googleusercontent.com/place-photos/AJRVUZOYddPFR9Jjrnx0Wq4H0Slby1AWzGX-Lawv_tXfzwzeWYIQ4hjGR_Dxu12zewg1xYfUBSMeQB8DCx-A-SPaskoyMH5iptEEb0pp8KFTy7RHOpBw2vAxKapemvZh2TNhWdhIN5C4ftYD99uhjtECJFR1=s4800-w1600",
+                "https://lh3.googleusercontent.com/place-photos/AJRVUZOzyMdVd29W2wjyh1DxQEb1FrTMK8qYhFEkHDxyTItluxaPcSpCLBaGxhUNndnlwD9X4D0aUbG3-BCCtg4rK2tJ0mypKY6LAzumoi7Y7K4NZwyCcKXKgolZq-KJf5H4Eq3GQO5UZ3cLMBsDbw=s4800-w1600"
+            ],
+            "highlights": [
+                "商売繁盛・縁結びの神様",
+                "江戸総鎮守としての歴史",
+                "ITお守りなど現代的なお守りも"
+            ],
+            "suggestions": [
+                "東京スカイツリー®から電車で約20分、秋葉原駅からも徒歩圏内です。",
+                "境内の文化交流館「EDOCCO」では、お土産やカフェも楽しめます。",
+                "アニメやゲームの舞台としても有名なので、聖地巡礼もおすすめです。"
+            ],
+            "chips": [
+                "パワースポット",
+                "神社",
+                "縁結び",
+                "秋葉原",
+                "歴史"
+            ],
+            "opening_times": "24時間参拝可能",
+            "official_website": "http://www.kandamyoujin.or.jp/",
+            "google_rating": "4.400000",
+            "location": {
+                "latitude": 35.70202,
+                "longitude": 139.7679
+            },
+            "address": "日本、〒101-0021 東京都千代田区外神田２丁目１６−２",
+            "category": [
+                "ACTIVITY_CATEGORY_TEMPLES_SHINES",
+                "ACTIVITY_CATEGORY_ATTRACTION"
+            ],
+            "products": [],
+            "events": [
+                {
+                    "title": "神田明神納涼祭り",
+                    "description": "昔ながらの盆踊りや屋台、アニソン盆踊りなど、老若男女が楽しめる夏祭りです。",
+                    "highlights": [
+                        "盆踊り",
+                        "屋台",
+                        "アニソン盆踊り"
+                    ],
+                    "opening_times": "8月上旬",
+                    "from_date": "2026-08-08",
+                    "suggest_visiting_time": "",
+                    "amount": "0"
+                }
+            ],
+            "tags": [
+                "歴史探訪",
+                "縁結び祈願"
+            ]
+        },
+        {
+            "place_id": "ChIJmY9L9lCJGGAR3ydy0pQ5y8A",
+            "language_code": "JA",
+            "title": "小網神社",
+            "description": "東京の中心部にある小網神社は、強運厄除けのパワースポットとして有名です。金運アップのご利益もあると言われ、多くの参拝者が訪れます。",
+            "amount": "",
+            "image_urls": [
+                "https://lh3.googleusercontent.com/place-photos/AJRVUZOusFhUZmhAW4ZCEEshNF3nJ92kDeo0DLYW_CnUeci8xcwrtvFTFMv2ptbAgonngRT2GKHjmKsITMQsH58o1OR1oQzXU0aa9qlakY6BmW3oSpNpF5IMJAYiB1xe6mo8DDqmf_vxy4Z2gAu9cQ=s4800-w1600",
+                "https://lh3.googleusercontent.com/place-photos/AJRVUZNM8zPKpEdqvJdf_jQua35YZnnQX4aKYsS8cAVcfP1YTbSAYgpe6vzpmD1okZN_xsvcCigeqo2Q5zvuCGNXzEEbEfbQQ0jRUJzlQ7IaBAJZ_UC7OR1RnQ8VrbKFVhulrQllFQzcxbPPJPH25Q=s4800-w1600",
+                "https://lh3.googleusercontent.com/place-photos/AJRVUZOtLe0OL4cwrWKKORtzeZ0wSFSoG-oH4rsVE9MXvqHXLWhyUKZfASCGsIeGP8_c325WcbPqFTjSdlF3DT97qvUXMsBxO5EaxhnnWhySJaUOygPhlo1hOtok5bfMqaCofsSZNITYuXCuqQfgmA=s4800-w1600"
+            ],
+            "highlights": [
+                "強運厄除けのご利益",
+                "東京銭洗い弁天",
+                "日本橋七福神"
+            ],
+            "suggestions": [
+                "東京メトロ日比谷線・人形町駅A2出口から徒歩5分。",
+                "宝くじや硬貨を銭洗い弁天で清めると金運アップが期待できます。",
+                "平日の午前中や夕方など、比較的空いている時間帯を狙うのがおすすめです。"
+            ],
+            "chips": [
+                "強運厄除",
+                "金運アップ",
+                "パワースポット",
+                "東京",
+                "神社"
+            ],
+            "opening_times": "9:00–17:00",
+            "official_website": "https://www.koamijinja.or.jp/",
+            "google_rating": "4.500000",
+            "location": {
+                "latitude": 35.684116,
+                "longitude": 139.78046
+            },
+            "address": "日本、〒103-0016 東京都中央区日本橋小網町１６−２３",
+            "category": [
+                "ACTIVITY_CATEGORY_TEMPLES_SHINES",
+                "ACTIVITY_CATEGORY_ATTRACTION"
+            ],
+            "products": [],
+            "events": [],
+            "tags": [
+                "縁結び祈願"
+            ]
+        },
+        {
+            "place_id": "ChIJ89TugkeMGGARDmSeJIiyWFA",
+            "language_code": "JA",
+            "title": "東京ドーム",
+            "description": "東京のランドマーク、東京ドーム！野球、コンサート、イベントなど多彩なエンターテイメントを楽しめます。",
+            "amount": "",
+            "image_urls": [
+                "https://lh3.googleusercontent.com/places/ANXAkqG7HmLrlqNFDOVgye-dLhEy0EiKiZXit9C64A1aCcqONYUw6Lp2LRaakI-zgSupm2wQ6bwNHDmB3ycZJU24axsRD_yWHLHWP0U=s4800-w1600",
+                "https://lh3.googleusercontent.com/place-photos/AJRVUZPuapghwnNJbRfG6bgnv4Q7TAgzec8etII7fEbBatTND55YLXf1ZSr8Z3P8vT6bmGYD_KP0IpjbFCb1ESBHdvFuokYy9bSzjpO-EZtDkogPGRJLe5S4H-3K6m_J38z6b2PG3ZJ7RGsovYKo=s4800-w1600",
+                "https://lh3.googleusercontent.com/place-photos/AJRVUZNClLdas2_zoOCJWLEQSph6mDNC3ApWCM7yEiAejEGfFyIl94H7anOUoyEsjvDpGJAbFB6rat90vk4dnA1czvdsl77BwYp5FJWJCuAkdBElwsJXV30tRpQ4VnbplcmJTiI7ayWw213ydCou0Q=s4800-w1600"
+            ],
+            "highlights": [
+                "野球・コンサート・イベント",
+                "多彩なエンターテイメント",
+                "東京のランドマーク"
+            ],
+            "suggestions": [
+                "最寄り駅は複数あり、JR水道橋駅、東京メトロ後楽園駅などが便利です。",
+                "イベントスケジュールを事前に確認し、時間に余裕を持ってアクセスしましょう。",
+                "周辺の東京ドームシティも合わせて楽しむのがおすすめです。"
+            ],
+            "chips": [
+                "イベント",
+                "野球",
+                "コンサート",
+                "ドーム",
+                "遊園地"
+            ],
+            "opening_times": "日によって変動",
+            "official_website": "https://www.tokyo-dome.co.jp/dome/",
+            "google_rating": "4.300000",
+            "location": {
+                "latitude": 35.70564,
+                "longitude": 139.75189
+            },
+            "address": "日本、〒112-0004 東京都文京区後楽１丁目３−６１",
+            "category": [
+                "ACTIVITY_CATEGORY_ATTRACTION"
+            ],
+            "products": [],
+            "events": [
+                {
+                    "title": "巨人公式戦",
+                    "description": "読売ジャイアンツのホームゲーム。プロ野球の迫力を体感できます。",
+                    "highlights": [
+                        "プロ野球観戦",
+                        "巨人戦",
+                        "熱気あるスタジアム"
+                    ],
+                    "opening_times": "",
+                    "from_date": "",
+                    "suggest_visiting_time": "",
+                    "amount": ""
+                },
+                {
+                    "title": "コンサート",
+                    "description": "人気アーティストによるドームツアーやライブ公演。音楽と一体となる感動を味わえます。",
+                    "highlights": [
+                        "人気アーティスト",
+                        "感動のライブ",
+                        "音楽体験"
+                    ],
+                    "opening_times": "",
+                    "from_date": "",
+                    "suggest_visiting_time": "",
+                    "amount": ""
+                },
+                {
+                    "title": "東京ドームホテル イベント",
+                    "description": "東京ドームホテルで開催される様々なイベントやフェア。特別な食体験や季節の催しを楽しめます。",
+                    "highlights": [
+                        "ホテルイベント",
+                        "特別グルメ",
+                        "季節の催し"
+                    ],
+                    "opening_times": "",
+                    "from_date": "",
+                    "suggest_visiting_time": "",
+                    "amount": ""
+                }
+            ],
+            "tags": []
+        },
+        {
+            "place_id": "ChIJq6q63UOMGGAR7zYBKd7iI3I",
+            "language_code": "JA",
+            "title": "東京大神宮",
+            "description": "縁結びの神様として有名な東京大神宮。日本で初めて神前結婚式が行われた場所としても知られています。",
+            "amount": "0",
+            "image_urls": [
+                "https://lh3.googleusercontent.com/place-photos/AJRVUZM_zF-6T911_ZN7-KkQGYYPkJorTqhSJQxPxcYPlkXEts-Qm7TEenm3xIQw-DNBNNjbqiu3AIa4wdUja2JRzrLoDkQT4iTfMyD1EleLpQghZgAJ56AByC2qyEslSx56DyIb14UNajzEKtjk_Q=s4800-w1600",
+                "https://lh3.googleusercontent.com/place-photos/AJRVUZMlpmUby3sxfP2Bqz4IcLKwhRql1Amh1IPNDExZFV2NdwtRf4MMeDJ91LoOPmi2Ek49VWjPjx10DElh1aQS5XWzfpclGWyMSdtG_iS8uArpp_1ToL_6UB2sZiYm2BhhBotqFLRN8RbsJPxi1ZHBvzaTXA=s4800-w1600",
+                "https://lh3.googleusercontent.com/place-photos/AJRVUZPfmvLAPoT--FpYnjDF9pEHeWGE-iqLY7tctqealoZ2Ova_rvy3TH9SzBNiOT6YsJnxK3ocLZ-FWlHrMbzZ0eaW5nGu6SSPOx9lalbzVkJper1nj1RSXSupUmVuqcmNDlVd_O6Mjb0YsffrMg=s4800-w1600"
+            ],
+            "highlights": [
+                "縁結びのパワースポット",
+                "日本で初めて神前結婚式を行った神社",
+                "東京のお伊勢さま"
+            ],
+            "suggestions": [
+                "JR飯田橋駅西口より徒歩5分",
+                "お守りやおみくじも豊富なのでチェック",
+                "ハートマークの「猪目」を探してみて"
+            ],
+            "chips": [
+                "神社",
+                "縁結び",
+                "パワースポット",
+                "飯田橋",
+                "徒歩5分"
+            ],
+            "opening_times": "6:00～21:00",
+            "official_website": "http://www.tokyodaijingu.or.jp/",
+            "google_rating": "4.400000",
+            "location": {
+                "latitude": 35.699986,
+                "longitude": 139.74689
+            },
+            "address": "日本、〒102-0071 東京都千代田区富士見２丁目４−１",
+            "category": [
+                "ACTIVITY_CATEGORY_TEMPLES_SHINES",
+                "ACTIVITY_CATEGORY_ATTRACTION"
+            ],
+            "products": [],
+            "events": [
+                {
+                    "title": "節分祭",
+                    "description": "裃姿の年男・年女を中心とした豆まきが行われ、境内は多くの人々でにぎわいます。",
+                    "highlights": [
+                        "豆まき",
+                        "年男・年女",
+                        "節分"
+                    ],
+                    "opening_times": "",
+                    "from_date": "",
+                    "suggest_visiting_time": "",
+                    "amount": ""
+                },
+                {
+                    "title": "除夜祭",
+                    "description": "大晦日の夜、一年間の神恩に感謝し、来る年のご加護を祈願します。",
+                    "highlights": [
+                        "大晦日",
+                        "新年を迎える",
+                        "感謝と祈願"
+                    ],
+                    "opening_times": "",
+                    "from_date": "",
+                    "suggest_visiting_time": "",
+                    "amount": ""
+                },
+                {
+                    "title": "お正月水引飾りワークショップ",
+                    "description": "水引の歴史や産地についての話を聞き、オリジナルの輪飾りや神棚用のしめ縄を作成します。",
+                    "highlights": [
+                        "水引細工",
+                        "お正月飾り",
+                        "ワークショップ"
+                    ],
+                    "opening_times": "",
+                    "from_date": "",
+                    "suggest_visiting_time": "",
+                    "amount": "2000"
+                },
+                {
+                    "title": "ハーバリウム作りワークショップ",
+                    "description": "専用のオイルを使い、ボトルの中に花や稲穂を配置してオリジナルのハーバリウムを作成します。",
+                    "highlights": [
+                        "ボトルフラワー",
+                        "アジサイ",
+                        "金色の稲穂"
+                    ],
+                    "opening_times": "",
+                    "from_date": "",
+                    "suggest_visiting_time": "",
+                    "amount": "2000"
+                },
+                {
+                    "title": "耳飾り作りワークショップ",
+                    "description": "革で作られた花や葉っぱ、パールビーズなどを組み合わせて、オリジナルの耳飾りを作成します。",
+                    "highlights": [
+                        "革細工",
+                        "スズランの花言葉",
+                        "幸福"
+                    ],
+                    "opening_times": "",
+                    "from_date": "",
+                    "suggest_visiting_time": "",
+                    "amount": "2000"
+                }
+            ],
+            "tags": [
+                "縁結び祈願"
+            ]
+        },
+        {
+            "place_id": "ChIJTQbYAg2MGGARt22eNwtfGtE",
+            "language_code": "JA",
+            "title": "皇居",
+            "description": "皇居は、かつて江戸城があった場所に位置し、現在は天皇皇后両陛下がお住まいになっている場所です。広大な敷地には、美しい庭園や歴史的な建造物が点在し、都心にありながらも緑豊かなオアシスとなっています。一般参観や東御苑の散策が可能です。",
+            "amount": "0",
+            "image_urls": [
+                "https://lh3.googleusercontent.com/place-photos/AJRVUZN_OxMLDd47loV7MOTy9GJGYfZfoPG_tfQUgc5ZgNgMIjMyRKYKeh8roS4hZiu2M1AHRuQv2jCjDySLy8wVuy4yCSiZX3pb2yDD-f9S5EgldlKqOaXWq3gsU-kqlTGmhtMZs6oVaVka8LO5cA=s4800-w1600",
+                "https://lh3.googleusercontent.com/place-photos/AJRVUZPzgMuLjs4Yx6dJo-rVXj5z1S252kTaTziaZO3ued9aFI6Y2c7-2NdeAtKYKULIK8zBqTsvT8UbqpqeUSQNkynjW2FE92DsQQ0EuO32vA5kqta55kPijwbPdXcVoAr9mcNS_WuMkBPgGcP5dQ=s4800-w1600",
+                "https://lh3.googleusercontent.com/place-photos/AJRVUZOkluVvvUbF9qYBwfoSPvhG2bee7NC-c4iT4iHR6kC9qd5-zpGOlxZG7mnCjG4FNNoNdHo7d-iNQ4mHmyVFWoAInoUIkTyz1lH3TtDoJbVevyhRAV2gi4ixXKgM477UVnWI2u3erXsas81pwOA=s4800-w1600"
+            ],
+            "highlights": [
+                "江戸城の歴史的遺構",
+                "美しく手入れされた庭園",
+                "天皇皇后両陛下のお住まい"
+            ],
+            "suggestions": [
+                "東京駅から徒歩約15分、または大手町駅から徒歩約5分でアクセス可能です。",
+                "東御苑は月・金曜休園日。事前に公式サイトで開園日をご確認ください。",
+                "皇居東御苑では、江戸城の遺構である門や天守台跡などを見学できます。"
+            ],
+            "chips": [
+                "歴史",
+                "庭園",
+                "無料",
+                "散策",
+                "都心"
+            ],
+            "opening_times": "9:00-17:00 (最終入場16:00) ※東御苑",
+            "official_website": "https://sankan.kunaicho.go.jp/index.html",
+            "google_rating": "4.400000",
+            "location": {
+                "latitude": 35.685177,
+                "longitude": 139.75279
+            },
+            "address": "日本、〒100-8111 東京都千代田区千代田１−１",
+            "category": [
+                "ACTIVITY_CATEGORY_TOWER_BUILDING",
+                "ACTIVITY_CATEGORY_ATTRACTION",
+                "ACTIVITY_CATEGORY_ATTRACTION",
+                "ACTIVITY_CATEGORY_TEMPLES_SHINES"
+            ],
+            "products": [],
+            "events": [],
+            "tags": []
+        },
+        {
+            "place_id": "ChIJ1UOuDWiMGGARkM6Iv-ZU57U",
+            "language_code": "JA",
+            "title": "靖國神社",
+            "description": "国家のために命を捧げた人々を祀る、東京の中心に位置する神聖な神社。歴史的な意義と静寂な雰囲気を併せ持つ。",
+            "amount": "0",
+            "image_urls": [
+                "https://lh3.googleusercontent.com/place-photos/AJRVUZMCEbXE1nyzhUIpjbDbmgLH_Jy0nmXYuOEwhY2_JrNkTnrHh9i5hW-O66InWDaq6XDpM2xSHM83rq0QC9D3upQT_fxU-1i1o2fNlIiI_OuEr5bw7mq-Nai8jA9KP3CbbGOSBRhkdE4SR6Q4zVI=s4800-w1440",
+                "https://lh3.googleusercontent.com/place-photos/AJRVUZNgWg9-gIUjikxQ9qDSwdXJJ4wp0AIwS1lw5r-ZEaCbNRJiRZOrLu5N6EYywjYZWz3yFvJ_bG0WbeThSUgrLbNpI7fJsRqPhst4ZzGX0tFp-BbHxGlxH64hV6-jFGRYkUa3YdsFRVguCVF9ymE=s4800-w1600",
+                "https://lh3.googleusercontent.com/place-photos/AJRVUZPwe3SXKVHqdb6H2alswIpGTxCeapSCSAI8yTW2QW0vQBF8v3iMApOmJJd3cFPac2NSCLUKyYXB8kxrHdIh5v15FcRYWSe6XZhKvx_jIKbdafGDykRirssz8A7O56wju-WBc-pTFMx4NYem2Q=s4800-w1600"
+            ],
+            "highlights": [
+                "幕末から現代までの戦没者を祀る",
+                "境内には桜の名所も",
+                "遊就館で歴史資料を展示"
+            ],
+            "suggestions": [
+                "東京スカイツリー®から電車で約30分、九段下駅下車徒歩5分",
+                "境内は広く、ゆっくり散策する時間を確保しましょう",
+                "季節ごとの祭事やライトアップも楽しめます"
+            ],
+            "chips": [
+                "神社",
+                "歴史",
+                "桜",
+                "東京"
+            ],
+            "opening_times": "6:00-18:00 (Mar-Oct)",
+            "official_website": "https://www.yasukuni.or.jp/",
+            "google_rating": "4.400000",
+            "location": {
+                "latitude": 35.694138,
+                "longitude": 139.74385
+            },
+            "address": "日本、〒102-0073 東京都千代田区九段北３丁目１−１",
+            "category": [
+                "ACTIVITY_CATEGORY_TEMPLES_SHINES",
+                "ACTIVITY_CATEGORY_ATTRACTION"
+            ],
+            "products": [],
+            "events": [
+                {
+                    "title": "春季例大祭",
+                    "description": "天皇陛下からの勅使が参向になる、春の最も重要な祭典です。期間中は様々な奉祝行事も行われます。",
+                    "highlights": [
+                        "天皇陛下の勅使参向",
+                        "春の重要な祭典",
+                        "奉祝行事"
+                    ],
+                    "opening_times": "4月21日～23日",
+                    "from_date": "2026-04-21",
+                    "suggest_visiting_time": "例大祭期間中の開門時間（6:00～20:00）",
+                    "amount": "0"
+                },
+                {
+                    "title": "みたままつり",
+                    "description": "大小3万以上の提灯が灯され、九段の夜空を彩る夏の風物詩。神輿振りや盆踊り、各種奉納芸能などが行われます。",
+                    "highlights": [
+                        "大小3万以上の提灯",
+                        "夏の風物詩",
+                        "盆踊り・奉納芸能"
+                    ],
+                    "opening_times": "",
+                    "from_date": "2026-07-13",
+                    "suggest_visiting_time": "夕方以降、提灯に灯りが灯る頃",
+                    "amount": "0"
+                },
+                {
+                    "title": "秋季例大祭",
+                    "description": "秋の最も重要な祭典で、天皇陛下からの勅使が参向になります。",
+                    "highlights": [
+                        "天皇陛下の勅使参向",
+                        "秋の重要な祭典",
+                        "静寂な雰囲気"
+                    ],
+                    "opening_times": "10月18日",
+                    "from_date": "2026-10-18",
+                    "suggest_visiting_time": "例大祭期間中の開門時間（6:00～17:00）",
+                    "amount": "0"
+                },
+                {
+                    "title": "新年祭（初詣）",
+                    "description": "元旦に行われるお祭りで、奉納の儀式や御神酒・甘酒の提供、福引などお正月らしい催し物があります。",
+                    "highlights": [
+                        "元旦のお祭り",
+                        "初詣",
+                        "お正月らしい催し物"
+                    ],
+                    "opening_times": "1月1日",
+                    "from_date": "2027-01-01",
+                    "suggest_visiting_time": "元旦午前中",
+                    "amount": "0"
+                }
+            ],
+            "tags": [
+                "歴史探訪"
+            ]
+        },
+        {
+            "place_id": "ChIJSeco5wiJGGARItbTS8lQ5G0",
+            "language_code": "JA",
+            "title": "チームラボプラネッツ TOKYO DMM",
+            "description": "豊洲にある、水に入るミュージアムと花と一体化する庭園「チームラボプラネッツ TOKYO DMM」。五感をフルに使ってアートと一体となる体験ができます。",
+            "amount": "3600",
+            "image_urls": [
+                "https://lh3.googleusercontent.com/place-photos/AJRVUZPRIv_TKCn_cHvsjlk8DGQAgSxsC8m3njuh_RA0mFFJZfG6tAZ4AlA3CAjnMbN9WhyoTEkfgYSDNV1GLfvlhERAybDQ3LKf9oQ5N1FM7sNzcs4v0vJ9Ib9sZ_x6VaMJtXJsUFjyLcmj8sljpPs=s4800-w1600",
+                "https://lh3.googleusercontent.com/place-photos/AJRVUZPXfWmJUnzOMcRGLvJ-ues6jxwQbQ160Iz_n7BbUDJErtylgALTltZCHVc2VkXfbqWCQz6BZRdIijS7tM9bZgETY-ZwcXzO9621OfiYSIoar5iY07m5iiUPqyuCYic4sbfz8cakRN933aaDFw=s4800-w1600",
+                "https://lh3.googleusercontent.com/place-photos/AJRVUZPXjPHnUhXvXP85LYDaRGwkqRPT2jWQvD2aRbW0BRzjmnF7OoDiPvsxhKMC0Ahd8D6bPhFSm-uK2ZQ9uQBTUuBD3Ab9eCSVCVPDfiNEXueN-Jc1ZBeDYvvyl0tOHadbhp5_5elrH30Z36j2dg=s4800-w1600"
+            ],
+            "highlights": [
+                "身体ごと没入するアート体験",
+                "水や花と一体になれる空間",
+                "写真映えする幻想的な演出"
+            ],
+            "suggestions": [
+                "東京メトロ有楽町線「豊洲駅」またはゆりかもめ「新豊洲駅」からアクセスできます。",
+                "膝下まで水に浸かるエリアがあるので、濡れても良い服装や短パンがおすすめです。",
+                "2025年1月に新エリアがオープン予定なので、最新情報をチェックしてみてください。"
+            ],
+            "chips": [
+                "体験型",
+                "アート",
+                "豊洲",
+                "新エリア",
+                "人気"
+            ],
+            "opening_times": "9:00-22:00",
+            "official_website": "https://www.teamlab.art/jp/e/planets/",
+            "google_rating": "4.500000",
+            "location": {
+                "latitude": 35.64912,
+                "longitude": 139.78978
+            },
+            "address": "日本、〒135-0061 東京都江東区豊洲６丁目１−１６",
+            "category": [
+                "ACTIVITY_CATEGORY_THEME_PARK",
+                "ACTIVITY_CATEGORY_MUSEUM_GALLERY",
+                "ACTIVITY_CATEGORY_THEME_PARK",
+                "ACTIVITY_CATEGORY_ATTRACTION",
+                "ACTIVITY_CATEGORY_MUSEUM_GALLERY"
+            ],
+            "products": [],
+            "events": [],
+            "tags": [
+                "アート体験"
+            ]
+        },
+        {
+            "place_id": "ChIJCewJkL2LGGAR3Qmk0vCTGkg",
+            "language_code": "JA",
+            "title": "東京タワー",
+            "description": "東京のシンボル、東京タワーへようこそ！展望台から東京の街並みや夜景を一望できます。",
+            "amount": "1500",
+            "image_urls": [
+                "https://lh3.googleusercontent.com/place-photos/AJRVUZMTJjikLGASGeku78uUcGgmT-Q68bY4_aKth-zSsX68CxUyKgqGVNKpuVoziUZ1rJgx7_WeHqIFn9sS0JlFYVElka_VSVi_WVIaTGRg1ap73Ahr7ERA66sTMfNK-zty2zKwrsgFQl2-I2FadQ=s4800-w1600",
+                "https://lh3.googleusercontent.com/place-photos/AJRVUZMBConRDKEf_630g52aT6zjIZlQ8jp-YZEtDK2Y4wotoQO_WY6mPN3d9axcX6NMeAusx3kxd2x0ljT7MjVIslAVZYCKd_n57DoyGTr36TrMa5o6VjBl8tVdj3XJybZMphHHvRtsk-LRaOv6ACXGpmBs=s4800-w1600",
+                "https://lh3.googleusercontent.com/place-photos/AJRVUZN7eN7tKG7PX3IgJY2wTXMc8uxdAXwNi2u1kNhcj49cyoLkXcOA8WMb9ABxKEclLzn_eOJFqKKMR6NZmoAnE-Cy7aiI6Z3km1HDBcPJbWTMoC7xozAHn7mxlAHAhTB4i8KtCsCNU0NjaWIx=s4800-w1600"
+            ],
+            "highlights": [
+                "東京のランドマーク",
+                "150mメインデッキからの絶景",
+                "250mトップデッキツアー"
+            ],
+            "suggestions": [
+                "東京スカイツリー®から電車で約35分、約380円でアクセス可能です。",
+                "外階段ウォーク（約600段）に挑戦して、達成感を味わいましょう。",
+                "夜景鑑賞に最適な時間帯は夕暮れ時です。"
+            ],
+            "chips": [
+                "夜景",
+                "展望台",
+                "ランドマーク",
+                "人気スポット",
+                "東京"
+            ],
+            "opening_times": "9:00～23:00",
+            "official_website": "https://www.tokyotower.co.jp/",
+            "google_rating": "4.500000",
+            "location": {
+                "latitude": 35.65858,
+                "longitude": 139.74544
+            },
+            "address": "日本、〒105-0011 東京都港区芝公園４丁目２−８",
+            "category": [
+                "ACTIVITY_CATEGORY_TOWER_BUILDING",
+                "ACTIVITY_CATEGORY_MUSEUM_GALLERY",
+                "ACTIVITY_CATEGORY_ATTRACTION"
+            ],
+            "products": [],
+            "events": [
+                {
+                    "title": "TOKYO TOWER CITY LIGHT FANTASIA 2026 Summer",
+                    "description": "東京の夜景とマッピング花火、蛍をテーマにした光の演出が融合する没入型イベント。涼しい展望台で夏祭り気分を味わえます。",
+                    "highlights": [
+                        "マッピング花火と蛍の演出",
+                        "東京の夜景とのコラボレーション",
+                        "和×夏のキャンドル装飾"
+                    ],
+                    "opening_times": "19:00～22:50",
+                    "from_date": "2026-05-11",
+                    "suggest_visiting_time": "夜",
+                    "amount": ""
+                },
+                {
+                    "title": "BEER HOUR FEST in 東京タワー2026",
+                    "description": "東京タワーの絶好のロケーションで、ドイツビールやグルメを楽しめるビールフェス。",
+                    "highlights": [
+                        "ドイツビールとグルメ",
+                        "東京タワーを望むロケーション",
+                        "気軽に楽しめるビアガーデン"
+                    ],
+                    "opening_times": "",
+                    "from_date": "",
+                    "suggest_visiting_time": "",
+                    "amount": ""
+                },
+                {
+                    "title": "東京タワー文化フェスティバルIX",
+                    "description": "音楽、美術、スポーツなど多様なジャンルを通して日本と世界の文化に触れることができる文化交流フェスティバル。",
+                    "highlights": [
+                        "国際文化交流",
+                        "メイク体験＆民族衣装パレード",
+                        "音楽、美術、スポーツ"
+                    ],
+                    "opening_times": "",
+                    "from_date": "2026-03-22",
+                    "suggest_visiting_time": "",
+                    "amount": ""
+                }
+            ],
+            "tags": [
+                "夜景ビュー"
+            ]
+        },
+        {
+            "place_id": "ChIJU9ZPE2-NGGARwiJyx0Id61E",
+            "language_code": "JA",
+            "title": "サンシャインシティ",
+            "description": "池袋のランドマーク！水族館、展望台、プラネタリウム、ショッピング、グルメまで、一日中楽しめる大型複合施設です。",
+            "amount": "0",
+            "image_urls": [
+                "https://lh3.googleusercontent.com/place-photos/AJRVUZPd8JwEdpFJdvk-pLHUkocsxW7PVP5XpKOUGvNuuxgvxLHhcGs1sh3_VWiSjqXkrAZyUsUKj_NEmvZ7-7SZKWg_Gm8JdvC1x7GZeDsCUSuZorv6sUOyah9NDeDnvgg-YaE2g2FK3D-lLeahGQ=s4800-w1600",
+                "https://lh3.googleusercontent.com/places/ANXAkqGIB4DPjiYZlP1r1HGYKXVzca15sUtvdP5MJsRJkz5ncTI50hYImBPSraHr11Od7KpMTwxUe237tb4trUC4il5VBWG_MnTwYNg=s4800-w1541",
+                "https://lh3.googleusercontent.com/place-photos/AJRVUZP4TwxJR40L3oSW5dOj7--yAqT-R-ZiPRZiLPvPtNf4SXD2nHHtbQrHugd_9jLQMtCkrprawjVbRAVPbDdvBgLwuTuVd-Pk9Vg6H3F_GcNK_wTq-1_XY2IhoOHkD0do6B-3pKXDIOMgwowvnw=s4800-w1600"
+            ],
+            "highlights": [
+                "天空のペンギン",
+                "展望台からの絶景",
+                "最新プラネタリウム"
+            ],
+            "suggestions": [
+                "東京メトロ有楽町線東池袋駅より徒歩約3分。JR池袋駅東口より徒歩約8分。",
+                "「サンシャイン60展望台 てんぼうパーク」からの眺望は必見です。",
+                "「サンシャイン国際水族館」では、都会にいながらリゾート気分を味わえます。"
+            ],
+            "chips": [
+                "複合施設",
+                "水族館",
+                "展望台",
+                "ショッピング",
+                "グルメ"
+            ],
+            "opening_times": "10:00～20:00",
+            "official_website": "https://sunshinecity.jp/?utm_source=Google&utm_medium=mybusiness&utm_campaign=kutikomi&utm_id=1",
+            "google_rating": "4.100000",
+            "location": {
+                "latitude": 35.72897,
+                "longitude": 139.71954
+            },
+            "address": "日本、〒170-8630 東京都豊島区東池袋３丁目１−２",
+            "category": [
+                "ACTIVITY_CATEGORY_TOWER_BUILDING",
+                "ACTIVITY_CATEGORY_AQUARIUM_ZOO",
+                "ACTIVITY_CATEGORY_ATTRACTION",
+                "ACTIVITY_CATEGORY_MUSEUM_GALLERY"
+            ],
+            "products": [],
+            "events": [
+                {
+                    "title": "名探偵コナン 風駆ける天空都市 レストランフェア",
+                    "description": "「名探偵コナン」とのコラボレストランフェア。作品の世界観をイメージした限定メニューが登場します。",
+                    "highlights": [
+                        "コナンコラボメニュー",
+                        "作品の世界観",
+                        "限定メニュー"
+                    ],
+                    "opening_times": "",
+                    "from_date": "2026-04-07",
+                    "suggest_visiting_time": "",
+                    "amount": "0"
+                },
+                {
+                    "title": "RODDY'S BIRTHDAY 2026",
+                    "description": "キャラクター「RODDY」の誕生日を記念したイベント。限定グッズの販売や、特別な装飾が施されます。",
+                    "highlights": [
+                        "RODDY誕生日記念",
+                        "限定グッズ",
+                        "特別装飾"
+                    ],
+                    "opening_times": "",
+                    "from_date": "2026-05-28",
+                    "suggest_visiting_time": "",
+                    "amount": "0"
+                },
+                {
+                    "title": "絵本のひろばにウルトラマンが登場！",
+                    "description": "「絵本のひろば」にウルトラマンが登場し、子供たちとの触れ合いや写真撮影の機会を提供します。",
+                    "highlights": [
+                        "ウルトラマン登場",
+                        "子供向けイベント",
+                        "写真撮影"
+                    ],
+                    "opening_times": "",
+                    "from_date": "",
+                    "suggest_visiting_time": "イベント開催期間中の日中",
+                    "amount": "0"
+                }
+            ],
+            "tags": [
+                "ショッピング",
+                "夜景ビュー"
+            ]
+        },
+        {
+            "place_id": "ChIJB3qyjVF9GGARE1Gz1IicoBY",
+            "language_code": "JA",
+            "title": "葛西臨海公園",
+            "description": "東京湾に面した広大な都立公園。水族園、大観覧車、鳥類園などがあり、自然とアトラクションが楽しめる。",
+            "amount": "",
+            "image_urls": [
+                "https://lh3.googleusercontent.com/place-photos/AJRVUZPXEm-mxcx-RLjCy6UoBXil-e2pGZLZW8nmWFHi1HtFTXacU1g0sFolPIY96SS4ZVclBOXt_IxmPtTgukhk3H9aKOgqQWgGiSy40UEyRKUC50lNZTn6dP5ato0VEM9T5Rfq0qQiFBj9-Dt3A2MB-I8GNw=s4800-w1600",
+                "https://lh3.googleusercontent.com/place-photos/AJRVUZPUnblY7g9tAomGQ5z66tUCq1MdIiQAZ3B1Y369osXG4YWuGrs9fCZI9tfA6hOJ400kJCFfMYOiDd_Qr1oK_WACUm55AMifgDy2Zi8x1QkVpWwLBv2MGThe6wEc_e4I1DJfCr8lEEuD624rBA=s4800-w1600",
+                "https://lh3.googleusercontent.com/place-photos/AJRVUZPdodNV3m2P5EVzlaO74CBgxeYC3DMA1aYCyTt2fgovzPmELs_EVYMhFDkUrR_770xoqwoL08XAHAp_1Nvjo-j-N4z2_fnkI6Qes6ub0W-rLeCpz7En1tleLCxOfsFDD3GiUbG2ohh8Q51pyRk=s4800-w1600"
+            ],
+            "highlights": [
+                "広大な敷地と豊かな自然",
+                "葛西臨海水族園",
+                "大観覧車からの眺望"
+            ],
+            "suggestions": [
+                "JR京葉線で約20分、東京駅からアクセス可能。",
+                "季節ごとのイベントや花を楽しめます。",
+                "水上バスでのアクセスもおすすめです。"
+            ],
+            "chips": [
+                "公園",
+                "水族園",
+                "観覧車",
+                "自然",
+                "イベント"
+            ],
+            "opening_times": "常時開園（施設により異なる）",
+            "official_website": "https://www.tokyo-park.or.jp/park/format/index026.html",
+            "google_rating": "4.300000",
+            "location": {
+                "latitude": 35.641983,
+                "longitude": 139.86032
+            },
+            "address": "日本、〒134-0086 東京都江戸川区臨海町６丁目２−２",
+            "category": [
+                "ACTIVITY_CATEGORY_ATTRACTION",
+                "ACTIVITY_CATEGORY_ATTRACTION"
+            ],
+            "products": [],
+            "events": [
+                {
+                    "title": "PARK CINEMA FESTIVAL in 葛西臨海公園 2026",
+                    "description": "星空の下で映画を楽しめる無料の野外イベント。ステージ公演やキッチンカーなども併設。",
+                    "highlights": [
+                        "無料野外映画上映",
+                        "星空の下の鑑賞",
+                        "グルメやライブも"
+                    ],
+                    "opening_times": "13:00 - 21:00",
+                    "from_date": "2026-05-16",
+                    "suggest_visiting_time": "",
+                    "amount": "0"
+                },
+                {
+                    "title": "ひまわりと光・アートのインスタレーション",
+                    "description": "約4万本のひまわり畑と、光の演出・アートを組み合わせた幻想的な夜の空間。",
+                    "highlights": [
+                        "4万本のひまわり",
+                        "光とアートの融合",
+                        "幻想的な夜景"
+                    ],
+                    "opening_times": "18:00 - 20:30",
+                    "from_date": "2025-08-01",
+                    "suggest_visiting_time": "夜",
+                    "amount": "0"
+                }
+            ],
+            "tags": []
+        },
+        {
+            "place_id": "ChIJ18IK6x2KGGARKTc2yLS-030",
+            "language_code": "JA",
+            "title": "お台場海浜公園",
+            "description": "東京湾に面した広大な公園。約800mの人工砂浜「おだいばビーチ」や磯浜エリアがあり、美しい景観を楽しめる。夜景スポットとしても人気。",
+            "amount": "0",
+            "image_urls": [
+                "https://lh3.googleusercontent.com/place-photos/AJRVUZMw2wSKXndTXu8FkA_iwsMhKP_xiSmZEE5pLRYkQY5icRgDBlrH72NGB6C2beY2ePHnWBjYLKrQNsmVV-Bni5VWpmmAjftImnLsLDBKvg526l0Hf9efR9ZW5_7xWU7wxcA2713qNP6nynUlGlo=s4800-w1600",
+                "https://lh3.googleusercontent.com/place-photos/AJRVUZMEDa_kvz5jbQtrEm1LjSpSXASdfyb4LHQIc_D4vGsZh-A1SX0kr9_FcHGXEOOBazW7QvSPg0RCUinFGOfSveglqJV_e5SXAGDvmBEindO1dSZa4HZpBLp9k6qVRSVG45cBChb2wtjgev83i53BAQpWLA=s4800-w1600",
+                "https://lh3.googleusercontent.com/place-photos/AJRVUZMZcnR9RhRpHyT2m86Ca_Pcnfwn71F80HcP5ZGXPx-jEGRMSecFUf545PuX97eSCBVsuCIBAMVCe35syfyElUWmsIt2z3e6rMs3fxTuOi_Q_h13yicZGGW3akA0vWFvGBWFZvKcWbalwtJZrw=s4800-w1600"
+            ],
+            "highlights": [
+                "人工砂浜「おだいばビーチ」",
+                "レインボーブリッジと東京タワーの夜景",
+                "自由の女神像",
+                "マリンスポーツや釣りも楽しめる"
+            ],
+            "suggestions": [
+                "東京スカイツリー®からゆりかもめ線でお台場海浜公園駅へ向かうのが便利です。",
+                "夕暮れ時や夜景の時間帯に訪れると、ロマンチックな雰囲気を満喫できます。",
+                "公園周辺の商業施設（デックス東京ビーチ、アクアシティお台場など）で食事やショッピングも楽しめます。"
+            ],
+            "chips": [
+                "夜景",
+                "公園",
+                "海",
+                "デート",
+                "都会",
+                "週末",
+                "東京"
+            ],
+            "opening_times": "24時間",
+            "official_website": "http://www.tptc.co.jp/park/01_02",
+            "google_rating": "4.400000",
+            "location": {
+                "latitude": 35.63005,
+                "longitude": 139.7757
+            },
+            "address": "日本、〒135-0091 東京都港区台場１丁目４−４",
+            "category": [
+                "ACTIVITY_CATEGORY_ATTRACTION",
+                "ACTIVITY_CATEGORY_ATTRACTION"
+            ],
+            "products": [],
+            "events": [
+                {
+                    "title": "海の灯まつりinお台場",
+                    "description": "おだいばビーチに設置された数万個のペーパーランプにキャンドルの灯を灯し、幻想的な地上絵を描くイベント。ライトアップされたレインボーブリッジや屋形船の光との共演が楽しめる。",
+                    "highlights": [
+                        "数万個のペーパーランプ",
+                        "幻想的な地上絵",
+                        "レインボーブリッジや屋形船との共演"
+                    ],
+                    "opening_times": "",
+                    "from_date": "2025-10-04",
+                    "suggest_visiting_time": "",
+                    "amount": ""
+                },
+                {
+                    "title": "STAR ISLAND 2026",
+                    "description": "未来型花火エンターテインメント「STAR ISLAND」が、お台場海浜公園で開催。次元突破の進化を遂げた、これまでにない花火体験が楽しめる。",
+                    "highlights": [
+                        "未来型花火エンターテインメント",
+                        "次元突破の進化",
+                        "これまでにない花火体験"
+                    ],
+                    "opening_times": "",
+                    "from_date": "2026-05-23",
+                    "suggest_visiting_time": "",
+                    "amount": ""
+                },
+                {
+                    "title": "東京ドラゴンボート大会2026",
+                    "description": "東京ドラゴンボート大会が開催されます。",
+                    "highlights": [
+                        "ドラゴンボートレース",
+                        "水上イベント"
+                    ],
+                    "opening_times": "",
+                    "from_date": "2026-05-16",
+                    "suggest_visiting_time": "",
+                    "amount": ""
+                }
+            ],
+            "tags": [
+                "夜景ビュー",
+                "自然散策"
+            ]
+        },
+        {
+            "place_id": "ChIJPyOTG8KMGGARh_IXobWxHmo",
+            "language_code": "JA",
+            "title": "新宿御苑",
+            "description": "新宿御苑は、広大な敷地に日本庭園、イギリス風景式庭園、フランス式整形庭園など、多様な様式の庭園が広がる都会のオアシスです。四季折々の花々や緑を楽しめ、歴史的建造物も点在しています。",
+            "amount": "500",
+            "image_urls": [
+                "https://lh3.googleusercontent.com/place-photos/AJRVUZP4UA1Yc9ZErd5wbcsT4ulkuKZYVv7fpdfeg2xTo3VKLoZfDQW_Ai2ZuThPYTDF3NXWTb10FU0PhXZbGee5GIvwUSx3mfxGxDcNDjmby9QY5_8m7MpqwhAnuxIXgdQVFoLIOSgTxtZtxh3BhMY=s4800-w1600",
+                "https://lh3.googleusercontent.com/place-photos/AJRVUZPv2eYsl64VdG3D7iAXgLrRSZUtYXMlKiAX2AWBTf0RxdFyu4RmsNDdfh0_XFSzENOwJGVAe1c8W83vK_4w8hDwbS1fVG0qtJrdOZ-NaTwekTQzRsv5LhZ9OJhFIGhk9egYrO4D8dZN2dyR=s4800-w1280",
+                "https://lh3.googleusercontent.com/place-photos/AJRVUZNyxJbrbDI2Ji5FtbTPx6o_heAIn3a8hcBtsmefPj4DFifEIc0Ug1nT26neHnYBOh_sEvP-wvxnTqmAzvq65wL6EoQPI5M-RJVA75aLb4g0IJiDbh2HQVEpKUHLLin56tJh9jWEksBq8XIrMQ=s4800-w1600"
+            ],
+            "highlights": [
+                "3つの様式からなる美しい庭園",
+                "桜や紅葉など四季折々の自然",
+                "歴史的建造物と緑の調和"
+            ],
+            "suggestions": [
+                "東京メトロ丸ノ内線「新宿御苑前駅」より徒歩5分",
+                "園内のカフェやレストランで休憩も可能",
+                "温室や旧洋館御休所なども見どころ"
+            ],
+            "chips": [
+                "花見",
+                "紅葉",
+                "夜景",
+                "穴場",
+                "散策"
+            ],
+            "opening_times": "9:00～16:30",
+            "official_website": "https://www.env.go.jp/garden/shinjukugyoen/index.html",
+            "google_rating": "4.600000",
+            "location": {
+                "latitude": 35.685177,
+                "longitude": 139.71005
+            },
+            "address": "日本、〒160-0014 東京都新宿区内藤町１１",
+            "category": [
+                "ACTIVITY_CATEGORY_ATTRACTION",
+                "ACTIVITY_CATEGORY_OUTDOOR_ACTIVITIES",
+                "ACTIVITY_CATEGORY_ATTRACTION",
+                "ACTIVITY_CATEGORY_ATTRACTION"
+            ],
+            "products": [],
+            "events": [
+                {
+                    "title": "GTFグリーンチャレンジデー",
+                    "description": "地球環境や生物多様性を意識するためのチャレンジを応援する環境イベント。毎年秋に開催されます。",
+                    "highlights": [
+                        "環境イベント",
+                        "生物多様性",
+                        "秋開催"
+                    ],
+                    "opening_times": "",
+                    "from_date": "",
+                    "suggest_visiting_time": "",
+                    "amount": ""
+                },
+                {
+                    "title": "新宿御苑フォトコンテスト",
+                    "description": "新宿御苑の四季や自然の魅力を捉えた写真作品を募集するコンテスト。入選作品は展示されることもあります。",
+                    "highlights": [
+                        "写真コンテスト",
+                        "四季の魅力",
+                        "作品展示"
+                    ],
+                    "opening_times": "",
+                    "from_date": "",
+                    "suggest_visiting_time": "",
+                    "amount": ""
+                },
+                {
+                    "title": "洋らん展",
+                    "description": "冬の温室で開催される、多彩な洋らんの展示会です。",
+                    "highlights": [
+                        "冬の温室",
+                        "洋らん展示",
+                        "季節限定"
+                    ],
+                    "opening_times": "",
+                    "from_date": "",
+                    "suggest_visiting_time": "",
+                    "amount": ""
+                }
+            ],
+            "tags": [
+                "自然散策"
+            ]
+        },
+        {
+            "place_id": "ChIJr7mGZdmMGGARjxoMFeHApXE",
+            "language_code": "JA",
+            "title": "新宿ゴールデン街",
+            "description": "新宿ゴールデン街は、昭和レトロな雰囲気が漂う、個性豊かな約280軒の小さなバーや飲食店が集まるエリアです。迷路のような路地を散策し、地元の人々との交流を楽しむことができます。",
+            "amount": "",
+            "image_urls": [
+                "https://lh3.googleusercontent.com/place-photos/AJRVUZPhSTngI9tlXACfVmaCURbYzRUjO-no4OsYI0yKFGhUeshvxoxz0k6U6E0S3CxnKcO0nBMIfku8p5dtEx5e5eTGsijvPIx8fErez6Q1DNEJvGVyk5pjvJCTIGmaoghawD3ccCqH49c_hpULsw=s4800-w1600",
+                "https://lh3.googleusercontent.com/place-photos/AJRVUZOZGC0m1s9wSbx2s0sIdrEzLdV1cOfWCo1BzpKPCnhNNfFALFbIv3_d78nfjAP-r8TsFwE-GF_KFIYmyFQp1iBbuJAQ607vi1qgQFT-M94YUOx0CVzfOqOPQXUyaD55OmC-bawIdQswlCsagqeSvL7ukg=s4800-w1600",
+                "https://lh3.googleusercontent.com/place-photos/AJRVUZMulFAbjvRAdvtev5NAB8JlQqDJ4OqG3ER4X3EUbzGeQBnyY8EKIg2-snuPt7shOi18EOq47SDnkPMlc3fsGwmNutEYa302vCWwaP8_YCXrW9MM2i4gXUQTC7Zv5g6dKVdGQVAlHChgjzaBvw=s4800-w1600"
+            ],
+            "highlights": [
+                "昭和初期の雰囲気が残るレトロな路地",
+                "個性豊かな約280軒のバーや飲食店",
+                "地元住民や文化人に愛される隠れ家"
+            ],
+            "suggestions": [
+                "新宿駅東口から徒歩約8分。歌舞伎町の隣に位置します。",
+                "深夜まで営業している店が多いので、夜の街歩きに最適です。",
+                "はしご酒を楽しみながら、様々なお店を巡ってみてください。"
+            ],
+            "chips": [
+                "夜景",
+                "昭和レトロ",
+                "ディープ",
+                "飲み歩き",
+                "ナイトライフ"
+            ],
+            "opening_times": "店舗により異なる",
+            "official_website": "http://goldengai.jp/",
+            "google_rating": "4.300000",
+            "location": {
+                "latitude": 35.69411,
+                "longitude": 139.70476
+            },
+            "address": "日本、〒160-0021 東京都新宿区歌舞伎町１丁目１−６ あかるい花園 五番街",
+            "category": [
+                "ACTIVITY_CATEGORY_ATTRACTION",
+                "ACTIVITY_CATEGORY_JAPANESE_RESTAURANT",
+                "ACTIVITY_CATEGORY_OTHER_RESTAURANT",
+                "ACTIVITY_CATEGORY_JAPANESE_RESTAURANT",
+                "ACTIVITY_CATEGORY_OTHER_RESTAURANT"
+            ],
+            "products": [],
+            "events": [
+                {
+                    "title": "新宿ゴールデン街 納涼感謝祭2025",
+                    "description": "毎年8月31日に開催される、新宿ゴールデン街の夏の感謝祭。参加店舗でのワンコインメニューや、はしご酒スタンプラリー、軒先屋台村などが楽しめます。",
+                    "highlights": [
+                        "はしご酒スタンプラリー",
+                        "軒先屋台村",
+                        "ワンコインメニュー"
+                    ],
+                    "opening_times": "15:00～22:00",
+                    "from_date": "2025-08-31",
+                    "suggest_visiting_time": "",
+                    "amount": ""
+                },
+                {
+                    "title": "新宿花園ゴールデン街桜まつり2026",
+                    "description": "毎年4月19日に開催される、新宿ゴールデン街の春祭り。ノーチャージで1杯500円から楽しめ、ドリンクスタンプラリーや記念品のプレゼントも。",
+                    "highlights": [
+                        "ノーチャージ1杯500円",
+                        "ドリンクスタンプラリー",
+                        "限定記念品"
+                    ],
+                    "opening_times": "15:00～22:00",
+                    "from_date": "2026-04-19",
+                    "suggest_visiting_time": "",
+                    "amount": ""
+                },
+                {
+                    "title": "新宿街バルウィーク2025",
+                    "description": "新宿エリア全体で開催される食と飲みのイベント。新宿ゴールデン街では、参加店全店チャージ無料、1杯500円～で特別なメニューが楽しめます。",
+                    "highlights": [
+                        "参加店チャージ無料",
+                        "特別メニュー",
+                        "食べ飲み歩き"
+                    ],
+                    "opening_times": "",
+                    "from_date": "",
+                    "suggest_visiting_time": "",
+                    "amount": ""
+                }
+            ],
+            "tags": [
+                "グルメ発見",
+                "ショッピング"
+            ]
+        }
+    ]
+}

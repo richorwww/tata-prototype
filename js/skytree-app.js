@@ -1,22 +1,15 @@
 // Triplabo App Logic
 // Auto-extracted from index.html
 
-/* TAG → filter function — searches across all 30 places */
+/* TAG → filter function — Skytree area (Japanese tags) */
 var TAG_FILTERS = {
-  '春日东京好去处': function(pl){return pl.ps.join('').includes('樱')||pl.ps.join('').includes('赏花')||pl.cat==='自然'||pl.ps.join('').includes('春日');},
-  '东京精品咖啡': function(pl){return pl.ps.join('').includes('咖啡')||pl.ps.join('').includes('精品')||pl.n.includes('Coffee');},
-  '亲子友好活动': function(pl){return pl.ps.join('').includes('亲子')||pl.cat==='活动';},
-  '免费打卡景点': function(pl){return pl.fr===1;},
-  '米其林美食': function(pl){return pl.ps.join('').includes('米其林');},
-  '夜景推荐': function(pl){return pl.ps.join('').includes('夜景')||pl.ps.join('').includes('夜间');},
-  '东京塔周边500m': function(pl){return parseInt(pl.d)<=500;},
-  '下午茶好去处': function(pl){return pl.ps.join('').includes('下午茶')||pl.ps.join('').includes('甜品')||pl.ps.join('').includes('咖啡');},
-  '神社寺庙巡礼': function(pl){return pl.ps.join('').includes('神社')||pl.ps.join('').includes('寺庙')||pl.tag==='景点'&&(pl.n.includes('神社')||pl.n.includes('寺'));},
-  '艺术文化探索': function(pl){return pl.ps.join('').includes('艺术')||pl.ps.join('').includes('文化')||pl.ps.join('').includes('博物馆')||pl.ps.join('').includes('展览');},
-  '东京购物新地标': function(pl){return pl.cat==='购物';},
-  '拉面百名店': function(pl){return pl.ps.join('').includes('拉面');},
-  '沉浸体验': function(pl){return pl.ps.join('').includes('沉浸')||pl.ps.join('').includes('夜生活');},
-  '无需预约': function(pl){return pl.ps.join('').includes('无需预约');},
+  '历史探访': function(pl){return pl.ps.join('').includes('历史')||pl.ps.join('').includes('寺庙')||pl.n.includes('浅草寺')||pl.n.includes('雷门')||pl.n.includes('花屋敷');},
+  '夜景推荐': function(pl){return pl.ps.join('').includes('夜景');},
+  '艺术体验': function(pl){return pl.ps.join('').includes('美术馆')||pl.ps.join('').includes('艺术')||pl.ps.join('').includes('浮世绘')||pl.ps.join('').includes('展览');},
+  '自然散策': function(pl){return pl.cat==='自然'||pl.ps.join('').includes('公园')||pl.ps.join('').includes('赏樱');},
+  '美食发现': function(pl){return pl.cat==='美食'||pl.ps.join('').includes('美食')||pl.ps.join('').includes('料理');},
+  '购物逛街': function(pl){return pl.cat==='购物'||pl.ps.join('').includes('专门店')||pl.ps.join('').includes('伴手礼');},
+  '祈愿参拜': function(pl){return pl.n.includes('浅草寺')||pl.n.includes('雷门')||pl.ps.join('').includes('寺庙神社');},
 };
 
 /* ── Category colors ─────────────────────────────────── */
@@ -143,7 +136,7 @@ mapboxgl.accessToken = 'pk.eyJ1IjoicG9wb3YyMzMiLCJhIjoiY21uemxpcmc3MGVyejJ4cHZnN
 var map = new mapboxgl.Map({
   container: 'map',
   style: 'mapbox://styles/popov233/cmogt89bl005d01sx1blv8jce',
-  center: [139.7454, 35.6586],
+  center: [139.8107, 35.710064],
   zoom: 15.5,
   interactive: true,
   scrollZoom: false
@@ -153,7 +146,7 @@ var ZOOM_CLOSE = 15.5;
 var ZOOM_MED   = 13.6;
 var ZOOM_FAR   = 12.3;
 
-var TT_LL=[139.7454,35.6586];
+var TT_LL=[139.8107,35.710064];
 
 function calcDist(ll){
   var R=6371000;
@@ -217,7 +210,7 @@ ccImg.style.opacity = '0';
 ccImg.style.transition = 'opacity .3s';
 ccImg.onload = function(){ this.style.opacity = '1'; };
 ccImg.onerror = function(){ this.style.display = 'none'; };
-ccImg.src = 'https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=400&q=80&fit=crop&crop=center';
+ccImg.src = 'https://lh3.googleusercontent.com/place-photos/AJRVUZNwXcpxVpNWj09JFD_vC4CgB0lPXnTuk2RAx7sWbI_KmRo9bPCc4OYgFX4qkLow4kUHUg13nCQpEOFf_Y0nahQ3Jd7gOKWj_iNKVXfDiy74O6JyYd3x821Cq0EeazciAGdZsokRRApxz5a6vg=s800';
 
 /* ══════════════════════════════════════════════════════
    GEOMETRY + STATE
@@ -277,13 +270,63 @@ function init(){
   cc.style.top=Math.round(MDEF/2)+'px';
   var cw=phone.clientWidth||390;
   cc.style.left=Math.round(cw/2)+'px';
-}
+}/* == Skytree content patch == */
+(function patchContent(){
+  function q(s){return document.querySelector(s);}
+  function qa(s){return document.querySelectorAll(s);}
+  // Labels
+  var c=q('.cc-lbl'); if(c)c.textContent='晴空塔';
+  var cn=q('#ccLabel .poi-name'); if(cn)cn.textContent='晴空塔';
+  // Near POIs
+  [['n1','0','展览馆','免费展示'],['n2','1','墓田水族馆','水族馆'],['n3','2','隆田公园','公园·樱花']].forEach(function(e){
+    var el=document.getElementById(e[0]);if(!el)return;
+    el.dataset.i=e[1];
+    var nm=el.querySelector('.poi-name');var sb=el.querySelector('.poi-sub');
+    if(nm)nm.textContent=e[2];if(sb)sb.textContent=e[3];
+  });
+  // Extended POIs
+  [['e1','3','雷门','浅草历史'],['e2','4','浅草寺','东京最古老的寺'],
+   ['e3','5','锦丝公园','赏樱名所'],['e4','6','浅草花屋敷','日本最古老游乐园'],
+   ['e5','7','武士忍者馆','体验历史'],['e6','8','北旋美术馆','浮世绘艺术'],
+   ['e7','9','东武博物馆','铁道历史'],
+   ['v1','10','合羽桥','专门店街'],['v2','10','隆田川散步','散步河畑'],
+   ['v3','10','索拉玛奇','购物'],['v4','10','抑上街区','咋啡杂货'],
+   ['v5','10','向岛百花园','幭园自然'],
+   ['ev1','30','BLUE LOCK','限时活动'],['ev2','31','台湾祭','限时活动']
+  ].forEach(function(e){
+    var el=document.getElementById(e[0]);if(!el)return;
+    el.dataset.i=e[1];
+    var nm=el.querySelector('.poi-name');var sb=el.querySelector('.poi-sub');
+    if(nm)nm.textContent=e[2];if(sb)sb.textContent=e[3];
+  });
+  // Hero
+  var ht=q('.hero-title');if(ht)ht.innerHTML='<span>&#x1F5FC;</span>开启晴空塔之旅';
+  var hi=qa('.hi-row span:last-child');
+  if(hi[0])hi[0].textContent='地上350米天望甲板360°全景';
+  if(hi[1])hi[1].textContent='天望回廊（450米）体验空中漫步';
+  if(hi[2])hi[2].textContent='东京第一夜景，日落后最美';
+  // Ticket
+  var tr=qa('.tkt-rows>div');
+  if(tr[0]){var v=tr[0].querySelector('.tkt-val');if(v)v.textContent='天望甲板（350米）入场券';}
+  if(tr[1]){var v=tr[1].querySelector('.tkt-val');if(v)v.textContent='2026-07-15、9:00';}
+  if(tr[2]){var v=tr[2].querySelector('.tkt-val');if(v)v.textContent='大人 ×2  儿童 ×1';}
+  var mr=qa('.tkt-mr span:last-child');
+  if(mr[0])mr[0].textContent='营业时间：10:00～22:00  最终入场 21:30';
+  if(mr[1])mr[1].textContent='东京都墓田区抑上1丁目1−1−2';
+  var tp=qa('.tkt-tip span');
+  if(tp[0])tp[0].innerHTML='<b>时间：</b>上午或傅晒后人少，推荐前往。';
+  if(tp[1])tp[1].innerHTML='<b>夜景：</b>日落30分后魔法时刻最美，选晴天前往。';
+  if(tp[2])tp[2].innerHTML='<b>购物：</b>别忘了在索拉玛奇买限定周边和伴手礼！';
+  var wb=q('.tkt-acts .btn-g');if(wb)wb.onclick=function(){window.open('https://www.tokyo-skytree.jp/','_blank');};
+})();
+
+
 init();
 injectCatIcons(0);
 
 /* ── Cycling search placeholder ──────────────────────── */
 (function(){
-  var TAGS=['春日好去处 🌸','东京精品咖啡 ☕','免费打卡景点 🆓','亲子友好活动 👨‍👩‍👧','夜景推荐 🌃','米其林美食 ⭐'];
+  var TAGS=['历史探访 🏛️','夜景推荐 🌃','艺术体验 🎨','自然散策 🌿','美食发现 🍜','祈愿参拜 ⛩️'];
   var idx=0;
   function cycle(){
     var els=[
@@ -705,10 +748,10 @@ function showTyping(){
 function removeTyping(){var d=document.getElementById('typingDiv');if(d)d.remove();}
 
 var chatReplies={
-  '免费':['好的！东京塔周边有几个免费打卡的绝佳地点：','增上寺（免费入场，可与东京塔同框）、芝公园（全天开放，宠物友好）、神明神社（千年古社，清幽参道）。要了解某个的详情吗？',['告诉我增上寺详情','芝公园在哪里','还有其他推荐吗']],
-  '亲子':['亲子游的话，这几个地方很适合：','RED° TOKYO TOWER 有50+沉浸式游戏项目，全年龄友好；芝公园绿地宽阔，宠物也欢迎；増上寺历史氛围浓，小朋友能感受传统文化。',['RED° TOKYO TOWER怎么玩','芝公园有什么设施','还有没有其他选择']],
-  '米其林':['米其林推荐的话，附近最值得去的是：','鮨 田中 ——江户前握寿司，食材每日丰洲直送，限定午间套餐性价比很高，建议提前一周预约。',['怎么预约','价格大概多少','还有其他餐厅吗']],
-  '排队':['不想排队的话，这些地方都无需预约：','炭火烧浓厚中华そば（拉面百名店，随到随吃）、Blue Bottle Coffee（精品咖啡，直接进店）、RED° TOKYO TOWER（随时入场）。',['炭火烧在哪里','Blue Bottle的环境怎么样']],
+  '免费':['好的！晴空塔周边有几个免费打卡的绝佳地点：','隅田公园（全天开放，可远眺晴空塔）、浅草寺（东京最古老寺院）、雷门（浅草象征，夜间灯光超美）。要了解某个地点的详情吗？',['告诉我隅田公园详情','浅草寺在哪里','还有其他推荐吗']],
+  '亲子':['亲子游的话，这几个地方很适合：','墨田水族馆有日本最大室内企鹅泳池，孩子超爱；浅草花屋敷是日本最古老游乐园，昭和复古超好玩；隅田公园草坪宽阔适合野餐。',['墨田水族馆怎么玩','花屋敷适合几岁','还有没有其他选择']],
+  '历史':['历史探访推荐：','浅草寺——东京最古老寺院，已有1400年历史；雷门——浅草标志，每天游客云集；武士忍者博物馆——体验武士文化，评分极高（4.9分）。',['浅草寺如何前往','武士博物馆怎么预约','还有什么历史景点']],
+  '夜景':['夜景推荐的话，晴空塔周边绝对不能错过：','东京晴空塔天望甲板（350米）——东京第一夜景；隅田公园沿河步道——可拍晴空塔倒影；浅草寺夜间参拜——提灯灯光超美。',['天望甲板票价多少','晴空塔几点开到几点','还有什么推荐']],
 };
 
 function getBotReply(msg){

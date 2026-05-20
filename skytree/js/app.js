@@ -1,22 +1,15 @@
 // Triplabo App Logic
 // Auto-extracted from index.html
 
-/* TAG → filter function — searches across all 30 places */
+/* TAG → filter function — Skytree area (Japanese tags) */
 var TAG_FILTERS = {
-  '春日东京好去处': function(pl){return pl.ps.join('').includes('樱')||pl.ps.join('').includes('赏花')||pl.cat==='自然'||pl.ps.join('').includes('春日');},
-  '东京精品咖啡': function(pl){return pl.ps.join('').includes('咖啡')||pl.ps.join('').includes('精品')||pl.n.includes('Coffee');},
-  '亲子友好活动': function(pl){return pl.ps.join('').includes('亲子')||pl.cat==='活动';},
-  '免费打卡景点': function(pl){return pl.fr===1;},
-  '米其林美食': function(pl){return pl.ps.join('').includes('米其林');},
-  '夜景推荐': function(pl){return pl.ps.join('').includes('夜景')||pl.ps.join('').includes('夜间');},
-  '东京塔周边500m': function(pl){return parseInt(pl.d)<=500;},
-  '下午茶好去处': function(pl){return pl.ps.join('').includes('下午茶')||pl.ps.join('').includes('甜品')||pl.ps.join('').includes('咖啡');},
-  '神社寺庙巡礼': function(pl){return pl.ps.join('').includes('神社')||pl.ps.join('').includes('寺庙')||pl.tag==='景点'&&(pl.n.includes('神社')||pl.n.includes('寺'));},
-  '艺术文化探索': function(pl){return pl.ps.join('').includes('艺术')||pl.ps.join('').includes('文化')||pl.ps.join('').includes('博物馆')||pl.ps.join('').includes('展览');},
-  '东京购物新地标': function(pl){return pl.cat==='购物';},
-  '拉面百名店': function(pl){return pl.ps.join('').includes('拉面');},
-  '沉浸体验': function(pl){return pl.ps.join('').includes('沉浸')||pl.ps.join('').includes('夜生活');},
-  '无需预约': function(pl){return pl.ps.join('').includes('无需预约');},
+  '歴史探訪': function(pl){return pl.ps.join('').includes('歴史')||pl.ps.join('').includes('寺社')||pl.n.includes('浅草寺')||pl.n.includes('雷門')||pl.n.includes('花やしき');},
+  '夜景ビュー': function(pl){return pl.ps.join('').includes('夜景');},
+  'アート体験': function(pl){return pl.ps.join('').includes('美術館')||pl.ps.join('').includes('芸術')||pl.ps.join('').includes('浮世絵')||pl.ps.join('').includes('展示')||pl.ps.join('').includes('アート');},
+  '自然散策': function(pl){return pl.cat==='自然'||pl.ps.join('').includes('公園')||pl.ps.join('').includes('桜');},
+  'グルメ発見': function(pl){return pl.cat==='美食'||pl.ps.join('').includes('グルメ')||pl.ps.join('').includes('料理');},
+  'ショッピング': function(pl){return pl.cat==='购物'||pl.ps.join('').includes('専門店')||pl.ps.join('').includes('お土産');},
+  '縁結び祈願': function(pl){return pl.n.includes('浅草寺')||pl.n.includes('雷門')||pl.ps.join('').includes('縁結び');},
 };
 
 /* ── Category colors ─────────────────────────────────── */
@@ -143,17 +136,17 @@ mapboxgl.accessToken = 'pk.eyJ1IjoicG9wb3YyMzMiLCJhIjoiY21uemxpcmc3MGVyejJ4cHZnN
 var map = new mapboxgl.Map({
   container: 'map',
   style: 'mapbox://styles/popov233/cmogt89bl005d01sx1blv8jce',
-  center: [139.7454, 35.6586],
+  center: [139.8107, 35.710064],
   zoom: 15.5,
   interactive: true,
   scrollZoom: false
 });
 
 var ZOOM_CLOSE = 15.5;
-var ZOOM_MED   = 13.6;
-var ZOOM_FAR   = 12.3;
+var ZOOM_MED   = 14.8;
+var ZOOM_FAR   = 13.5;
 
-var TT_LL=[139.7454,35.6586];
+var TT_LL=[139.8107,35.710064];
 
 function calcDist(ll){
   var R=6371000;
@@ -217,7 +210,7 @@ ccImg.style.opacity = '0';
 ccImg.style.transition = 'opacity .3s';
 ccImg.onload = function(){ this.style.opacity = '1'; };
 ccImg.onerror = function(){ this.style.display = 'none'; };
-ccImg.src = 'https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=400&q=80&fit=crop&crop=center';
+ccImg.src = 'https://lh3.googleusercontent.com/place-photos/AJRVUZNwXcpxVpNWj09JFD_vC4CgB0lPXnTuk2RAx7sWbI_KmRo9bPCc4OYgFX4qkLow4kUHUg13nCQpEOFf_Y0nahQ3Jd7gOKWj_iNKVXfDiy74O6JyYd3x821Cq0EeazciAGdZsokRRApxz5a6vg=s800';
 
 /* ══════════════════════════════════════════════════════
    GEOMETRY + STATE
@@ -283,7 +276,7 @@ injectCatIcons(0);
 
 /* ── Cycling search placeholder ──────────────────────── */
 (function(){
-  var TAGS=['春日好去处 🌸','东京精品咖啡 ☕','免费打卡景点 🆓','亲子友好活动 👨‍👩‍👧','夜景推荐 🌃','米其林美食 ⭐'];
+  var TAGS=['歴史探訪 🏛️','夜景ビュー 🌃','アート体験 🎨','自然散策 🌿','グルメ発見 🍜','縁結び祈願 ⛩️'];
   var idx=0;
   function cycle(){
     var els=[
@@ -428,7 +421,7 @@ function setZoom(lv,showMsg){
   }
 
   /* ── Distance badge ── */
-  var distLabels=['步行范围 · 500m','地铁 2站以内 · 2km','地铁 5站以内 · 5km'];
+  var distLabels=['徒步 15min · 800m','地铁 2站以内 · 2km','地铁 5站以内 · 5km'];
   document.getElementById('wbtxt').textContent=distLabels[lv];
 
   /* ── Bottom area — unified mkCard for all levels ── */
